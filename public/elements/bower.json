@@ -1,0 +1,20 @@
+{
+  "name": "Polymer",
+  "authors": [
+    "Vajahath Ahmed <vajuoff.1@gmail.com>"
+  ],
+  "description": "Polymer components and custom elements.",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.5.0"
+  }
+}

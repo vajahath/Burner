@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		<%= title %>
+	</title>
+
+	<!-- get bootstrap -->
+	<link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+
+	<!-- get custom css -->
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+
+	<!-- polymer webcomponentsjs -->
+	<script src="/elements/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+
+	<!-- getting elements -->
+	<link rel="import" href="/elements/hello-world/hello-world.html">
+
+</head>
+
+<body>
+	<h1><%= title %></h1>
+	<h2>tesst</h2>
+	<p>Welcome to
+		<%= title %>
+	</p>
+
+	<hello-world></hello-world>
+</body>
+
+</html>

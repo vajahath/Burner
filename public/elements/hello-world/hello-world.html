@@ -1,0 +1,34 @@
+<!-- hello-world test element -->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="hello-world">
+	<template>
+
+		<style>
+		:host {
+			display: block;
+		}
+		
+		h2 {
+			color: green;
+		}
+		</style>
+		<h2>Hello {{name}}</h2>
+		<button class="btn btn-success">hi</button>
+	</template>
+
+	<script>
+	Polymer({
+
+		is: 'hello-world',
+
+		properties: {
+			name: {
+				type: String,
+				value: 'hello-world',
+			},
+		},
+	});
+	</script>
+</dom-module>
