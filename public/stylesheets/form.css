@@ -1,0 +1,40 @@
+/* <body> should be removed */
+body{
+	margin-top:20px;
+}
+
+.row{
+	background-color:#823;
+	
+}
+.col-md-10{
+	background-color:#445;
+}
+.container{
+	background-color:gray;
+}
+
+
+/* -------------------- */
+
+.form-inline{
+	margin-bottom: 10px;
+	width:100%;
+}
+.form-group{
+	width:100%;
+}
+
+.form-inline .form-control{
+	margin-bottom:2px;
+	margin-top:2px;
+}
+.form-control{
+	max-width:250px;
+	letter-spacing:1.25px;
+}
+
+.label-margin{
+	margin-left: 10px;
+	margin-top:7px;
+}

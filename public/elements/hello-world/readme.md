@@ -15,6 +15,7 @@ This is a hello-world that is intended to confirm that everything is working fin
 
 By default it will output `hello-world`.
 
-Attribute | Type | Description
----------------------------------
+Attribute | Type   | Description
+--------------------------------------------------------------
 name      | String | `name = "Vaju"` will output `hello Vaju`
+

@@ -1,2 +1,2 @@
 # Burner
-Burn the elements.
+Burn elements.
