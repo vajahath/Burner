@@ -1,40 +1,108 @@
 /* <body> should be removed */
-body{
-	margin-top:20px;
+
+body {
+	margin-top: 20px;
 }
 
-.row{
-	background-color:#823;
-	
-}
-.col-md-10{
-	background-color:#445;
-}
-.container{
-	background-color:gray;
-}
+/* ///////// */
+.affix {
+      top: 20px;
+  }
 
-
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover{
+	background-color:#59b9d6;
+}
 /* -------------------- */
 
-.form-inline{
+.panel.with-nav-tabs .panel-heading {
+	padding: 5px 5px 0 5px;
+}
+
+.panel.with-nav-tabs .nav-tabs {
+	border-bottom: none;
+}
+
+.panel.with-nav-tabs .nav-justified {
+	margin-bottom: -1px;
+}
+
+.form-inline {
 	margin-bottom: 10px;
-	width:100%;
-}
-.form-group{
-	width:100%;
+	width: 100%;
 }
 
-.form-inline .form-control{
-	margin-bottom:2px;
-	margin-top:2px;
-}
-.form-control{
-	max-width:250px;
-	letter-spacing:1.25px;
+.form-group {
+	width: 100%;
 }
 
-.label-margin{
+.form-inline .form-control {
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+.form-control {
+	max-width: 250px;
+	letter-spacing: 1.25px;
+}
+
+.label-margin {
 	margin-left: 10px;
-	margin-top:7px;
+	margin-top: 7px;
+}
+.label-margin-adj {
+	margin-top: -9px;
+}
+
+
+/* panel primary css */
+
+.with-nav-tabs.panel-primary .nav-tabs > li > a,
+.with-nav-tabs.panel-primary .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > li > a:focus {
+	color: #fff;
+}
+
+.with-nav-tabs.panel-primary .nav-tabs > .open > a,
+.with-nav-tabs.panel-primary .nav-tabs > .open > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > .open > a:focus,
+.with-nav-tabs.panel-primary .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > li > a:focus {
+	color: #fff;
+	background-color: #3071a9;
+	border-color: transparent;
+}
+
+.with-nav-tabs.panel-primary .nav-tabs > li.active > a,
+.with-nav-tabs.panel-primary .nav-tabs > li.active > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > li.active > a:focus {
+	color: #428bca;
+	background-color: #fff;
+	border-color: #428bca;
+	border-bottom-color: transparent;
+}
+
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu {
+	background-color: #428bca;
+	border-color: #3071a9;
+}
+
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > li > a {
+	color: #fff;
+}
+
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+	background-color: #3071a9;
+}
+
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+	background-color: #4a9fe9;
+}
+/* -------------------- */
+.padding-adj{
+	padding-left:30px;
 }
