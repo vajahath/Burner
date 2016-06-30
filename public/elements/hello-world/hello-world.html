@@ -10,15 +10,37 @@
 			display: block;
 		}
 		
-		h2 {
-			color: green;
+		.helloClass {
+			background-color: #333;
+			display: inline-block;
+			padding: 20px;
+			margin: 5px;
+			text-align: center;
+		}
+		
+		.helloClass h2 {
+			color: #f0ad4e;
+		}
+		
+		.helloClass p {
+			color: white;
 		}
 		</style>
-		<h2>Hello {{name}}</h2>
+		<div class="helloClass">
+			<h2>Hello {{name}}</h2>
+			<p>This element is a test.</p>
+			<p>Have you linked Bootstrap? Try doing it.</p>
+			<p>bye {{name}}</p>
+			<button on-tap="sayHi" class="btn btn-warning">press me</button>
+		</div>
 	</template>
 
 	<script>
-	Polymer({
+	// var hello = document.querySelector('hello-world');
+	// console.log(hello);
+	// hello.sayHi();
+
+	var poly = Polymer({
 
 		is: 'hello-world',
 
@@ -27,7 +49,15 @@
 				type: String,
 				value: 'hello-world',
 			},
+			message:{
+				type: String,
+				value: "Hope you are smiling."
+			}
 		},
+		sayHi: function() {
+			alert(this.message);
+		}
+
 	});
 	</script>
 </dom-module>
