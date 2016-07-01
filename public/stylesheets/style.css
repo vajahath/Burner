@@ -1,24 +1,19 @@
-.modal-content {
-	box-shadow: 1px 1px 3px #929292;
-}
-
-.modal-content:hover{
-	box-shadow: 1px 1px 7px #929292;	
-}
-
-input[type="file"] {
-	display: none;
-}
-
-input[type="text"] {
-	letter-spacing:1.6px;
+/* 
+	.holder should be modified according
+	to your requirement.
+*/
+/* .holder {
+	padding: 70px 0px 0px 300px;
 }
 
 
-.custom-file-upload {
-	border: 1px solid #ccc;
-	display: inline-block;
-	padding: 6px 12px;
-	cursor: pointer;
-	background-color:#e2e2e2;
-}
+.green{
+	background-color:#5cb85c;
+	color:#FFF;
+	font-size:70px;
+	padding:18px 0px 0px 10px;
+	border-radius:15px;
+	width:136px;
+	height:136px;
+	text-align:center;
+} */

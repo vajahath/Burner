@@ -1,0 +1,81 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="successful-operation">
+	<template>
+
+		<style>
+		:host {
+			background-color:#fff;
+			display: inline-block;
+			padding: 20px 0px 20px 20px;
+			margin: 2px;
+			box-shadow: 0px 0px 10px #e2e2e2;
+			width:50%;
+		}
+		
+		:host .green {
+			background-color: #5cb85c;
+			color: #FFF;
+			font-size: 70px;
+			padding: 18px 0px 0px 10px;
+			border-radius: 15px;
+			width: 136px;
+			height: 136px;
+			text-align: center;
+		}
+		</style>
+		<div class="container-fluid">
+
+			<div class="row">
+				<div class="col-md-3 col-sm-3 green">
+					<span class="glyphicon glyphicon-saved" aria-hidden="true"></span>
+				</div>
+				<div class="col-md-9 col-sm-9">
+					<p style="color:gray;">{{header}}</p>
+					<h2 style="color:#696969;">{{title}}</h2>
+					<div class="alert alert-success" role="alert">
+						<p><strong>{{info_bold}}</strong> <span class="text-mutedd">{{info}}</span></p>
+					</div>
+					<a href="{{button_href}}" class="btn btn-success pull-right">{{button_name}} <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+				</div>
+			</div>
+
+		</div>
+
+
+	</template>
+
+	<script>
+	Polymer({
+
+		is: 'successful-operation',
+
+		properties: {
+			header: {
+				type: String,
+				value: 'Hello there',
+			},
+			title: {
+				type: String,
+				value: "Success"
+			},
+			info_bold: {
+				type: String,
+				value: "Be bold "
+			},
+			info:{
+				type: String,
+				value: "Normal letters"
+			},
+			button_name: {
+				type: String,
+				value: "Continue"
+			},
+			button_href:{
+				type: String,
+				value: "http://www.google.com"
+			}
+		},
+	});
+	</script>
+</dom-module>

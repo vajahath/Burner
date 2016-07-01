@@ -3,12 +3,21 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', {});
 });
 
 
 
-router.get('/form', function(req, res){
-	res.render('form', {});
+router.get('/bootnav', function(req, res){
+	res.render('bootnav', {});
 });
+
+router.get('/success', function(req, res){
+	res.render('file-upload-success', {});
+});
+
+router.get('/oops', function(req, res){
+	res.render('upload-failed', {});
+});
+
 module.exports = router;

@@ -1,0 +1,15 @@
+{
+  "name": "successful-operation",
+  "version": "1.0.3",
+  "description": "A UI element that can be used to indicate that the operation was successful.",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web-components",
+    "polymer"
+  ],
+  "author": "twitter.com/vajahath7",
+  "license": "ISC"
+}
