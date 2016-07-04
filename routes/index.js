@@ -16,8 +16,5 @@ router.get('/success', function(req, res){
 	res.render('file-upload-success', {});
 });
 
-router.get('/oops', function(req, res){
-	res.render('upload-failed', {});
-});
 
 module.exports = router;
