@@ -8,13 +8,10 @@ router.get('/', function(req, res, next) {
 
 
 
-router.get('/bootnav', function(req, res){
-	res.render('bootnav', {});
+router.get('/delight', function(req, res){
+	res.render('delight', {});
 });
 
-router.get('/success', function(req, res){
-	res.render('file-upload-success', {});
-});
 
 
 module.exports = router;
