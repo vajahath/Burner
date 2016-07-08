@@ -115,6 +115,7 @@ blockquote p {
   background-color: #4E4E4E;
   color: #FFF;
 }
+
 .gray-back:link,
 .gray-back:visited {
   background-color: #525252;
@@ -126,37 +127,67 @@ blockquote p {
   background-color: #318F85;
   color: #FFF;
 }
+
 .main-footer {
   background-color: #2F2F2F;
   color: #6B6B6B;
 }
 
-.price-card{
-  background-color:#DADADA;
-  margin:5px;
-  box-shadow:2px 2px 6px #717171;
-  padding-bottom:30px;
+.price-card {
+  background-color: #DADADA;
+  margin: 5px;
+  box-shadow: 2px 2px 6px #717171;
+  padding-bottom: 30px;
 }
-.card-header{
-  color:#FFF;
-  padding:15px 10px 10px 10px;
+
+.card-header {
+  color: #FFF;
+  padding: 15px 10px 10px 10px;
 }
-.card-header i{
-  font-size:40px;
+
+.card-header i {
+  font-size: 40px;
 }
-.btn-green{
-  background-color:#318F85;
-  border:#008D7E;
+
+.btn-green {
+  background-color: #318F85;
+  border: #008D7E;
 }
-.btn-green:hover{
-  background-color:#24AC9E;
-  border:#008D7E;
+
+.btn-green:hover {
+  background-color: #24AC9E;
+  border: #008D7E;
 }
-.btn-gray{
-  background-color:#ABABAB;
-  border:#989898;
+
+.btn-gray {
+  background-color: #ABABAB;
+  border: #989898;
 }
-.btn-gray:hover{
-  background-color:#909090;
-  border:#989898;
+
+.btn-gray:hover {
+  background-color: #909090;
+  border: #989898;
+}
+
+.contact-section {
+  padding: 50px 20px 20px 20px;
+}
+
+.contact-section input {
+  background-color: #5E5E5E;
+  border: none;
+  letter-spacing: 1.75px;
+  height: 3.38em;
+  color: #FFFFFF;
+}
+
+.contact-section textarea {
+  background-color: #5E5E5E;
+  border: none;
+  color: #FFFFFF;
+  letter-spacing: 1.75px;
+}
+
+.btn {
+  font-family: "Montserrat", sans-serif;
 }
