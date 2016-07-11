@@ -13,7 +13,7 @@ router.get('/delight', function(req, res){
 });
 
 router.get('/register', function(req, res){
-	res.render('delight', {});
+	res.render('register', {});
 });
 
 
