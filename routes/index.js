@@ -12,6 +12,10 @@ router.get('/delight', function(req, res){
 	res.render('delight', {});
 });
 
+router.get('/register', function(req, res){
+	res.render('delight', {});
+});
+
 
 
 module.exports = router;
