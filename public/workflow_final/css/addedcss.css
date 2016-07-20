@@ -1,0 +1,33 @@
+.paper-scroller {
+	background-color: #607D8B;
+}
+
+.paper-scroller > .paper {
+	background-color: #D6D6D6;
+	box-shadow: 2px 2px 7px #000;
+}
+
+#toolbar-container {
+	background-color: #00B8D4;
+	box-shadow: 2px 2px 5px #000;
+}
+
+#toolbar-container button {
+	background-color: #00B8D4;
+	color: #000;
+	border: none;
+}
+
+#toolbar-container button:hover {
+	background-color: #546E7A;
+}
+.stencil .elements {
+   background-color:#263238;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
