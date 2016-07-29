@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<title>Interland</title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="styles/style.css">
 
 	<!-- material icon fonts -->
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,64 +16,14 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 
 	<style>
-	nav ul a,
-	nav .brand-logo {
-		color: #444;
-	}
 	
-	p {
-		line-height: 2rem;
-	}
-	
-	.button-collapse {
-		color: #26a69a;
-	}
-	
-	.parallax-container {
-		min-height: 380px;
-		line-height: 0;
-		height: auto;
-		color: rgba(255, 255, 255, .9);
-	}
-	
-	.parallax-container .section {
-		width: 100%;
-	}
-	
-	@media only screen and (max-width: 992px) {
-		.parallax-container .section {
-			position: absolute;
-			top: 40%;
-		}
-		#index-banner .section {
-			top: 10%;
-		}
-	}
-	
-	@media only screen and (max-width: 600px) {
-		#index-banner .section {
-			top: 0;
-		}
-	}
-	
-	.icon-block {
-		padding: 0 15px;
-	}
-	
-	.icon-block .material-icons {
-		font-size: inherit;
-	}
-	
-	footer.page-footer {
-		margin: 0;
-	}
 	</style>
 </head>
 
 <body>
 	<nav class="grey lighten-5">
 		<div class="nav-wrapper">
-			<a href="#" style="margin-left: 5%;" class="brand-logo red-text text-lighten-2"><img style="width: 50px;margin-top: 14px;" src="imgpsh_fullsize.png" alt="logo"><span>Interland</span></a>
+			<a href="#" class="brand-logo red-text text-lighten-2">Interland</a>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
 				<li><a class="grey-text text-darken-2" href="#">Home</a></li>
 				<li><a class="grey-text text-darken-2" href="#">Products</a></li>
@@ -82,42 +32,45 @@
 		</div>
 	</nav>
 
-	<div id="index-banner" class="parallax-container">
+	<div id="index-banner" class="parallax-container valign-wrapper">
 		<div class="section no-pad-bot">
-			<div class="container">
-				<br>
-				<br>
-				<h1 class="header center grey-text text-darken-2">Grow your business faster</h1>
+			<div class="container valign">
+				<h1 class="header center white-text">Grow your business faster</h1>
 				<div class="row center">
-					<h5 class="header col s12 light grey-text text-darken-3">Tell us what you need next. Let's make it awesome.</h5>
+					<h5 class="header col s12 light white-text">Tell us what you need next. Let's make it awesome.</h5>
 				</div>
 				<div class="row center">
 					<a href="#" id="" class="btn-large waves-effect waves-light teal white-text text-lighten-2">Get Started</a>
 				</div>
 				<br>
 				<br>
-
 			</div>
 		</div>
-		<div class="parallax"><img src="work.jpg" alt="Unsplashed background img 1"></div>
+		<div class="parallax"><img src="images/macwork-dd.jpg" alt="Unsplashed background img 1" style="width: 100%;"></div>
 	</div>
+
+
+	<div class="row">
+		<div class="col s6">
+			<img src="" alt="">	
+		</div>
+		<div class="col s6">
+			<h2>Banking Solutions</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
+		</div>
+	</div>
+
+	
+
 	<!-- dependencies -->
 	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 	<!-- Material Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	<script src="js/main.js"></script>
 
-	<script type="text/javascript">
-	(function($) {
-		$(function() {
-
-			$('.button-collapse').sideNav();
-			$('.parallax').parallax();
-
-		}); // end of document ready
-	})(jQuery); // end of jQuery name space
-	</script>
 </body>
 
 </html>
