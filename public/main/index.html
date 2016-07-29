@@ -11,32 +11,113 @@
 
 	<!-- material icon fonts -->
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	
+
 	<!-- material Compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 
-
+	<style>
+	nav ul a,
+	nav .brand-logo {
+		color: #444;
+	}
+	
+	p {
+		line-height: 2rem;
+	}
+	
+	.button-collapse {
+		color: #26a69a;
+	}
+	
+	.parallax-container {
+		min-height: 380px;
+		line-height: 0;
+		height: auto;
+		color: rgba(255, 255, 255, .9);
+	}
+	
+	.parallax-container .section {
+		width: 100%;
+	}
+	
+	@media only screen and (max-width: 992px) {
+		.parallax-container .section {
+			position: absolute;
+			top: 40%;
+		}
+		#index-banner .section {
+			top: 10%;
+		}
+	}
+	
+	@media only screen and (max-width: 600px) {
+		#index-banner .section {
+			top: 0;
+		}
+	}
+	
+	.icon-block {
+		padding: 0 15px;
+	}
+	
+	.icon-block .material-icons {
+		font-size: inherit;
+	}
+	
+	footer.page-footer {
+		margin: 0;
+	}
+	</style>
 </head>
 
 <body>
-	<nav>
+	<nav class="grey lighten-5">
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo">Logo</a>
+			<a href="#" style="margin-left: 5%;" class="brand-logo red-text text-lighten-2"><img style="width: 50px;margin-top: 14px;" src="imgpsh_fullsize.png" alt="logo"><span>Interland</span></a>
 			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a href="sass.html">Sass</a></li>
-				<li><a href="badges.html">Components</a></li>
-				<li><a href="collapsible.html">JavaScript</a></li>
+				<li><a class="grey-text text-darken-2" href="#">Home</a></li>
+				<li><a class="grey-text text-darken-2" href="#">Products</a></li>
+				<li><a class="grey-text text-darken-2" href="#">JavaScript</a></li>
 			</ul>
 		</div>
 	</nav>
 
+	<div id="index-banner" class="parallax-container">
+		<div class="section no-pad-bot">
+			<div class="container">
+				<br>
+				<br>
+				<h1 class="header center grey-text text-darken-2">Grow your business faster</h1>
+				<div class="row center">
+					<h5 class="header col s12 light grey-text text-darken-3">Tell us what you need next. Let's make it awesome.</h5>
+				</div>
+				<div class="row center">
+					<a href="#" id="" class="btn-large waves-effect waves-light teal white-text text-lighten-2">Get Started</a>
+				</div>
+				<br>
+				<br>
 
+			</div>
+		</div>
+		<div class="parallax"><img src="work.jpg" alt="Unsplashed background img 1"></div>
+	</div>
 	<!-- dependencies -->
 	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	
+
 	<!-- Material Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+	<script type="text/javascript">
+	(function($) {
+		$(function() {
+
+			$('.button-collapse').sideNav();
+			$('.parallax').parallax();
+
+		}); // end of document ready
+	})(jQuery); // end of jQuery name space
+	</script>
 </body>
 
 </html>
