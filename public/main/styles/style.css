@@ -3,10 +3,6 @@ nav .brand-logo {
 	color: #444;
 }
 
-p {
-	line-height: 2rem;
-}
-
 .button-collapse {
 	color: #26a69a;
 }
@@ -14,7 +10,7 @@ p {
 .parallax-container {
 	min-height: 380px;
 	line-height: 0;
-	height: auto;
+	height: 550px;
 	color: rgba(255, 255, 255, .9);
 }
 
@@ -52,4 +48,25 @@ p {
 
 footer.page-footer {
 	margin: 0;
+}
+.section-marg{
+	margin-top: 165px;
+}
+.image-section{
+	padding-left:0px !important;
+}
+.image-section img{
+	width: 600px;
+}
+.section-marg .content-section{
+	padding-right: 6em !important;
+}
+.section-marg .content-section h2{
+	font-weight: 300;
+	color: #4D4D4D;
+}
+.section-marg .content-section p{
+	font-weight: 300;
+	color: #4D4D4D;
+	font-size: 1.3em;
 }

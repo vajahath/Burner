@@ -7,30 +7,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<title>Interland</title>
-	<link rel="stylesheet" href="styles/style.css">
 
 	<!-- material icon fonts -->
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<!-- material Compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+	<link rel="stylesheet" href="styles/style.css">
 
 	<style>
-	
+
 	</style>
 </head>
 
 <body>
-	<nav class="grey lighten-5">
-		<div class="nav-wrapper">
-			<a href="#" class="brand-logo red-text text-lighten-2">Interland</a>
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li><a class="grey-text text-darken-2" href="#">Home</a></li>
-				<li><a class="grey-text text-darken-2" href="#">Products</a></li>
-				<li><a class="grey-text text-darken-2" href="#">JavaScript</a></li>
-			</ul>
-		</div>
-	</nav>
+	<div class="navbar-fixed">
+		<nav class="grey lighten-5">
+			<div class="nav-wrapper">
+				<!-- <img src="images/logo.svg" alt=""> -->
+				<a href="#" class="brand-logo red-text text-lighten-2">Interland</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a class="grey-text text-darken-2" href="#">Home</a></li>
+					<li><a class="grey-text text-darken-2" href="#">Products</a></li>
+					<li><a class="grey-text text-darken-2" href="#">JavaScript</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 
 	<div id="index-banner" class="parallax-container valign-wrapper">
 		<div class="section no-pad-bot">
@@ -50,18 +53,33 @@
 	</div>
 
 
-	<div class="row">
-		<div class="col s6">
-			<img src="" alt="">	
+	<div class="row section-marg">
+		<div class="col s6 image-section">
+			<img src="images/mac-window-cr.jpg">
 		</div>
-		<div class="col s6">
-			<h2>Banking Solutions</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
+		<div class="col s6 content-section">
+			<h2>Lorem Ipsium Doller Sit Ammet</h2>
+			<p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
+			<a class="waves-effect waves-light btn">learn more</a>
 		</div>
 	</div>
 
-	
+	<div class="row">
+		<div class="col s3">
+			<div class="card">
+				<div class="card-image">
+					<img src="images/school.jpg">
+					<span class="card-title">Card Title</span>
+				</div>
+				<div class="card-content">
+					<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+				</div>
+				<div class="card-action">
+					<a href="#">This is a link</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- dependencies -->
 	<!-- jquery -->
