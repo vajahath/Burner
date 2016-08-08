@@ -49,25 +49,71 @@ nav .brand-logo {
 footer.page-footer {
 	margin: 0;
 }
-.section-marg{
-	margin-top: 165px;
+
+/**
+ * left-light styles
+ */
+.left-light{
+	margin-top: 11%;
 }
-.image-section{
-	padding-left:0px !important;
+.left-light .image-section{
+	padding-right: 3%;
 }
-.image-section img{
-	width: 600px;
+.left-light .left-croped{
+	padding-left: 0px;
 }
-.section-marg .content-section{
-	padding-right: 6em !important;
+.left-light .left-croped img{
+	width: 100%;
 }
-.section-marg .content-section h2{
+.left-light .bottom-croped{
+	padding-left: 7%;
+	padding-right: 7%;
+}
+.left-light .bottom-croped img{
+	width: 100%;
+	position: relative;
+	bottom: -6px;
+}
+.left-light .content-section{
+	padding-right: 10%;
+	margin-top: 2%;
+}
+.left-light .content-section h2{
 	font-weight: 300;
-	color: #4D4D4D;
+	color: #595B60;
 }
-.section-marg .content-section p{
+.left-light .content-section p{
 	font-weight: 300;
-	color: #4D4D4D;
+	color: #272727;
+	font-size: 1.3em;
+}
+
+/**
+ * left-light styles
+ */
+.right-light{
+	margin-top: 11%;
+}
+.right-light .image-section{
+	padding-left: 3%;
+}
+.right-light .right-croped{
+	padding-right: 0px;
+}
+.right-light .right-croped img{
+	width: 100%;
+	float: right;
+}
+.right-light .content-section{
+	padding-left: 10%;
+}
+.right-light .content-section h2{
+	font-weight: 300;
+	color: #595B60;
+}
+.right-light .content-section p{
+	font-weight: 300;
+	color: #272727;
 	font-size: 1.3em;
 }
 /**
@@ -92,5 +138,17 @@ footer.page-footer {
 	font-size: 20px;
 }
 /**
- * right-light styles
+ * winding-up styles
  */
+.winding-up{
+	border-top: 2px solid white;
+	border-bottom: 0px solid white;
+	padding: 3% 10%;
+	text-align: center;
+}
+.winding-up .header-strip h3{
+	font-weight: 300;
+}
+.winding-up .header-strip p{
+	font-size: 1.2em;
+}
