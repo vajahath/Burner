@@ -50,105 +50,143 @@ footer.page-footer {
 	margin: 0;
 }
 
+
 /**
  * left-light styles
  */
-.left-light{
+
+.left-light {
 	margin-top: 11%;
 }
-.left-light .image-section{
+
+.left-light .image-section {
 	padding-right: 3%;
 }
-.left-light .left-croped{
+
+.left-light .left-croped {
 	padding-left: 0px;
 }
-.left-light .left-croped img{
+
+.left-light .left-croped img {
 	width: 100%;
 }
-.left-light .bottom-croped{
+
+.left-light .bottom-croped {
 	padding-left: 7%;
 	padding-right: 7%;
 }
-.left-light .bottom-croped img{
+
+.left-light .bottom-croped img {
 	width: 100%;
 	position: relative;
 	bottom: -6px;
 }
-.left-light .content-section{
+
+.left-light .content-section {
 	padding-right: 10%;
 	margin-top: 2%;
 }
-.left-light .content-section h2{
+
+.left-light .content-section h2 {
 	font-weight: 300;
 	color: #595B60;
 }
-.left-light .content-section p{
+
+.left-light .content-section p {
 	font-weight: 300;
 	color: #272727;
 	font-size: 1.3em;
 }
 
+
 /**
  * left-light styles
  */
-.right-light{
+
+.right-light {
 	margin-top: 11%;
 }
-.right-light .image-section{
+
+.right-light .image-section {
 	padding-left: 3%;
 }
-.right-light .right-croped{
+
+.right-light .right-croped {
 	padding-right: 0px;
 }
-.right-light .right-croped img{
+
+.right-light .right-croped img {
 	width: 100%;
 	float: right;
 }
-.right-light .content-section{
+
+.right-light .content-section {
 	padding-left: 10%;
 }
-.right-light .content-section h2{
+
+.right-light .content-section h2 {
 	font-weight: 300;
 	color: #595B60;
 }
-.right-light .content-section p{
+
+.right-light .content-section p {
 	font-weight: 300;
 	color: #272727;
 	font-size: 1.3em;
 }
+
+
 /**
  * divergent styling
  */
-.divergent{
+
+.divergent {
 	background-color: #F6F6F6;
 	margin-top: 100px;
 	padding-bottom: 20px;
 }
-.divergent .header-strip{
+
+.divergent .header-strip {
 	text-align: center;
 	padding: 30px;
 }
-.divergent .header-strip h3{
+
+.divergent .header-strip h3 {
 	font-weight: 300;
 	color: #4d4d4d;
 }
-.divergent .header-strip p{
+
+.divergent .header-strip p {
 	font-weight: 300;
 	color: #4d4d4d;
 	font-size: 20px;
 }
+
+
 /**
  * winding-up styles
  */
-.winding-up{
+
+.winding-up {
 	border-top: 2px solid white;
 	border-bottom: 0px solid white;
 	padding: 3% 10%;
 	text-align: center;
 }
-.winding-up .header-strip h3{
+
+.winding-up .header-strip h3 {
 	font-weight: 300;
 }
-.winding-up .header-strip p{
+
+.winding-up .header-strip p {
 	font-size: 1.2em;
+}
+
+
+/**
+ * page-banner styling
+ */
+
+.page-banner {
+	padding: 1.5% 5%;
 }
