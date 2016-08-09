@@ -3,6 +3,7 @@
 
 		$('.button-collapse').sideNav();
 		$('.parallax').parallax();
+		$('.modal-trigger').leanModal();
 		$('.carousel').carousel({
 			// time_constant:1000
 		});

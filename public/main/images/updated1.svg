@@ -6,14 +6,13 @@
 <g>
 	<path fill="none" stroke="#09BCD4" stroke-width="4.9306" stroke-miterlimit="10" d="M23,65"/>
 </g>
-<path fill="none" stroke="#09BCD4" stroke-width="8.4718" stroke-miterlimit="10" d="M50.7,6.7V52c0,3.4-2.8,6.2-6.2,6.2H15.3v-38"
+<path fill="none" stroke="#FFFFFF" stroke-width="8.4718" stroke-miterlimit="10" d="M50.7,6.7V52c0,3.4-2.8,6.2-6.2,6.2H15.3v-38"
 	/>
-<path fill="#09BCD4" d="M15.3,26.7h-0.1c-2.3,0-4.2-1.9-4.2-4.2v-5.3c0-2.3,1.9-4.2,4.2-4.2h0.1c2.3,0,4.2,1.9,4.2,4.2v5.3
-	C19.5,24.9,17.6,26.7,15.3,26.7z"/>
-<path fill="#09BCD4" d="M50.8,14.7h-0.1c-2.3,0-4.2-1.9-4.2-4.2V5.2c0-2.3,1.9-4.2,4.2-4.2h0.1C53.1,1,55,2.9,55,5.2v5.3
-	C55,12.8,53.1,14.7,50.8,14.7z"/>
-<circle fill="#09BCD4" cx="15.3" cy="5.2" r="4.2"/>
+<path fill="#EF4438" d="M11,22.6v-5.3c0-2.3,1.9-4.2,4.2-4.2h0.1c2.3,0,4.2,1.9,4.2,4.2v5.3"/>
+<path fill="#FFFFFF" d="M46.5,10.5V5.2c0-2.3,1.9-4.2,4.2-4.2h0.1C53.1,1,55,2.9,55,5.2v5.3"/>
+<circle fill="#EF4438" cx="15.3" cy="5.2" r="4.2"/>
 <g>
 	<path fill="none" stroke="#09BCD4" stroke-width="4.2998" stroke-miterlimit="10" d="M15.3,60.4"/>
 </g>
+<polygon fill="#EF4438" points="19.5,54 11,62.4 11,17.2 19.5,17.2 "/>
 </svg>

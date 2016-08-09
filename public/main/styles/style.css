@@ -3,6 +3,13 @@ nav .brand-logo {
 	color: #444;
 }
 
+nav .img-logo {
+	width: 42px;
+	margin-top: 10px;
+	margin-left: 16px;
+	margin-right: 5px;
+}
+
 .button-collapse {
 	color: #26a69a;
 }
@@ -189,4 +196,67 @@ footer.page-footer {
 
 .page-banner {
 	padding: 1.5% 5%;
+}
+
+.page-banner p {
+	font-size: 1.2em;
+}
+
+
+/**
+ * product-lay styles
+ */
+
+.product-lay {
+	margin-top: 3%;
+}
+
+.product-lay .each-pro {
+	/* background-color: pink; */
+}
+
+.product-lay .each-pro .pro-class-container {
+	padding: 1% 3%;
+}
+
+.product-lay .each-pro .pro-class-container .pro-class {
+	font-weight: 300;
+	color: #656565;
+}
+
+.product-lay .each-pro .pro-content-container {
+	padding: 1.7% 1%;
+}
+
+.collapsible-body {
+	padding: 3rem;
+}
+
+.collapsible-body p {
+	padding: 0px;
+}
+
+.disc li {
+	list-style-type: disc;
+}
+
+
+/**
+ * product-modal
+ */
+
+.product-modal .modal-content {
+	padding: 0px;
+}
+
+.product-modal .modal-content .header-strip {
+	padding: 4% 4% 2% 4%;
+}
+
+.product-modal .modal-content .content-strip {
+	padding: 4% 4% 2% 4%;
+}
+.product-modal .modal-footer .modal-action {
+	margin-left: 1%;
+	margin-right: 1%;
 }
