@@ -294,3 +294,6 @@ footer.page-footer {
 	color: #FFF;
 	padding: 3% 0% 2% 4%;
 }
+.elevation .content i{
+	margin-top: 3px;
+}
