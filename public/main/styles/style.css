@@ -201,6 +201,8 @@ footer.page-footer {
 .page-banner p {
 	font-size: 1.2em;
 }
+
+
 /**
  * page-banner-thin styling
  */
@@ -247,9 +249,10 @@ footer.page-footer {
 	padding: 0px;
 }
 
-.disc{
+.disc {
 	margin-left: 17px;
 }
+
 .disc li {
 	list-style-type: disc;
 }
@@ -275,28 +278,66 @@ footer.page-footer {
 	margin-left: 1%;
 	margin-right: 1%;
 }
+
+
 /**
  * elevation styles
  */
-.elevation{
+
+.elevation {
 	/* background-color: yellow; */
 	width: 100%;
 	height: 350px;
 }
-.elevation div{
+
+.elevation div {
 	height: 100%;
 }
-.elevation .image-div{
+
+.elevation .image-div {
 	padding-right: 0px;
 }
-.elevation .image-div img{
+
+.elevation .image-div img {
 	height: 100%;
 	float: right;
 }
-.elevation .content{
+
+.elevation .content {
 	color: #FFF;
 	padding: 3% 0% 2% 4%;
 }
-.elevation .content i{
+
+.elevation .content i {
 	margin-top: 3px;
+}
+
+
+/**
+ * single-strip
+ */
+
+.single-strip {
+	padding-top: 4%;
+	padding-bottom: 2%;
+}
+
+
+/**
+ * pictured
+ */
+
+.pictured {
+	background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOenWh07yTmtV8e_VmSy9n0Xl9g6LjRbqpgGrGDzqXcO56DC9O');
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.pictured .page-banner-thin {
+	background-color: rgba(0, 0, 0, 0.63);
+}
+
+.pictured .elevation {
+	background-color: rgba(0, 0, 0, 0.28);
 }
