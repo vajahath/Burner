@@ -247,6 +247,9 @@ footer.page-footer {
 	padding: 0px;
 }
 
+.disc{
+	margin-left: 17px;
+}
 .disc li {
 	list-style-type: disc;
 }
