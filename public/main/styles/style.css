@@ -328,16 +328,16 @@ footer.page-footer {
  */
 
 .pictured {
-	background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOenWh07yTmtV8e_VmSy9n0Xl9g6LjRbqpgGrGDzqXcO56DC9O');
-	background-position: bottom;
+	background-image: url('../images/partner.jpg');
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover
 }
 
 .pictured .page-banner-thin {
-	background-color: rgba(0, 0, 0, 0.63);
+	background-color: rgba(0, 0, 0, 0.41);
 }
 
 .pictured .elevation {
-	background-color: rgba(0, 0, 0, 0.28);
+	background-color: rgba(0, 0, 0, 0.35);
 }
