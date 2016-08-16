@@ -341,3 +341,46 @@ footer.page-footer {
 .pictured .elevation {
 	background-color: rgba(0, 0, 0, 0.35);
 }
+
+
+/**
+ * colorify
+ */
+
+.colorify {
+	height: 170px;
+	width: 240px;
+	text-align: center;
+	padding: 20px;
+}
+
+.colorify p {
+	color: #FFF;
+	font-size: 24px;
+}
+
+
+/**
+ * noselect
+ */
+
+.noselect {
+	-webkit-touch-callout: none;
+	/* iOS Safari */
+	-webkit-user-select: none;
+	/* Chrome/Safari/Opera */
+	-khtml-user-select: none;
+	/* Konqueror */
+	-moz-user-select: none;
+	/* Firefox */
+	-ms-user-select: none;
+	/* Internet Explorer/Edge */
+	user-select: none;
+	/* Non-prefixed version, currently */
+}
+/**
+ * footer.page-footer
+ */
+footer.page-footer ul li a:hover{
+	text-decoration: underline;
+}

@@ -7,6 +7,9 @@
 		$('.carousel').carousel({
 			// time_constant:1000
 		});
+		$('.scrollspy').scrollSpy({
+			scrollOffset: 200
+		});
 		var options = [{
 			selector: '#sosoft-1',
 			offset: 320,

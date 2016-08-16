@@ -14,10 +14,6 @@
 	<!-- material Compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 	<link rel="stylesheet" href="styles/style.css">
-
-	<style>
-
-	</style>
 </head>
 
 <body>
@@ -27,9 +23,9 @@
 				<!-- <img src="images/logo3.svg" alt="" style="width:64px;"> -->
 				<a href="#" class="brand-logo white-text text-lighten-2">Interland</a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a class="grey-text text-lighten-2" href="#">Home</a></li>
-					<li><a class="grey-text text-lighten-2" href="#">Products</a></li>
-					<li><a class="grey-text text-lighten-2" href="#">Services</a></li>
+					<li class="active"><a class="grey-text text-lighten-2" href="index.html">Home</a></li>
+					<li><a class="grey-text text-lighten-2" href="products.html">Products</a></li>
+					<li><a class="grey-text text-lighten-2" href="services.html">Services</a></li>
 					<li><a class='dropdown-button btn red' style="margin-left: 0px;" href='#' data-activates='dropdown1'>More</a></li>
 
 				</ul>
@@ -39,10 +35,12 @@
 	<!-- Dropdown Structure -->
 
 	<ul id='dropdown1' class='dropdown-content'>
-		<li><a href="#!">one</a></li>
-		<li><a href="#!">two</a></li>
+		<li><a href="edu.html">Education</a></li>
+		<li><a href="consult.html">Consult</a></li>
 		<li class="divider"></li>
-		<li><a href="#!">three</a></li>
+		<li><a href="partners.html">Partners</a></li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="contact.html">Contact Us</a></li>
 	</ul>
 	<div id="index-banner" class="parallax-container valign-wrapper">
 		<div class="section no-pad-bot">
@@ -52,7 +50,7 @@
 					<h5 class="header col s12 light white-text">Tell us what you need next. Let's make it awesome.</h5>
 				</div>
 				<div class="row center">
-					<a href="#" id="" class="btn-large waves-effect waves-light teal white-text text-lighten-2">Get Started</a>
+					<a href="#strip1" id="" class="btn-large waves-effect waves-light teal white-text text-lighten-2">Get Started</a>
 				</div>
 				<br>
 				<br>
@@ -62,22 +60,22 @@
 	</div>
 
 	<!-- left-light -->
-	<div class="row left-light">
+	<div class="row left-light section scrollspy" id="strip1">
 		<div class="col s6 image-section left-croped">
 			<img src="images/mac-window-cr.jpg">
 		</div>
 		<div class="col s6 content-section">
-			<h2>Lorem Ipsium Doller Sit Ammet</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
-			<a class="waves-effect waves-light btn">learn more</a>
+			<h2>ERP solutions redefined</h2>
+			<p>Comprehensive suite of SAP R/3 implementation services including business process blue printing, data migration, system integration, upgrade support and end-user training.</p>
+			<a class="waves-effect waves-light btn" href="products.html#erp-solutions">learn more</a>
 		</div>
 	</div>
 
 	<!-- divergent -->
 	<div class="divergent">
 		<div class="header-strip">
-			<h3>Lorem ipsium doller sit</h3>
-			<p>Nobis doloribus laboriosam blanditiis autem vero sapiente tempora esse, sit omnis!</p>
+			<h3>Explore other products</h3>
+			<p>A comprehensive set of IT solutions that enable banking community to align IT services to the critical needs of the business.</p>
 		</div>
 		<div class="content-strip">
 			<div class="row">
@@ -86,13 +84,13 @@
 					<div class="card">
 						<div class="card-image">
 							<img src="images/school.jpg">
-							<span class="card-title">Card Title</span>
+							<span class="card-title">CRM Solutions</span>
 						</div>
 						<div class="card-content">
-							<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+							<p>Solutions that optimize service delivery across multiple channels, including phone, Web, and email, to improve service and reduce costs.</p>
 						</div>
 						<div class="card-action">
-							<a href="#" class="blue-text text-lighten-1">This is a link</a>
+							<a href="products.html#crm-solutions" class="blue-text text-lighten-1">Learn more</a>
 						</div>
 					</div>
 				</div>
@@ -101,13 +99,13 @@
 					<div class="card">
 						<div class="card-image">
 							<img src="images/school.jpg">
-							<span class="card-title">Card Title</span>
+							<span class="card-title">IT Service Management</span>
 						</div>
 						<div class="card-content">
-							<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+							<p>Solutions that are recognized as the market leaders for organizations of all sizes, from small service desks to geographically distributed enterprises.</p>
 						</div>
 						<div class="card-action">
-							<a href="#">This is a link</a>
+							<a href="products.html#it-services" class="blue-text text-lighten-1">Learn more</a>
 						</div>
 					</div>
 				</div>
@@ -116,13 +114,13 @@
 					<div class="card">
 						<div class="card-image">
 							<img src="images/school.jpg">
-							<span class="card-title">Card Title</span>
+							<span class="card-title">Bulk SMS Gateway</span>
 						</div>
 						<div class="card-content">
-							<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+							<p>Enables Cooperates to send Bulk SMS messages to its customer automatically. The system is capable of integrating with any applications in different environment.</p>
 						</div>
 						<div class="card-action">
-							<a href="#">This is a link</a>
+							<a href="products.html#sms-gateway" class="blue-text text-lighten-1">Learn more</a>
 						</div>
 					</div>
 				</div>
@@ -131,13 +129,13 @@
 					<div class="card">
 						<div class="card-image">
 							<img src="images/school.jpg">
-							<span class="card-title">Card Title</span>
+							<span class="card-title">School Manager</span>
 						</div>
 						<div class="card-content">
-							<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+							<p>The software is designed after an exhaustive study conducted by our team across India. Packed with the essential tools.</p>
 						</div>
 						<div class="card-action">
-							<a href="#">This is a link</a>
+							<a href="products.html#school-manager" class="blue-text text-lighten-1">learn more</a>
 						</div>
 					</div>
 				</div>
@@ -148,18 +146,34 @@
 	<!-- right-light -->
 	<div class="row right-light" id="sosoft-1">
 		<div class="col s6 content-section">
-			<h2>Lorem Ipsium Doller Sit Ammet</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven</p>
-			<a class="waves-effect waves-light btn">learn more</a>
+			<h2>Bring your questions</h2>
+			<p>In today's economy, you need to move forward quickly and confidently with application development and implementation. But you don't always have all the skills you need in house. InterLand Consulting Services gives you ready access to the expertise you need.</p>
+			<a href="consult.html" class="waves-effect waves-light btn">learn more</a>
 		</div>
 		<div class="col s6 image-section right-croped">
 			<!-- <img src="images/mac-window-r-cr.jpg"> -->
 			<div class="carousel">
-				<a class="carousel-item" href="#one!"><img src="images/macwork.jpg"></a>
-				<a class="carousel-item" href="#two!"><img src="images/school.jpg"></a>
-				<a class="carousel-item" href="#three!"><img src="images/nex-b-cr.jpg"></a>
-				<a class="carousel-item" href="#four!"><img src="images/school.jpg"></a>
-				<a class="carousel-item" href="#five!"><img src="images/macwork.jpg"></a>
+				<a class="carousel-item" href="#one!">
+					<div class="colorify orange darken-3 valign-wrapper">
+						<p class="valign noselect">System Analysis and Design</p>
+					</div>
+				</a>
+				<a class="carousel-item" href="#two!">
+					<div class="colorify teal darken-3 valign-wrapper">
+						<p class="valign noselect">Application Development</p>
+					</div>
+				</a>
+				<a class="carousel-item" href="#three!">
+					<div class="colorify blue darken-2 valign-wrapper">
+						<p class="valign noselect">Production System Installation</p>
+					</div>
+				</a>
+				<a class="carousel-item" href="#three!">
+					<div class="colorify amber darken-2 valign-wrapper">
+						<p class="valign noselect" style="text-align: center;">Out Sourcing</p>
+					</div>
+				</a>
+				
 			</div>
 		</div>
 	</div>
@@ -170,17 +184,17 @@
 			<img src="images/nex-b-cr.jpg">
 		</div>
 		<div class="col s6 content-section">
-			<h2>Lorem Ipsium Doller Sit Ammet</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit consectetur adipisicing elitconsectetur adipisicing elit</p>
-			<a class="waves-effect red waves-light btn">learn more</a>
+			<h2>Interland Security Essentials</h2>
+			<p>Maximize your training time and turbo-charge your career in security by learning the full Interland Security Essentials curriculum needed to qualify for the GSEC certification.</p>
+			<a href="edu.html" class="waves-effect red waves-light btn">learn more</a>
 		</div>
 	</div>
 
 	<!-- winding up -->
 	<div class="winding-up teal lighten-1" style="margin-top:0px;">
 		<div class="header-strip">
-			<h3>Lorem ipsium doller sit</h3>
-			<p>Nobis doloribus laboriosam blanditiis autem vero sapiente tempora esse, sit omnis!</p>
+			<h3>Contact our customer support</h3>
+			<a class="btn teal darken-2 white-text" href="mailto:info@interlandtech.com?subject=help">Mail us</a>
 		</div>
 		<div class="content-strip">
 			<!-- other content -->
@@ -192,23 +206,25 @@
 		<div class="container">
 			<div class="row">
 				<div class="col l6 s12">
-					<h5 class="white-text">Interland Technologies</h5>
-					<p class="grey-text text-lighten-4">Perspiciatis beatae minima, illum sapiente laborum distinctio corporis</p>
+					<h5 class="teal-text text-lighten-1">Interland Technologies</h5>
+					<p class="grey-text">8th floor, Yamuna,<br> Technopark P III,<br>Trivandrum.</p>
 				</div>
 				<div class="col l4 offset-l2 s12">
 					<ul>
-						<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-						<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-						<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-						<li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+						<li><a class="teal-text text-lighten-1" href="index.html">Home</a></li>
+						<li><a class="teal-text text-lighten-1" href="products.html">Products</a></li>
+						<li><a class="teal-text text-lighten-1" href="services.html">Services</a></li>
+						<li><a class="teal-text text-lighten-1" href="consult.html">Consult</a></li>
+						<li><a class="teal-text text-lighten-1" href="edu.html">Education</a></li>
+						<li><a class="teal-text text-lighten-1" href="partners.html">Partners</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="footer-copyright">
 			<div class="container">
-				© 2014 Copyright Interland Inc.
-				<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+				© 2014 Copyright Interland
+				<a class="grey-text text-lighten-4 right" href="#!"> </a>
 			</div>
 		</div>
 	</footer>
