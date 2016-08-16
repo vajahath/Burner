@@ -8,12 +8,16 @@
 
 	<title>Interland</title>
 
+	<script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
 	<!-- material icon fonts -->
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 	<!-- material Compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 	<link rel="stylesheet" href="styles/style.css">
+
+	<!-- html imports -->
+	<link rel="import" href="templates/page-footer.html">
 </head>
 
 <body>
@@ -200,34 +204,9 @@
 			<!-- other content -->
 		</div>
 	</div>
-
-	<!-- footer -->
-	<footer class="page-footer" style="background-color:#051918;">
-		<div class="container">
-			<div class="row">
-				<div class="col l6 s12">
-					<h5 class="teal-text text-lighten-1">Interland Technologies</h5>
-					<p class="grey-text">8th floor, Yamuna,<br> Technopark P III,<br>Trivandrum.</p>
-				</div>
-				<div class="col l4 offset-l2 s12">
-					<ul>
-						<li><a class="teal-text text-lighten-1" href="index.html">Home</a></li>
-						<li><a class="teal-text text-lighten-1" href="products.html">Products</a></li>
-						<li><a class="teal-text text-lighten-1" href="services.html">Services</a></li>
-						<li><a class="teal-text text-lighten-1" href="consult.html">Consult</a></li>
-						<li><a class="teal-text text-lighten-1" href="edu.html">Education</a></li>
-						<li><a class="teal-text text-lighten-1" href="partners.html">Partners</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="footer-copyright">
-			<div class="container">
-				© 2014 Copyright Interland
-				<a class="grey-text text-lighten-4 right" href="#!"> </a>
-			</div>
-		</div>
-	</footer>
+	
+	<page-footer></page-footer>
+	
 	<!-- dependencies -->
 	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

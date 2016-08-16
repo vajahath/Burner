@@ -1,0 +1,21 @@
+{
+  "name": "interland",
+  "homepage": "https://github.com/vajahath/Burner",
+  "authors": [
+    "Vajahath Ahmed <vajuoff.1@gmail.com>"
+  ],
+  "description": "some dependent packages",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.6.1"
+  }
+}
