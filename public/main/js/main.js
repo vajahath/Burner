@@ -18,5 +18,13 @@
 			}
 		}];
 		Materialize.scrollFire(options);
+
+		// map configs
+		$('.maps').click(function() {
+			$('.maps iframe').css("pointer-events", "auto");
+		});
+		$('.maps').mouseleave(function() {
+			$('.maps iframe').css("pointer-events", "none");
+		});
 	}); // end of document ready
 })(jQuery); // end of jQuery name space

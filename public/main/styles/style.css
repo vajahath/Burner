@@ -202,6 +202,12 @@ footer.page-footer {
 	font-size: 1.2em;
 }
 
+.page-banner-thin {
+	background-color: rgba(0, 0, 0, 0.52);
+	padding: 1% 5%;
+}
+
+
 /**
  * product-lay styles
  */
@@ -265,6 +271,7 @@ footer.page-footer {
 	margin-right: 1%;
 }
 
+
 /**
  * single-strip
  */
@@ -293,6 +300,7 @@ footer.page-footer {
 .pictured .elevation {
 	background-color: rgba(0, 0, 0, 0.35);
 }
+
 
 /**
  * colorify
@@ -337,4 +345,22 @@ footer.page-footer {
 
 footer.page-footer ul li a:hover {
 	text-decoration: underline;
+}
+
+.row .image-div {
+	padding-right: 0px;
+}
+
+.row .image-div img {
+	height: 100%;
+	float: right;
+}
+
+.row .content {
+	color: #FFF;
+	padding: 3% 0% 2% 5%;
+}
+
+.row .content i {
+	margin-top: 3px;
 }

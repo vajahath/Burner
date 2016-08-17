@@ -39,69 +39,41 @@
 		.picturify .front {
 			z-index: 3;
 		}
+		/* page-banner-thin */
 		
 		.picturify .front .page-banner-thin {
-			background-color: rgba(0, 0, 0, 0.41);
-		}
-		/* --------- */
-		
-		.picturify .front .elevation {
-			background-color: rgba(0, 0, 0, 0.35);
-			width: 100%;
-			height: 350px;
-		}
-		
-		.picturify .front .elevation div {
-			height: 100%;
-		}
-		
-		.picturify .front .elevation .image-div {
-			padding-right: 0px;
-		}
-		
-		.picturify .front .elevation .image-div img {
-			height: 100%;
-			float: right;
-		}
-		
-		.picturify .front .elevation .content {
-			color: #FFF;
-			padding: 3% 0% 2% 4%;
-		}
-		
-		.picturify .front .elevation .content i {
-			margin-top: 3px;
-		}
-		/* -------- */
-		.picturify .front .page-banner-thin {
+			background-color: rgba(0, 0, 0, 0.52);
 			padding: 1% 5%;
 		}
 		
 		.picturify .front .page-banner-thin p {
 			font-size: 1em;
 		}
+		/* elevation */
+		
+		.picturify .front .elevation {
+			background-color: rgba(0, 0, 0, 0.37);
+			width: 100%;
+			height: 350px;
+		}
+		
+		.picturify .front .elevation * {
+			height: 100%;
+		}
 		</style>
 
 		<div class="picturify">
 			<!-- background -->
 			<div class="back">
-				<img src="http://localhost:3001/main/images/partner.jpg" alt="" />
+				<img src="{{background}}" alt="" />
 			</div>
 			<!-- foreground -->
 			<div class="front">
 				<div class="page-banner-thin">
-					<h5 class="white-text">About Us</h5>
+					<h5 class="white-text">{{name}}</h5>
 				</div>
 				<div class="elevation">
-					<div class="row">
-						<div class="col l8 content">
-							<h2>Let's build it</h2>
-							<a href="mailto:partnership@interlandtech.com?subject=Partnership" class="btn white blue-text">mail us at partnership@interlandtech.com</a>
-						</div>
-						<div class="col l4 image-div">
-							<!-- <img src="images/letter.svg" alt="letter"> -->
-						</div>
-					</div>
+					<content></content>
 				</div>
 			</div>
 		</div>
@@ -114,9 +86,13 @@
 		is: 'picturify-header',
 
 		properties: {
-			theme: {
+			background: {
 				type: String,
-				value: 'teal',
+				value: 'https://static.pexels.com/photos/6778/landscape-mountains-skyline-metal-large.jpg',
+			},
+			name: {
+				type: String,
+				value: 'just kiddin <3',
 			}
 		}
 	});

@@ -20,32 +20,29 @@
 	<!-- html imports -->
 	<link rel="import" href="templates/header-navbar.html">
 	<link rel="import" href="templates/page-footer.html">
-	<link rel="import" href="templates/picturify-header.html">
+	<link rel="import" href="templates/mapify-this.html">
 	<style>
-
+	.maps iframe {
+		pointer-events: none;
+	}
 	</style>
 </head>
 
 <body>
 	<header-navbar></header-navbar>
 	<!-- intro -->
-	<picturify-header name="About Us" background="images/mountain.jpg">
-		<div class="row">
-			<div class="col l8 content">
-				<h2>Meet our team</h2>
-			</div>
-			<div class="col l4 image-div">
-				<!-- <img src="images/letter.svg" alt="letter"> -->
-			</div>
-		</div>
-	</picturify-header>
-
+	<div class="page-banner-thin blue lighten-1">
+		<h5 class="white-text">Contact Us</h5>
+	</div>
+	<div class="maps">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15781.858310956977!2d76.87280366191554!3d8.551245138267415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1471433214412" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
 	<div class="single-strip">
 		<div class="container">
 			<div class="row">
 				<div class="col l12">
-					<p>Inter Land is a professional consulting company, who earned their reputation for integrity though respect for the rights of their consultants and guaranteeing their professionalism and productivity.</p>
-					<p>Inter Land offers extensive industry experience in developing and implementing high-value solutions that optimize and integrate the enterprise for lower costs and on-time delivery. As a company - Inter Land is entirely focused on delivering measurable value to its customers. Our approach provides our customers with a customized business solution that:</p>
+					<p>Interland is a professional consulting company, who earned their reputation for integrity though respect for the rights of their consultants and guaranteeing their professionalism and productivity.</p>
+					<p>Interland offers extensive industry experience in developing and implementing high-value solutions that optimize and integrate the enterprise for lower costs and on-time delivery. As a company - Inter Land is entirely focused on delivering measurable value to its customers. Our approach provides our customers with a customized business solution that:</p>
 					<ul class="disc">
 						<li>Improves current business processes</li>
 						<li>Provides consistent on time, within budget delivery</li>
