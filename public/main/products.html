@@ -6,7 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<title>Interland</title>
+	<title>Interland | Products</title>
+
+	<script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
 
 	<!-- material icon fonts -->
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,38 +17,21 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 	<link rel="stylesheet" href="styles/style.css">
 
+	<!-- html imports -->
+	<link rel="import" href="templates/header-navbar.html">
+	<link rel="import" href="templates/page-footer.html">
+
 	<style>
 
 	</style>
 </head>
 
 <body>
-	<div class="navbar-fixed">
-		<nav style="background-color:#3E3E40;">
-			<div class="nav-wrapper">
-				<img src="images/updated1.svg" class="img-logo" alt="">
-				<a href="#" class="brand-logo white-text text-lighten-2">Interland</a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a class="grey-text text-lighten-2" href="#">Home</a></li>
-					<li><a class="grey-text text-lighten-2" href="#">Products</a></li>
-					<li><a class="grey-text text-lighten-2" href="#">Services</a></li>
-					<li><a class='dropdown-button btn red' style="margin-left: 0px;" href='#' data-activates='dropdown1'>More</a></li>
-
-				</ul>
-			</div>
-		</nav>
-	</div>
-	<!-- Dropdown Structure -->
-	<ul id='dropdown1' class='dropdown-content'>
-		<li><a href="#!">one</a></li>
-		<li><a href="#!">two</a></li>
-		<li class="divider"></li>
-		<li><a href="#!">three</a></li>
-	</ul>
+	<header-navbar></header-navbar>
 	<!-- intro -->
 	<div class="page-banner teal lighten-1">
-		<h4>Products</h4>
-		<p>A comprehensive set of IT solutions from Inter Land that enable banking community to align IT services to the critical needs of the business.</p>
+		<h4 style="color: #FFF;">Products</h4>
+		<p style="color: #FFF;">A comprehensive set of IT solutions from Inter Land that enable banking community to align IT services to the critical needs of the business.</p>
 	</div>
 
 	<div class="product-lay">
@@ -420,30 +405,7 @@
 	</div>
 
 	<!-- footer -->
-	<footer class="page-footer" style="background-color:#051918;">
-		<div class="container">
-			<div class="row">
-				<div class="col l6 s12">
-					<h5 class="white-text">Interland Technologies</h5>
-					<p class="grey-text text-lighten-4">Perspiciatis beatae minima, illum sapiente laborum distinctio corporis</p>
-				</div>
-				<div class="col l4 offset-l2 s12">
-					<ul>
-						<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-						<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-						<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-						<li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="footer-copyright">
-			<div class="container">
-				© 2014 Copyright Interland Inc.
-				<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-			</div>
-		</div>
-	</footer>
+	<page-footer></page-footer>
 	<!-- dependencies -->
 	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
