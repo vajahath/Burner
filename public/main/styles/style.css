@@ -202,20 +202,6 @@ footer.page-footer {
 	font-size: 1.2em;
 }
 
-
-/**
- * page-banner-thin styling
- */
-
-.page-banner-thin {
-	padding: 1% 5%;
-}
-
-.page-banner-thin p {
-	font-size: 1em;
-}
-
-
 /**
  * product-lay styles
  */
@@ -279,40 +265,6 @@ footer.page-footer {
 	margin-right: 1%;
 }
 
-
-/**
- * elevation styles
- */
-
-.elevation {
-	/* background-color: yellow; */
-	width: 100%;
-	height: 350px;
-}
-
-.elevation div {
-	height: 100%;
-}
-
-.elevation .image-div {
-	padding-right: 0px;
-}
-
-.elevation .image-div img {
-	height: 100%;
-	float: right;
-}
-
-.elevation .content {
-	color: #FFF;
-	padding: 3% 0% 2% 4%;
-}
-
-.elevation .content i {
-	margin-top: 3px;
-}
-
-
 /**
  * single-strip
  */
@@ -341,7 +293,6 @@ footer.page-footer {
 .pictured .elevation {
 	background-color: rgba(0, 0, 0, 0.35);
 }
-
 
 /**
  * colorify
@@ -378,9 +329,12 @@ footer.page-footer {
 	user-select: none;
 	/* Non-prefixed version, currently */
 }
+
+
 /**
  * footer.page-footer
  */
-footer.page-footer ul li a:hover{
+
+footer.page-footer ul li a:hover {
 	text-decoration: underline;
 }

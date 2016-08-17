@@ -1,0 +1,49 @@
+<!-- header-navbar test element -->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="header-navbar">
+	<template>
+
+		<style>
+		:host {}
+		</style>
+
+		<div class="navbar-fixed">
+			<nav class="white">
+				<div class="nav-wrapper">
+					<img src="images/updated_edu.svg" class="img-logo" alt="">
+					<a href="#" class="brand-logo red-text text-lighten-2">Interland</a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a class="grey-text text-darken-2" href="#">Home</a></li>
+						<li><a class="grey-text text-darken-2" href="#">Products</a></li>
+						<li><a class="grey-text text-darken-2" href="#">Services</a></li>
+						<li><a class='dropdown-button btn blue' style="margin-left: 0px;" href='#' data-activates='dropdown1'>More</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- Dropdown Structure -->
+		<ul id='dropdown1' class='dropdown-content'>
+			<li><a href="#!">one</a></li>
+			<li><a href="#!">two</a></li>
+			<li class="divider"></li>
+			<li><a href="#!">three</a></li>
+		</ul>
+
+	</template>
+
+	<script>
+	Polymer({
+
+		is: 'header-navbar',
+
+		properties: {
+			theme: {
+				type: String,
+				value: 'teal',
+			}
+		}
+	});
+	</script>
+</dom-module>
