@@ -6,7 +6,7 @@
 	<template>
 
 		<style>
-		:host {}
+			:host {}
 		
 		.valign-wrapper-cust {
 			display: -webkit-flex;
@@ -24,9 +24,8 @@
 		}
 		
 		@media only screen and (max-width: 992px) {
-			.dropdown-content {
-				top: 157px !important;
-				left: 15px !important;
+			.side-nav li>a>i.material-icons {
+				height: inherit;
 			}
 		}
 		</style>
@@ -40,16 +39,21 @@
 					</div>
 					<a href="#" data-activates="mobile-view" class="button-collapse"><i class="material-icons">menu</i></a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a class="grey-text text-darken-2" href="../index.html">Home</a></li>
+						<li><a class="grey-text text-darken-2" href="../">Home</a></li>
 						<li><a class="grey-text text-darken-2" href="../products.html">Products</a></li>
 						<li><a class="grey-text text-darken-2" href="../services.html">Services</a></li>
 						<li><a class='dropdown-button btn blue' style="margin-left: 0px;" href='#' data-activates='dropdown1'>More</a></li>
 					</ul>
 					<ul id="mobile-view" class="side-nav">
-						<li><a class="grey-text text-darken-2" href="../index.html">Home</a></li>
-						<li><a class="grey-text text-darken-2" href="../products.html">Products</a></li>
-						<li><a class="grey-text text-darken-2" href="../services.html">Services</a></li>
-						<li><a class='dropdown-button btn blue' href='#' data-activates='dropdown1'>More</a></li>
+						<li><a class="grey-text text-darken-2" href="../"><i class="material-icons">home</i> Home</a></li>
+						<li><a class="grey-text text-darken-2" href="../products.html"><i class="material-icons">work</i> Products</a></li>
+						<li><a class="grey-text text-darken-2" href="../services.html"><i class="material-icons">swap_horiz</i> Services</a></li>
+						<li><a class="grey-text text-darken-2" href="../edu.html"><i class="material-icons">description</i> Education</a></li>
+						<li><a class="grey-text text-darken-2" href="../consult.html"><i class="material-icons">perm_identity</i> Consulting</a></li>
+						<li class="divider"></li>
+						<li><a class="grey-text text-darken-2" href="../partners.html"><i class="material-icons">group_work</i> Partners</a></li>
+						<li><a class="grey-text text-darken-2" href="../about.html"><i class="material-icons">info</i> About Us</a></li>
+						<li><a class="grey-text text-darken-2" href="../contact.html"><i class="material-icons">mail</i> Contact Us</a></li>
 					</ul>
 				</div>
 			</nav>
