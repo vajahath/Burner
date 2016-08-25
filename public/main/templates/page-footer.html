@@ -7,19 +7,29 @@
 
 		<style>
 		:host {}
+		
+		.tits {
+			position: relative;
+			bottom: 13px;
+		}
+		
+		.tits_logo {
+			width: 46px;
+		}
 		</style>
 
 		<!-- footer -->
 		<footer class="page-footer" style="background-color:#051918;">
 			<div class="container">
 				<div class="row">
-					<div class="col l6 s12">
-						<h5 class="teal-text text-lighten-1">Interland Technologies</h5>
+					<div class="col m9 s12">
+						<!-- <img src="../images/logo_green.svg" alt="blended logo"> -->
+						<h5 class="teal-text text-lighten-1"><img class="tits_logo" src="../images/logo_green.svg" alt="blended logo"> <span class="tits">Interland Technologies</span></h5>
 						<p class="grey-text">8th floor, Yamuna,
 							<br> Technopark P III,
 							<br>Trivandrum.</p>
 					</div>
-					<div class="col l4 offset-l2 s12">
+					<div class="col m3 s12">
 						<ul>
 							<li><a class="teal-text text-lighten-1" href="index.html">Home</a></li>
 							<li><a class="teal-text text-lighten-1" href="products.html">Products</a></li>
@@ -42,7 +52,6 @@
 	</template>
 
 	<script>
-
 	Polymer({
 
 		is: 'page-footer',
