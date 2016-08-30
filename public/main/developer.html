@@ -1,0 +1,136 @@
+<!-- 
+todo
+> change picture header.
+> customer care number.
+> add meta info.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Interland | Partners</title>
+
+	<script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+	<!-- material icon fonts -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- material Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+	<link rel="stylesheet" href="styles/style.css">
+
+	<!-- html imports -->
+	<link rel="import" href="templates/header-navbar.html">
+	<link rel="import" href="templates/page-footer.html">
+	<link rel="import" href="templates/picturify-header.html">
+	<style>
+		.single-strip h4,
+		.single-strip h5{
+			color: #2196F3;
+		}
+	</style>
+</head>
+
+<body>
+	<header-navbar></header-navbar>
+	<!-- intro -->
+	<picturify-header name="Developer Community" background="images/partner.jpg">
+		<div class="row">
+			<div class="col l8 content">
+				<h4>Write your queries to us.</h4>
+				<a class="btn white teal-text" href="mailto:bms@interlandtech.com?subject=dev.">email us</a>
+			</div>
+			<div class="col l4 image-div">
+				<!-- <img src="images/letter.svg" alt="letter"> -->
+			</div>
+		</div>
+	</picturify-header>
+	<div class="single-strip">
+		<div class="container">
+			<div class="row">
+				<div class="col l12">
+					<h4 style="color: grey;">Bulk SMS Gateway API</h4>
+					<p>bms.com allows users to send bulk SMS text messages, and manage interactive SMS based services directly via our online web interface. In addition, developers can link directly to the our gateway via a HTTP Post. This can be done either via standard non-encrypted port 80 requests or via an encrypted connection using SSL. This gives developers the opportunity to add interactive sms capabilities to their existing systems using bms purely as an behind the scenes SMS gateway service.</p>
+					<p>To setup an bms account Please contact us.</p>
+					<a class="btn" href="mailto:bms@interlandtech.com?subject=dev">email us</a>
+
+					<h5>Ex SMS-WAP customer?</h5>
+					<p>We have developed a gateway which attempts to emulate the old sms-wap ringtone, logo and text HTTP Post interface, for more details Please contact us</p>
+
+					<h5>Email to SMS Gateway (outgoing messages)</h5>
+					<p>If you are looking for a quick and simple way to add SMS functionality to your service, or your systems are already setup with email notification then have them relayed to you as text messages via our email to sms service, for more details Please contact us</p>
+
+					<h5>Premium rate billing (Shortcode) services</h5>
+					<p>bms offer a simple-to-integrate API for use with our premium rate mobile terminated (MT) billing services. Please contact bms@interlandtech.com to download the connection documentation. Ordering a shortcode cannot be done via our website - please contact us to discuss any aspect of our shortcode or premium services. If you are unfamiliar with the SMPP protocol, we also offer an HTTP/HTTPS gateway which offers simple integration. Please Please contact bms@interlandtech.com to download the specification document.</p>
+
+					<h5>HTTP/HTTPS Gateway (outgoing messages)</h5>
+					<p>Developers can use HTTP posts to interface with our systems for outgoing messages, now supporting postback confirmation for message delivery, for more details Please contact bms@interlandtech.com. For information on our multiple redundant gateways Please contact us</p>
+
+					<h5>Extended HTTP/HTTPS Gateway (address book and distribution list sync)</h5>
+					<p>Developers can integrate our address book and distribution list features via this powerful API. This includes uploading and modifying addressbooks, distribution lists. (note - needs to be used in conjunction with our standard Gateway). For more details in pdf format Please contactus</p>
+
+					<h5>SMPP/SMPP(SSL) Gateway (outgoing messages)</h5>
+					<p>High volume operators can use our SMPP gateway for message delivery. Our gateway is SMPP v3.4 friendly. To view our connection specification document please Please contact bms@interlandtech.com SMPP account setup is charged at £50 + vat. To set up an account please contact us.</p>
+
+					<h5>XML-SOAP / Web Service Gateway</h5>
+					<p>Developers can use our SOAP Gateway to quickly interface their systems to bms.com. SOAP is supported by most of the available technologies including the .NET Framework and Java. For further information please Please contact us</p>
+
+					<h5>Sending messages in udh & udp hex format</h5>
+					<p>If you require the ability to specify sms headers for sending concatenated messages or vCards for example, you can make use of our UDH gateway, for more details Please contact us</p>
+
+					<h5>HTTP/HTTPS Gateway (incoming messages)</h5>
+					<p>Developers can use HTTP posts to interface with our systems for remote manipulation of our textback service. For details of how to do this Please contact bms@interlandtech.com.</p>
+
+					<h5>WAP PUSH Gateway</h5>
+					<p>Our WAP Push gateway is now operational, for more details and testing Please contact bms@interlandtech.com, or for general information on WAP Push and other multimedia services Please contact us.</p>
+
+					<h5>Textback Gateway</h5>
+					<p>Developers can use HTTP posts to receive incoming messages, for more details Please contact bms@interlandtech.com.</p>
+
+					<h5>MMS Gateway</h5>
+					<p>Our MMS gateway is now operational, for more details and testing Please contact bms@interlandtech.com, or for general information on MMS and other multimedia services Please contact us.
+					</p>
+
+					<h5>Ringtone Gateway</h5>
+					<p>Our monophonic ringtone gateway is now operational, for more details and testing Please contact bms@interlandtech.com, or for general information on our other multimedia services Please contact us.</p>
+
+					<h5>Ringtone Content Gateway</h5>
+					<p>In addition to ringtone content delivery, we also offer an XML API in partnership with some of the UK's leading content providers. The content is updated on a weekly basis. Our XML interface allows your website to submit searches in realtime. This means that if we add content to our portfolio, it is automatically available to users via your website. For more information, please see our gateway document for more information.</p>
+					<p>To browse available content, Please contact bms@interlandtech.com Or for a schematic overview, Please contact us.</p>
+
+					<h5>Resellers - SMS site bundle</h5>
+					<p>In response to numerous enquiries from resellers, bms has created a collection of scripts which form a simple SMS website which can be re-branded by resellers and hosted on their own servers. It allows users to sign up and also for an administrator to assign credits.</p>
+					<p>The script can be downloaded from here and is offered for free distribution. An bms.com account is required in order for the script to send SMS.</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- winding up -->
+	<div class="winding-up teal lighten-1" style="margin-top:0px;">
+		<div class="header-strip">
+			<h3>call our customer care 12121325254</h3>
+		</div>
+		<div class="content-strip">
+			<!-- other content -->
+		</div>
+	</div>
+
+	<!-- footer -->
+	<page-footer></page-footer>
+	<!-- dependencies -->
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Material Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
