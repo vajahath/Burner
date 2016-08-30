@@ -1,0 +1,86 @@
+<!-- header-navbar test element -->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="header-navbar-darker">
+	<template>
+
+		<style>
+			:host {}
+		
+		.valign-wrapper-cust {
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-align-items: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+		
+		@media only screen and (min-width: 601px) {
+			.container {
+				width: 91%;
+			}
+		}
+		
+		@media only screen and (max-width: 992px) {
+			.side-nav li>a>i.material-icons {
+				height: inherit;
+			}
+		}
+		</style>
+
+		<div class="navbar-fixed">
+			<nav style="background-color:#3E3E40">
+				<div class="nav-wrapper container">
+					<div class="brand-logo valign-wrapper-cust">
+						<img src="../images/logo-transp.svg" class="img-logo valign" alt="">
+						<a href="../index.html" class="white-text valign">Interland</a>
+					</div>
+					<a href="#" data-activates="mobile-view" class="button-collapse"><i class="material-icons">menu</i></a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a class="grey-text text-lighten-2" href="../">Home</a></li>
+						<li><a class="grey-text text-lighten-2" href="../products.html">Products</a></li>
+						<li><a class="grey-text text-lighten-2" href="../services.html">Services</a></li>
+						<li><a class='dropdown-button btn red' style="margin-left: 0px;" href='#' data-activates='dropdown1'>More</a></li>
+					</ul>
+					<ul id="mobile-view" class="side-nav">
+						<li><a class="grey-text text-darken-2" href="../"><i class="material-icons">home</i> Home</a></li>
+						<li><a class="grey-text text-darken-2" href="../products.html"><i class="material-icons">work</i> Products</a></li>
+						<li><a class="grey-text text-darken-2" href="../services.html"><i class="material-icons">swap_horiz</i> Services</a></li>
+						<li><a class="grey-text text-darken-2" href="../edu.html"><i class="material-icons">description</i> Education</a></li>
+						<li><a class="grey-text text-darken-2" href="../consult.html"><i class="material-icons">perm_identity</i> Consulting</a></li>
+						<li class="divider"></li>
+						<li><a class="grey-text text-darken-2" href="../partners.html"><i class="material-icons">group_work</i> Partners</a></li>
+						<li><a class="grey-text text-darken-2" href="../about.html"><i class="material-icons">info</i> About Us</a></li>
+						<li><a class="grey-text text-darken-2" href="../contact.html"><i class="material-icons">mail</i> Contact Us</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- Dropdown Structure -->
+		<ul id='dropdown1' class='dropdown-content'>
+			<li><a class="blue-text" href="../edu.html">Education</a></li>
+			<li><a class="blue-text" href="../consult.html">Consult</a></li>
+			<li class="divider"></li>
+			<li><a class="blue-text" href="../partners.html">Partners</a></li>
+			<li><a class="blue-text" href="../about.html">About Us</a></li>
+			<li><a class="blue-text" href="../contact.html">Contact Us</a></li>
+		</ul>
+
+	</template>
+
+	<script>
+	Polymer({
+
+		is: 'header-navbar-darker',
+
+		properties: {
+			theme: {
+				type: String,
+				value: 'teal',
+			}
+		}
+	});
+	</script>
+</dom-module>

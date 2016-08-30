@@ -18,34 +18,11 @@
 
 	<!-- html imports -->
 	<link rel="import" href="templates/page-footer.html">
+	<link rel="import" href="templates/header-navbar-darker.html">
 </head>
 
 <body>
-	<div class="navbar-fixed">
-		<nav style="background-color:#3E3E40;">
-			<div class="nav-wrapper">
-				<!-- <img src="images/logo3.svg" alt="" style="width:64px;"> -->
-				<a href="index.html" class="brand-logo white-text text-lighten-2">Interland</a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li class="active"><a class="grey-text text-lighten-2" href="index.html">Home</a></li>
-					<li><a class="grey-text text-lighten-2" href="products.html">Products</a></li>
-					<li><a class="grey-text text-lighten-2" href="services.html">Services</a></li>
-					<li><a class='dropdown-button btn red' style="margin-left: 0px;" href='#' data-activates='dropdown1'>More</a></li>
-
-				</ul>
-			</div>
-		</nav>
-	</div>
-	<!-- Dropdown Structure -->
-
-	<ul id='dropdown1' class='dropdown-content'>
-		<li><a href="edu.html">Education</a></li>
-		<li><a href="consult.html">Consult</a></li>
-		<li class="divider"></li>
-		<li><a href="partners.html">Partners</a></li>
-		<li><a href="about.html">About Us</a></li>
-		<li><a href="contact.html">Contact Us</a></li>
-	</ul>
+	<header-navbar-darker></header-navbar-darker>
 	<div id="index-banner" class="parallax-container valign-wrapper">
 		<div class="section no-pad-bot">
 			<div class="container valign">
@@ -65,13 +42,15 @@
 
 	<!-- left-light -->
 	<div class="row left-light section scrollspy" id="strip1">
-		<div class="col s6 image-section left-croped">
+		<div class="col m6 image-section left-croped">
 			<img src="images/mac-window-cr.jpg">
 		</div>
-		<div class="col s6 content-section">
-			<h2>ERP solutions redefined</h2>
-			<p>Comprehensive suite of SAP R/3 implementation services including business process blue printing, data migration, system integration, upgrade support and end-user training.</p>
-			<a class="waves-effect waves-light btn" href="products.html#erp-solutions">learn more</a>
+		<div class="col m6 content-section">
+			<!-- <div class="container"> -->
+				<h2>ERP solutions redefined</h2>
+				<p>Comprehensive suite of SAP R/3 implementation services including business process blue printing, data migration, system integration, upgrade support and end-user training.</p>
+				<a class="waves-effect waves-light btn" href="products.html#erp-solutions">learn more</a>
+			<!-- </div> -->
 		</div>
 	</div>
 
@@ -84,7 +63,7 @@
 		<div class="content-strip">
 			<div class="row">
 				<!-- card 1 -->
-				<div class="col s3">
+				<div class="col m3">
 					<div class="card">
 						<div class="card-image">
 							<img src="images/school.jpg">
@@ -99,7 +78,7 @@
 					</div>
 				</div>
 				<!-- card 2 -->
-				<div class="col s3">
+				<div class="col m3">
 					<div class="card">
 						<div class="card-image">
 							<img src="images/school.jpg">
@@ -114,7 +93,7 @@
 					</div>
 				</div>
 				<!-- card 3 -->
-				<div class="col s3">
+				<div class="col m3">
 					<div class="card">
 						<div class="card-image">
 							<img src="images/school.jpg">
@@ -129,7 +108,7 @@
 					</div>
 				</div>
 				<!-- card 4 -->
-				<div class="col s3">
+				<div class="col m3">
 					<div class="card">
 						<div class="card-image">
 							<img src="images/school.jpg">
@@ -149,12 +128,12 @@
 
 	<!-- right-light -->
 	<div class="row right-light" id="sosoft-1">
-		<div class="col s6 content-section">
+		<div class="col m6 s12 content-section">
 			<h2>Bring your questions</h2>
 			<p>In today's economy, you need to move forward quickly and confidently with application development and implementation. But you don't always have all the skills you need in house. InterLand Consulting Services gives you ready access to the expertise you need.</p>
 			<a href="consult.html" class="waves-effect waves-light btn">learn more</a>
 		</div>
-		<div class="col s6 image-section right-croped">
+		<div class="col m6 s12 image-section right-croped">
 			<!-- <img src="images/mac-window-r-cr.jpg"> -->
 			<div class="carousel">
 				<a class="carousel-item" href="consult.html#overview">
@@ -184,13 +163,16 @@
 
 	<!-- left-light -->
 	<div class="row left-light blue-grey lighten-5" style="margin-bottom: 0px;">
-		<div class="col s6 image-section bottom-croped">
+		<div class="col m6 s12 image-section bottom-croped">
 			<img src="images/nex-b-cr.jpg">
 		</div>
-		<div class="col s6 content-section">
+		<div class="col m6 s12 content-section">
 			<h2>Interland Security Essentials</h2>
 			<p>Maximize your training time and turbo-charge your career in security by learning the full Interland Security Essentials curriculum needed to qualify for the GSEC certification.</p>
 			<a href="edu.html" class="waves-effect red waves-light btn">learn more</a>
+			<br>
+			<br>
+			<br>
 		</div>
 	</div>
 
