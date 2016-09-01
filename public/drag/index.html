@@ -1,33 +1,146 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title></title>
-	<script type="text/javascript" src="js/main.js"></script>
+	<title>Drag</title>
 	<link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.min.css">
 
 	<style>
-		html,
-		body{
-			height: 100%;
-		}
-		.store,
-		.droed{
-			height: inherit;
-			background-color: #FF8D73;
-		}
+	html,
+	body {
+		height: 100%;
+	}
+	
+	.store,
+	.droped {
+		height: inherit;
+		/* background-color: #FF8D73; */
+		border: thin solid black;
+		padding: 4%;
+	}
 	</style>
 </head>
+
 <body>
-	<div class="container" style="background-color: yellow;">
-		<div class="row" style="background-color: pink;">
-			<div class="col md-6" style="background-color: green;">
+	<div class="container" style="height:inherit;">
+		<div class="row" style="height:inherit;">
+			<div class="col-md-6" style=" height:inherit;">
 				<div class="store">
-					
+					<form class="form-horizontal">
+
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Input text</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" i placeholder="Input text">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Password</label>
+							<div class="col-sm-9">
+								<input type="password" class="form-control" i placeholder="Password">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Options</label>
+							<div class="col-sm-9">
+								<select class="form-control">
+									<option value="">1</option>
+									<option value="">3</option>
+									<option value="">3</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Check</label>
+							<div class="col-sm-9">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value=""> Option one is this and that&mdash;be sure to include why it's great
+									</label>
+								</div>
+
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value=""> Option one is this and that&mdash;be sure to include why it's great
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Radio</label>
+							<div class="col-sm-9">
+								<div class="radio">
+									<label>
+										<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> Option one is this and that&mdash;be sure to include why it's great
+									</label>
+								</div>
+
+								<div class="radio">
+									<label>
+										<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> Option one is this and that&mdash;be sure to include why it's great
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Checkbox inline</label>
+							<div class="col-sm-9">
+								<label class="checkbox-inline">
+									<input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+								</label>
+								<label class="checkbox-inline">
+									<input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+								</label>
+								<label class="checkbox-inline">
+									<input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+								</label>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Radio inline</label>
+							<div class="col-sm-9">
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+								</label>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-3 control-label">File input</label>
+							<div class="col-sm-9">
+								<label class="btn btn-success" for="exampleInputFile">File input</label>
+								<input type="file" id="exampleInputFile" style="visibility: hidden">
+							</div>
+						</div>
+
+						<!-- buttons container -->
+						<div class="form-group">
+							<div class="col-sm-offset-3 col-sm-9">
+								<button type="submit" class="btn btn-default">Sign in</button>
+							</div>
+						</div>
+
+					</form>
 				</div>
 			</div>
-			<div class="col md-6" style="background-color: green;">
+
+			<div class="col-md-6" style="height:inherit;">
 				<div class="droped">
-					
+					<form class="form-horizontal">
+
+					</form>
 				</div>
 			</div>
 		</div>
@@ -35,5 +148,7 @@
 
 	<script type="text/javascript" src="../bootstrap/jquery-1-11-3.min.js"></script>
 	<script type="text/javascript" src="../bootstrap/bootstrap.min.js"></script>
+
 </body>
+
 </html>
