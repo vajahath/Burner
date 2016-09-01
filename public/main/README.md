@@ -14,6 +14,19 @@ Opening the files directly with browser may cause some functions not to work. In
 
 ## PHP server
 #### Instructions to use with WAMP server.
-* Install WAMP on your machine.
-* Place the content of the `build` folder inside the `www` directory of your root.
-* 
+* Install WAMP/XAMPP on your machine.
+* Place the folder.
+    - **if WAMP :** Place the given `interland` folder inside  `C:\wamp\www\`.
+    - **if XAMPP :** Place the given `interland` folder inside  `C:\xampp\htdocs\`.
+* Run the server.
+* Navigate to `http://127.0.0.1/interland/` with your browser.
+
+## Node.js server
+#### Instructions to use with Node.js server.
+* Install and generate Express.js.
+* Place the `interland` folder in the `puplic` directory.
+* `npm start` in your terminal.
+* Navigate to `http://127.0.0.1:<PORT>/interland/` with your browser.
+    - default `PORT` is `3000`.
+
+> Note: All the images used inside the website are well optimized and compressed. If you change/replace them with other images, do optimize and compress it with the gulp imagemin.

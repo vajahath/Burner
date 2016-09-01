@@ -10,6 +10,10 @@ const imagemin = require('gulp-imagemin');
 const uncss = require('gulp-uncss');
 
 // setting variables for src
+// readme
+const src_readme = 'README.md'
+const dest_readme = 'build/'
+
 // html
 const src_main_html = '*.html';
 const src_templates_html = 'templates/*.html';
@@ -23,16 +27,16 @@ const src_webcomp_js = 'bower_components/webcomponentsjs/webcomponents-lite.min.
 const src_img = 'images/*';
 
 // dest location
-const dest_main_html = 'build/';
-const dest_templates_html = 'build/templates/';
-const dest_polymer = 'build/bower_components/polymer/';
+const dest_main_html = 'build/interland/';
+const dest_templates_html = 'build/interland/templates/';
+const dest_polymer = 'build/interland/bower_components/polymer/';
 //css
-const dest_css = 'build/styles/';
+const dest_css = 'build/interland/styles/';
 // js
-const dest_main_js = 'build/js/';
-const dest_webcomp_js = 'build/bower_components/webcomponentsjs/';
+const dest_main_js = 'build/interland/js/';
+const dest_webcomp_js = 'build/interland/bower_components/webcomponentsjs/';
 // img
-const dest_img = 'build/images/';
+const dest_img = 'build/interland/images/';
 
 
 gulp.task('default', function() {
@@ -120,4 +124,10 @@ gulp.task('build', function() {
 	gulp.src(src_img)
 		.pipe(imagemin())
 		.pipe(gulp.dest(dest_img));
+
+	////////////
+	// readme //
+	////////////
+	gulp.src(src_readme)
+		.pipe(gulp.dest(dest_readme));
 });
