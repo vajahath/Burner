@@ -5,9 +5,10 @@ body {
 	position: relative;
 }
 
-body {
-	/* margin-bottom: 60px; */
-}
+
+/**
+ * highlight
+ */
 
 .highlight {
 	background-image: url('../image/flight blur.jpg');
@@ -24,6 +25,11 @@ body {
 .no-padding {
 	padding: 0px;
 }
+
+
+/** 
+ * dull
+ */
 
 .dull {
 	background-color: rgba(0, 0, 0, 0.52);
@@ -70,6 +76,11 @@ body {
 	border-radius: 4px;
 }
 
+
+/**
+ * btn-yellow
+ */
+
 .btn-yellow {
 	color: #2E2E2E;
 	background-color: #F3B642;
@@ -82,9 +93,19 @@ body {
 	border-color: #d58512;
 }
 
+
+/**
+ * card-section
+ */
+
 .card-section {
 	margin-top: 30px;
 }
+
+
+/** 
+ * card
+ */
 
 .card {
 	background-color: #FFF;
@@ -108,35 +129,69 @@ body {
 	padding-top: 9px;
 	border-top: solid thin #DDDDDD;
 }
-.card .card-footer *{
+
+.card .card-footer * {
 	display: inline-block;
 }
-.card .card-footer a{
+
+.card .card-footer a {
 	float: right;
 }
+
+
+/**
+ * footer
+ */
 
 .footer {
 	margin-top: 20px;
 	width: 100%;
 	/* Set the fixed height of the footer here */
+	/* position: absolute; */
+	bottom: 0;
 	background-color: #E2E2E2;
-	padding: 20px; 
+	padding: 20px;
 }
-.footer ul{
+
+.footer ul {
 	list-style: none;
 }
 
-.f-brands{
+
+/**
+ * footer-brands
+ */
+
+.footer-brands {
 	margin-top: 20px;
 }
-.cust-brands{
+
+.cust-brands {
 	margin-right: 7px;
 	width: 120px;
 }
-.cust-brands *{
+
+.cust-brands * {
 	display: inline-block;
 }
-.login-menu{
+
+
+/**
+ * login-menu
+ */
+
+.login-menu {
 	min-width: 300px;
 	padding: 15px;
+}
+
+/**
+ * box
+ */
+.box{
+	background-color: white;
+	padding: 25px;
+	border: thin solid #E2E2E2;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }

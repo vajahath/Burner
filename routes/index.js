@@ -10,6 +10,9 @@ router.get('/', function(req, res, next) {
 router.get('/tripped', function(req, res) {
 	res.render('trip/index', {});
 });
+router.get('/tripped/create', function(req, res) {
+	res.render('trip/create-new-acc', {});
+});
 
 
 // router.get('/dafaq', function(req, res){
