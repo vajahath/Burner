@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Trip</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<style>
+	html,
+	body {
+		min-height: 100%;
+		background-color: #F5F5F5;
+		position: relative;
+	}
+	
+	body {
+		/* margin-bottom: 60px; */
+	}
+	
+	.highlight {
+		background-image: url('../image/flight blur.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		min-height: 500px;
+	}
+	
+	.navbar-default {
+		margin-bottom: 0px;
+	}
+	
+	.no-padding {
+		padding: 0px;
+	}
+	
+	.dull {
+		background-color: rgba(0, 0, 0, 0.52);
+		height: inherit;
+		padding: 5%;
+		color: #FFF;
+	}
+	
+	.dull a {
+		color: #f3b642;
+	}
+	
+	.dull .nav-tabs>li.active>a,
+	.dull .nav-tabs>li.active>a:focus,
+	.dull .nav-tabs>li.active>a:hover {
+		color: #555;
+		background-color: #f3b642;
+		border: 1px solid #f3b642;
+		border-bottom-color: transparent;
+	}
+	
+	.dull .nav-tabs>li>a:hover {
+		border-color: #eee #eee #ddd;
+	}
+	
+	.dull .nav>li>a:focus,
+	.dull .nav>li>a:hover {
+		background-color: #1c3742;
+	}
+	
+	.dull .nav-pills>li.active>a,
+	.dull .nav-pills>li.active>a:focus,
+	.dull .nav-pills>li.active>a:hover {
+		color: #fff;
+		background-color: #a98763;
+	}
+	
+	.dull .form-control {
+		letter-spacing: 1px;
+		color: #fff;
+		background-color: rgba(0, 0, 0, 0.45);
+		background-image: none;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+	
+	.btn-yellow {
+		color: #2E2E2E;
+		background-color: #F3B642;
+		border-color: #F3B642;
+	}
+	
+	.btn-yellow:hover {
+		color: #000;
+		background-color: #ec971f;
+		border-color: #d58512;
+	}
+	
+	.card-section {
+		margin-top: 30px;
+	}
+	
+	.card {
+		background-color: #FFF;
+		border: thin solid #DDDDDD;
+	}
+	
+	.card .card-header {
+		padding: 2% 5%;
+		border-bottom: solid thin #DDDDDD;
+		color: #FF6700;
+	}
+	
+	.card .card-body {
+		padding: 3% 5%;
+	}
+	
+	.card .card-footer {
+		padding-left: 5%;
+		padding-right: 5%;
+		margin-bottom: 0px;
+		padding-top: 9px;
+		border-top: solid thin #DDDDDD;
+	}
+	
+	.card .card-footer * {
+		display: inline-block;
+	}
+	
+	.card .card-footer a {
+		float: right;
+	}
+	
+	.footer {
+		margin-top: 20px;
+		width: 100%;
+		/* Set the fixed height of the footer here */
+		background-color: #E2E2E2;
+		padding: 20px;
+	}
+	
+	.footer ul {
+		list-style: none;
+	}
+	
+	.f-brands {
+		margin-top: 20px;
+	}
+	
+	.cust-brands {
+		margin-right: 7px;
+		width: 120px;
+	}
+	
+	.cust-brands * {
+		display: inline-block;
+	}
+	
+	.login-menu {
+		min-width: 300px;
+		padding: 15px;
+	}
+	</style>
+</head>
+
+<body>
+	<!-- nav-bar -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Trip</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sign in <span class="caret"></span></a>
+						<div class="dropdown-menu login-menu">
+							<h5><strong>Login</strong></h5>
+							<form>
+								<div class="form-group">
+									<input placeholder="Email" type="email" class="form-control" id="email">
+								</div>
+								<div class="form-group">
+									<input placeholder="Password" type="password" class="form-control" id="pwd">
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Remember me</label>
+								</div>
+								<button type="submit" class="btn btn-warning">Submit</button>
+							</form>
+							<br>
+							<a href="#">Profile</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Country <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- body -->
+	<div>
+		<div class="highlight">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-offset-2 col-md-8" style="height:inherit;">
+						<div class="dull" style="height:inherit;">
+							<ul class="nav nav-tabs">
+								<li class="active"><a data-toggle="tab" href="#flights">Flights</a></li>
+								<li><a data-toggle="tab" href="#hotel">Hotel</a></li>
+								<li><a data-toggle="tab" href="#holi">Holidays</a></li>
+							</ul>
+
+							<div class="tab-content">
+								<div id="flights" class="tab-pane fade in active">
+									<h3>Book domestic and international flights</h3>
+									<ul class="nav nav-pills">
+										<li class="active"><a data-toggle="pill" href="#domestic">Domestic</a></li>
+										<li><a data-toggle="pill" href="#inter">International</a></li>
+									</ul>
+									<div class="tab-content">
+										<div id="domestic" class="tab-pane fade in active">
+											<!-- content -->
+											<form>
+												<div class="row">
+													<div class="col-md-12">
+														<div class="form-horizontal">
+															<div class="form-group">
+																<div class="col-sm-12">
+																	<label class="radio-inline">
+																		<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> One way
+																	</label>
+																	<label class="radio-inline">
+																		<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Round Trip
+																	</label>
+																	<label class="radio-inline">
+																		<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Multy city
+																	</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-6">
+														<div class="form-group">
+															<label for="ifrom">Email address</label>
+															<input type="email" class="form-control" id="ifrom" placeholder="From">
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<label for="ito">Email address</label>
+															<input type="email" class="form-control" id="ito" placeholder="To">
+														</div>
+													</div>
+												</div>
+
+												<div class="row">
+													<div class="col-md-3">
+														<div class="form-group">
+															<label for="ito">Departure</label>
+															<input class="form-control" type="date">
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="form-group">
+															<label for="ito">Return</label>
+															<input class="form-control" type="date">
+														</div>
+													</div>
+													<div class="col-md-2">
+														<div class="form-group">
+															<label for="ito">Adult</label>
+															<input class="form-control" value="1" type="number">
+														</div>
+													</div>
+													<div class="col-md-2">
+														<div class="form-group">
+															<label for="ito">Child</label>
+															<input class="form-control" value="0" type="number">
+														</div>
+													</div>
+													<div class="col-md-2">
+														<div class="form-group">
+															<label for="ito">Infant</label>
+															<input class="form-control" type="number" value="0">
+														</div>
+													</div>
+												</div>
+
+												<div class="row">
+													<div class="col-md-3">
+														<div class="form-group">
+															<label for="ifrom">Class</label>
+															<select class="form-control">
+																<option>Economy</option>
+																<option>Premium Economy</option>
+																<option>Business</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<div class="form-group">
+															<label for="ifrom">Class</label>
+															<select class="form-control">
+																<option>Spice Jet</option>
+																<option>Jet Airways</option>
+																<option>Air India</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-md-12">
+														<div class="form-group">
+															<button class="btn btn-yellow" type="submit">Search Flights</button>
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+										<div id="inter" class="tab-pane fade">
+											<h3>international</h3>
+											<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										</div>
+									</div>
+								</div>
+								<div id="hotel" class="tab-pane fade">
+									<h3>Menu 1</h3>
+									<p>Some content in menu 1.</p>
+								</div>
+								<div id="holi" class="tab-pane fade">
+									<h3>Menu 2</h3>
+									<p>Some content in menu 2.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- section 2 -->
+		<div class="card-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card">
+							<div class="card-header">
+								<h4>Malesia Airlines Sale</h4>
+							</div>
+							<div class="card-body">
+								<p>Discount upto 40% off !</p>
+							</div>
+							<div class="card-footer">
+								<p>Valid till 5th Sep '16</p>
+								<a href="#">BOOK NOW</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card">
+							<div class="card-header">
+								<h4>Malesia Airlines Sale</h4>
+							</div>
+							<div class="card-body">
+								<p>Discount upto 40% off !</p>
+							</div>
+							<div class="card-footer">
+								<p>Valid till 5th Sep '16</p>
+								<a href="#">BOOK NOW</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card">
+							<div class="card-header">
+								<h4>Malesia Airlines Sale</h4>
+							</div>
+							<div class="card-body">
+								<p>Discount upto 40% off !</p>
+							</div>
+							<div class="card-footer">
+								<p>Valid till 5th Sep '16</p>
+								<a href="#">BOOK NOW</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<h3>Trip</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur maiores iusto quidem deleniti laudantium asperiores libero autem dignissimos</p>
+					<div class="row">
+						<div class="col-md-6">
+							<h5><strong>Lorem Ipsium</strong></h5>
+							<p>lorem ipsium doller sit ammet.</p>
+						</div>
+						<div class="col-md-6">
+							<h5><strong>Lorem Ipsium</strong></h5>
+							<p>lorem ipsium doller sit ammet.</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<ul>
+						<li>
+							<h5><strong>OUR PRODUCTS</strong></h5></li>
+						<li>Bus Booking</li>
+						<li>Domestic Airlines</li>
+						<li>Hotels in India</li>
+						<li>Hotel Booking</li>
+						<li>Domestic Airlines</li>
+						<li>Hotels in India</li>
+						<li>Hotel Booking</li>
+						<li>Domestic Airlines</li>
+						<li>Hotels in India</li>
+						<li>Hotel Booking</li>
+						<li>Domestic Airlines</li>
+						<li>Hotels in India</li>
+						<li>Hotel Booking</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul>
+						<li>
+							<h5><strong>OUR PRODUCTS</strong></h5></li>
+						<li>Bus Booking</li>
+						<li>Domestic Airlines</li>
+						<li>Hotels in India</li>
+						<li>Hotel Booking</li>
+						<li>Domestic Airlines</li>
+						<li>Hotels in India</li>
+						<li>Hotel Booking</li>
+						<li>Domestic Airlines</li>
+						<li>Hotels in India</li>
+						<li>Hotel Booking</li>
+						<li>Domestic Airlines</li>
+						<li>Hotels in India</li>
+						<li>Hotel Booking</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul>
+						<li>
+							<h5><strong>OUR PRODUCTS</strong></h5></li>
+						<li>Bus Booking</li>
+						<li>Domestic Airlines</li>
+						<li>Hotels in India</li>
+						<li>Hotel Booking</li>
+						<li>Domestic Airlines</li>
+						<li>Hotels in India</li>
+						<li>Hotel Booking</li>
+						<li>Domestic Airlines</li>
+						<li>Hotels in India</li>
+						<li>Hotel Booking</li>
+						<li>Domestic Airlines</li>
+						<li>Hotels in India</li>
+						<li>Hotel Booking</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="../bootstrap/jquery-1-11-3.min.js"></script>
+	<script type="text/javascript" src="../bootstrap/bootstrap.min.js"></script>
+	<script>
+	$('.dropdown-menu').find('form').click(function(e) {
+		e.stopPropagation();
+	});
+	</script>
+</body>
+
+</html>

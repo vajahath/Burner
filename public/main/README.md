@@ -14,6 +14,7 @@ Opening the files directly with browser may cause some functions not to work. In
 
 ## PHP server
 #### Instructions to use with WAMP server.
+
 * Install WAMP/XAMPP on your machine.
 * Place the folder.
     - **if WAMP :** Place the given `interland` folder inside  `C:\wamp\www\`.
@@ -23,6 +24,7 @@ Opening the files directly with browser may cause some functions not to work. In
 
 ## Node.js server
 #### Instructions to use with Node.js server.
+
 * Install and generate Express.js.
 * Place the `interland` folder in the `puplic` directory.
 * `npm start` in your terminal.

@@ -1,0 +1,142 @@
+html,
+body {
+	min-height: 100%;
+	background-color: #F5F5F5;
+	position: relative;
+}
+
+body {
+	/* margin-bottom: 60px; */
+}
+
+.highlight {
+	background-image: url('../image/flight blur.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 500px;
+}
+
+.navbar-default {
+	margin-bottom: 0px;
+}
+
+.no-padding {
+	padding: 0px;
+}
+
+.dull {
+	background-color: rgba(0, 0, 0, 0.52);
+	height: inherit;
+	padding: 5%;
+	color: #FFF;
+}
+
+.dull a {
+	color: #f3b642;
+}
+
+.dull .nav-tabs>li.active>a,
+.dull .nav-tabs>li.active>a:focus,
+.dull .nav-tabs>li.active>a:hover {
+	color: #555;
+	background-color: #f3b642;
+	border: 1px solid #f3b642;
+	border-bottom-color: transparent;
+}
+
+.dull .nav-tabs>li>a:hover {
+	border-color: #eee #eee #ddd;
+}
+
+.dull .nav>li>a:focus,
+.dull .nav>li>a:hover {
+	background-color: #1c3742;
+}
+
+.dull .nav-pills>li.active>a,
+.dull .nav-pills>li.active>a:focus,
+.dull .nav-pills>li.active>a:hover {
+	color: #fff;
+	background-color: #a98763;
+}
+
+.dull .form-control {
+	letter-spacing: 1px;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.45);
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.btn-yellow {
+	color: #2E2E2E;
+	background-color: #F3B642;
+	border-color: #F3B642;
+}
+
+.btn-yellow:hover {
+	color: #000;
+	background-color: #ec971f;
+	border-color: #d58512;
+}
+
+.card-section {
+	margin-top: 30px;
+}
+
+.card {
+	background-color: #FFF;
+	border: thin solid #DDDDDD;
+}
+
+.card .card-header {
+	padding: 2% 5%;
+	border-bottom: solid thin #DDDDDD;
+	color: #FF6700;
+}
+
+.card .card-body {
+	padding: 3% 5%;
+}
+
+.card .card-footer {
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-bottom: 0px;
+	padding-top: 9px;
+	border-top: solid thin #DDDDDD;
+}
+.card .card-footer *{
+	display: inline-block;
+}
+.card .card-footer a{
+	float: right;
+}
+
+.footer {
+	margin-top: 20px;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	background-color: #E2E2E2;
+	padding: 20px; 
+}
+.footer ul{
+	list-style: none;
+}
+
+.f-brands{
+	margin-top: 20px;
+}
+.cust-brands{
+	margin-right: 7px;
+	width: 120px;
+}
+.cust-brands *{
+	display: inline-block;
+}
+.login-menu{
+	min-width: 300px;
+	padding: 15px;
+}
