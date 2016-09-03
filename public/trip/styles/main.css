@@ -183,7 +183,7 @@ body {
  */
 
 .login-menu {
-	min-width: 300px;
+	min-width: 400px;
 	padding: 15px;
 }
 
@@ -216,4 +216,17 @@ body {
     margin-top: 2px;
     margin-left: -20px;
     color: #F0AD4E;
+}
+
+/**
+ * no-bullet
+ */
+.no-bullet{
+	list-style: none;
+}
+/**
+ * ul-clean
+ */
+.ul-clean{
+	padding: 0px;
 }
