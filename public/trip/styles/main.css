@@ -110,6 +110,8 @@ body {
 .card {
 	background-color: #FFF;
 	border: thin solid #DDDDDD;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .card .card-header {
@@ -185,13 +187,33 @@ body {
 	padding: 15px;
 }
 
+
 /**
  * box
  */
-.box{
+
+.box {
 	background-color: white;
 	padding: 25px;
 	border: thin solid #E2E2E2;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+/**
+ * ul-tick
+ */
+.ul-tick li {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.ul-tick li:before {
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e013";
+    font-family: 'Glyphicons Halflings';
+    font-size: 11px;
+    float: left;
+    margin-top: 2px;
+    margin-left: -20px;
+    color: #F0AD4E;
 }
