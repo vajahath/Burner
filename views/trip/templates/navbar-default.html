@@ -10,7 +10,9 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">Trip</a>
+			<a class="navbar-brand" href="#">
+				<img src="/trip/image/plane.svg" alt="logo"> <span>Trip</span>
+			</a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
@@ -22,29 +24,67 @@
 						<div class="login-menu">
 							<div class="row">
 								<div class="col-md-8">
-									<h5><strong>Login</strong></h5>
-									<form>
-										<div class="form-group">
-											<input placeholder="Email" type="email" class="form-control" id="email">
+									<div class="tab-content">
+										<div id="login" class="tab-pane fade in active">
+											<h5><strong>Login</strong></h5>
+											<form>
+												<div class="form-group">
+													<input placeholder="Email" type="email" class="form-control" id="email">
+												</div>
+												<div class="form-group">
+													<input placeholder="Password" type="password" class="form-control" id="pwd">
+												</div>
+												<div class="checkbox">
+													<label>
+														<input type="checkbox"> Remember me</label>
+												</div>
+												<button type="button" class="btn btn-warning">Login</button>
+												<br>
+												<br>
+											</form>
+												<ul class="no-bullet ul-clean">
+													<li><a href="#">Forgot Password</a></li>
+												</ul>
+											<a data-toggle="tab" href="#create">New user? Create Account</a>
 										</div>
-										<div class="form-group">
-											<input placeholder="Password" type="password" class="form-control" id="pwd">
+										<div id="create" class="tab-pane fade">
+											<h5><strong>Create an Account</strong></h5>
+											<form>
+												<div class="form-group">
+													<input placeholder="Email" type="email" class="form-control" id="email">
+												</div>
+												<div class="form-group">
+													<input placeholder="Password" type="password" class="form-control" id="pwd">
+												</div>
+												<div class="form-group">
+													<input placeholder="Re-type Password" type="password" class="form-control" id="pwd">
+												</div>
+												
+												<button type="button" class="btn btn-warning">Sign up</button>
+											</form>
+												<br>
+												<ul class="no-bullet ul-clean">
+												</ul>
+											<a data-toggle="tab" href="#login">Have an Account? Login</a>
 										</div>
-										<div class="checkbox">
-											<label>
-												<input type="checkbox"> Remember me</label>
-										</div>
-										<button type="submit" class="btn btn-warning">Submit</button>
-									</form>
+									</div>
+
 								</div>
 								<div class="col-md-4 ">
 									<!-- <h5><br></h5> -->
 									<ul class="no-bullet ul-clean">
-										<li><a href="#">Profile</a></li>
-										<li><a href="#">other links 1</a></li>
-										<li><a href="#">other links 2</a></li>
-										<li><a href="#">other links 3</a></li>
-										<li><a href="#">other links 4</a></li>
+										<li><a href="#">My Profile</a></li>
+										<li><a href="#">Manage Bookings</a></li>
+										<li>
+											<hr>
+										</li>
+										<li><a href="#">View E-tickets</a></li>
+										<li><a href="#">Cancel Bookings</a></li>
+										<li><a href="#">Change Travel Date</a></li>
+										<li><a href="#">Check Refund Status</a></li>
+										<li><a href="#">View Holiday Status</a></li>
+										<li><a href="#">View Holiday Booking</a></li>
+										<li><a href="#">Make Payment</a></li>
 									</ul>
 								</div>
 							</div>
