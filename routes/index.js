@@ -7,17 +7,6 @@ router.get('/', function(req, res, next) {
 	res.render('index', {});
 });
 
-router.get('/tripped', function(req, res) {
-	res.render('trip/index', {});
-});
-router.get('/tripped/create', function(req, res) {
-	res.render('trip/create-new-acc', {});
-});
-router.get('/tripped/myacc', function(req, res) {
-	res.render('trip/myAccount', {});
-});
-
-
 // router.get('/dafaq', function(req, res){
 // 	res.sendFile('drawer.html', { root: path.join(__dirname, '../views') });
 // });

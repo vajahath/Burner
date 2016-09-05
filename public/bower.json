@@ -1,0 +1,20 @@
+{
+  "name": "public",
+  "homepage": "https://github.com/vajahath/Burner",
+  "authors": [
+    "Vajahath Ahmed <vajuoff.1@gmail.com>"
+  ],
+  "description": "common packages",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.3"
+  }
+}

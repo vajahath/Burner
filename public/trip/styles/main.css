@@ -10,7 +10,7 @@ body {
  * highlight
  */
 
-.highlight {
+.c-highlight {
 	background-image: url('../image/flight blur.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
@@ -217,7 +217,7 @@ body {
 	font-size: 11px;
 	float: left;
 	margin-top: 2px;
-	margin-left: -20px;
+	margin-left: -18px;
 	color: #F0AD4E;
 }
 
@@ -265,7 +265,7 @@ div.bhoechie-tab-container {
 	padding: 0 !important;
 	border-radius: 4px;
 	-moz-border-radius: 4px;
- 	background-clip: padding-box;
+	background-clip: padding-box;
 	opacity: 0.97;
 	filter: alpha(opacity=97);
 }
@@ -334,14 +334,59 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
 	color: #318F85;
 }
 
+
 /**
  * .welcome
  */
-.welcome{
+
+.welcome {
 	/* border-bottom: #d3d1cc solid thin; */
 	padding: 0px 15px 0px 15px;
 	margin-bottom: 10px;
 }
-.welcome h3{
+
+.welcome h3 {
 	color: #2f2f2f;
+}
+
+
+/**
+ * edit
+ */
+
+.edit {
+	display: inline-block;
+	position: absolute;
+	text-align: right;
+	right: 26px;
+}
+
+
+/**
+ * .profile-colored
+ */
+
+.profile-colored {
+	background-color: yellow;
+	padding: 15px 15px;
+}
+.profile-colored h3{
+	margin-top: 0px;
+}
+.profile-colored ul li{
+	margin-bottom: 2px;
+}
+.profile-colored ul li span{
+	margin-right: 7px;
+}
+.profile-colored .progress{
+	margin-bottom: 0px;
+}
+
+/**
+ * Telephone input
+ * intl-tel-input.allow-dropdown
+ */
+.intl-tel-input.allow-dropdown{
+	width: 100%;
 }

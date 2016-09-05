@@ -1,216 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Trip</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Air | Burner</title>
 	<link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="trip/style.css">
+	<style>
+	html {
+		position: relative;
+		min-height: 100%;
+	}
+	
+	body {
+		/* Margin bottom by footer height */
+		margin-bottom: 60px;
+	}
+	
+	.footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		/* Set the fixed height of the footer here */
+		height: 60px;
+		background-color: #f5f5f5;
+	}
+	
+	.footer .text-muted {
+		margin: 20px 0;
+	}
+	.footer a{
+		color: #777777;
+	}
+	</style>
 </head>
 
 <body>
-	<!-- nav-bar -->
-	
-	<!-- body -->
-	<div>
-		<div class="highlight">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-offset-2 col-md-8" style="height:inherit;">
-						<div class="dull" style="height:inherit;">
-							<ul class="nav nav-tabs">
-								<li class="active"><a data-toggle="tab" href="#flights">Flights</a></li>
-								<li><a data-toggle="tab" href="#hotel">Hotel</a></li>
-								<li><a data-toggle="tab" href="#holi">Holidays</a></li>
-							</ul>
-
-							<div class="tab-content">
-								<div id="flights" class="tab-pane fade in active">
-									<h3>Book domestic and international flights</h3>
-									<ul class="nav nav-pills">
-										<li class="active"><a data-toggle="pill" href="#domestic">Domestic</a></li>
-										<li><a data-toggle="pill" href="#inter">International</a></li>
-									</ul>
-									<div class="tab-content">
-										<div id="domestic" class="tab-pane fade in active">
-											<!-- content -->
-											<form>
-												<div class="row">
-													<div class="col-md-12">
-														<div class="form-horizontal">
-															<div class="form-group">
-																<div class="col-sm-12">
-																	<label class="radio-inline">
-																		<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> One way
-																	</label>
-																	<label class="radio-inline">
-																		<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Round Trip
-																	</label>
-																	<label class="radio-inline">
-																		<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Multy city
-																	</label>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-md-6">
-														<div class="form-group">
-															<label for="ifrom">Email address</label>
-															<input type="email" class="form-control" id="ifrom" placeholder="From">
-														</div>
-													</div>
-													<div class="col-md-6">
-														<div class="form-group">
-															<label for="ito">Email address</label>
-															<input type="email" class="form-control" id="ito" placeholder="To">
-														</div>
-													</div>
-												</div>
-
-												<div class="row">
-													<div class="col-md-3">
-														<div class="form-group">
-															<label for="ito">Departure</label>
-															<input class="form-control" type="date">
-														</div>
-													</div>
-													<div class="col-md-3">
-														<div class="form-group">
-															<label for="ito">Return</label>
-															<input class="form-control" type="date">
-														</div>
-													</div>
-													<div class="col-md-2">
-														<div class="form-group">
-															<label for="ito">Adult</label>
-															<input class="form-control" value="1" type="number">
-														</div>
-													</div>
-													<div class="col-md-2">
-														<div class="form-group">
-															<label for="ito">Child</label>
-															<input class="form-control" value="0" type="number">
-														</div>
-													</div>
-													<div class="col-md-2">
-														<div class="form-group">
-															<label for="ito">Infant</label>
-															<input class="form-control" type="number" value="0">
-														</div>
-													</div>
-												</div>
-
-												<div class="row">
-													<div class="col-md-3">
-														<div class="form-group">
-															<label for="ifrom">Class</label>
-															<select class="form-control">
-																<option>Economy</option>
-																<option>Premium Economy</option>
-																<option>Business</option>
-															</select>
-														</div>
-													</div>
-													<div class="col-md-3">
-														<div class="form-group">
-															<label for="ifrom">Class</label>
-															<select class="form-control">
-																<option>Spice Jet</option>
-																<option>Jet Airways</option>
-																<option>Air India</option>
-															</select>
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-md-12">
-														<div class="form-group">
-															<button class="btn btn-yellow" type="submit">Search Flights</button>
-														</div>
-													</div>
-												</div>
-											</form>
-										</div>
-										<div id="inter" class="tab-pane fade">
-											<h3>international</h3>
-											<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-										</div>
-									</div>
-								</div>
-								<div id="hotel" class="tab-pane fade">
-									<h3>Menu 1</h3>
-									<p>Some content in menu 1.</p>
-								</div>
-								<div id="holi" class="tab-pane fade">
-									<h3>Menu 2</h3>
-									<p>Some content in menu 2.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><strong>Air</strong> Pages</a>
 			</div>
-		</div>
 
-		<!-- section 2 -->
-		<div class="card-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card">
-							<div class="card-header">
-								<h4>Malesia Airlines Sale</h4>
-							</div>
-							<div class="card-body">
-								<p>Discount upto 40% off !</p>
-							</div>
-							<div class="card-footer">
-								<p>Valid till 5th Sep '16</p>
-								<a href="#">BOOK NOW</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="card">
-							<div class="card-header">
-								<h4>Malesia Airlines Sale</h4>
-							</div>
-							<div class="card-body">
-								<p>Discount upto 40% off !</p>
-							</div>
-							<div class="card-footer">
-								<p>Valid till 5th Sep '16</p>
-								<a href="#">BOOK NOW</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="card">
-							<div class="card-header">
-								<h4>Malesia Airlines Sale</h4>
-							</div>
-							<div class="card-body">
-								<p>Discount upto 40% off !</p>
-							</div>
-							<div class="card-footer">
-								<p>Valid till 5th Sep '16</p>
-								<a href="#">BOOK NOW</a>
-							</div>
-						</div>
-					</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<!-- <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li> -->
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<!-- <li><a>Vajahath's machine</a></li> -->
+					<!-- <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</li> -->
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<div class="container">
+		<p class="lead"></p>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="list-group">
+					<a target='_blank' href="/air/index" class="list-group-item">Landing page</a>
+					<a target='_blank' href="/air/create" class="list-group-item">Create account</a>
+					<a target='_blank' href="/air/myacc" class="list-group-item">Profile page</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- footer -->
-	
+
+	<footer class="footer">
+		<div class="container">
+			<p class="text-muted">&copy; <a href="https://github.com/vajahath/Burner"><strong>Burner </strong>Laboratory</a>
+			<span class="pull-right">Vajahath Ahmed</span></p>
+		</div>
+	</footer>
 	<script type="text/javascript" src="bootstrap/jquery-1-11-3.min.js"></script>
 	<script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
 	<script type="text/javascript" src="trip/js/main.js"></script>
-	
+
 </body>
 
 </html>

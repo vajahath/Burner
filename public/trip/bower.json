@@ -1,0 +1,21 @@
+{
+  "name": "airlines",
+  "homepage": "https://github.com/vajahath/Burner",
+  "authors": [
+    "Vajahath Ahmed <vajuoff.1@gmail.com>"
+  ],
+  "description": "packages for this app",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "intl-tel-input": "https://github.com/jackocnr/intl-tel-input.git#^9.0.9"
+  }
+}

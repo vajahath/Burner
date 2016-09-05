@@ -7,6 +7,7 @@
 	<title>Trip | Create Account</title>
 	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/trip/styles/main.css">
+	<link rel="stylesheet" href="/trip/bower_components/intl-tel-input/build/css/intlTelInput.css">
 </head>
 
 <body>
@@ -33,38 +34,51 @@
 								<input placeholder="Re-type Password" type="password" class="form-control" id="pwd-2">
 							</div>
 							<div class="form-group">
+								<input placeholder="Phone" type="tel" class="form-control" id="phone">
+							</div>
+							<div class="form-group">
 								<!-- recaptcha -->
 								<div class="g-recaptcha" data-sitekey="your_site_key"></div>
 							</div>
 							<div class="checkbox">
 								<label>
-									<input type="checkbox"> Remember me <span>| <a href="#">Forgot password</a></span></label>
+									<input type="checkbox"> Remember me</label>
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> I agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></label>
 							</div>
 							<button type="submit" class="btn btn-warning">Login</button>
+							<button type="submit" class="btn btn-default">Cancel</button>
 						</form>
 					</div>
 				</div>
 
-				<div class="col-md-8">
-					<h3>Some features</h3>
+				<div class="col-md-offset-1 col-md-7">
+					<div style="margin-top: 57px;">
+						<h4>Benifits of **Airlines** account.</h4>
 						<ul class="ul-tick">
-							<li>feature 1</li>
-							<li>feature</li>
-							<li>feature</li>
-							<li>feature</li>
-							<li>feature</li>
-							<li>feature</li>
+							<li>Faster bookings with lesser clicks</li>
+							<li>Track travel history & manage bookings</li>
+							<li>Manage profile & personalize experience</li>
+							<li>Receive alerts & recommendations</li>
 						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 
 		<!-- include footer -->
 		<% include templates/footer-default.html %>
-
 			<script type="text/javascript" src="/bootstrap/jquery-1-11-3.min.js"></script>
 			<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
 			<script type="text/javascript" src="/trip/js/main.js"></script>
+			<script src="/trip/bower_components/intl-tel-input/build/js/intlTelInput.js"></script>
+			<script type="text/javascript">
+			$(document).ready(function() {
+				$("#phone").intlTelInput();
+			});
+			</script>
 
 </body>
 
