@@ -13,6 +13,9 @@ router.get('/tripped', function(req, res) {
 router.get('/tripped/create', function(req, res) {
 	res.render('trip/create-new-acc', {});
 });
+router.get('/tripped/myacc', function(req, res) {
+	res.render('trip/myAccount', {});
+});
 
 
 // router.get('/dafaq', function(req, res){
