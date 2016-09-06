@@ -4,7 +4,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res){
-	res.sendFile('index.html', { root: path.join(__dirname, '../public/trip/') });
+	// res.sendFile('index.html', { root: path.join(__dirname, '../public/trip/') });
+	res.send("Ah snap..! that's currently unavailable.");
 });
 
 router.get('/index', function(req, res) {

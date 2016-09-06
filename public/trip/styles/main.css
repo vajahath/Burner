@@ -198,6 +198,7 @@ body {
 	border: thin solid #E2E2E2;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	width: 100%;
 }
 
 
@@ -286,7 +287,7 @@ div.bhoechie-tab-menu div.list-group>a {
 
 div.bhoechie-tab-menu div.list-group>a .glyphicon,
 div.bhoechie-tab-menu div.list-group>a .fa {
-	color: #2B8C82;
+	color: #F8981D;
 }
 
 div.bhoechie-tab-menu div.list-group>a:first-child {
@@ -302,8 +303,7 @@ div.bhoechie-tab-menu div.list-group>a:last-child {
 div.bhoechie-tab-menu div.list-group>a.active,
 div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
 div.bhoechie-tab-menu div.list-group>a.active .fa {
-	background-color: #2B8C82;
-	background-image: #2B8C82;
+	background-color: #F8981D;
 	color: #ffffff;
 }
 
@@ -316,7 +316,7 @@ div.bhoechie-tab-menu div.list-group>a.active:after {
 	border-left: 0;
 	border-bottom: 13px solid transparent;
 	border-top: 13px solid transparent;
-	border-left: 10px solid #2B8C82;
+	border-left: 10px solid #F8981D;
 }
 
 div.bhoechie-tab-content {
@@ -330,8 +330,40 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
 	display: none;
 }
 
+div.bhoechie-tab-container .list-group-item.active,
+div.bhoechie-tab-container .list-group-item.active:focus,
+div.bhoechie-tab-container .list-group-item.active:hover div.bhoechie-tab-container {
+	border-color: #f89b24;
+}
+
 .bhoechie-tab-content h1 {
-	color: #318F85;
+	color: #f89b24;
+}
+
+
+/**
+ * .text-yellow
+ */
+
+.text-yellow {
+	color: #FF9221;
+}
+
+a.text-yellow:hover {
+	color: #FF6D00;
+}
+
+
+/**
+ * .text-white
+ */
+
+.text-white {
+	color: #FFF;
+}
+
+a.text-white:hover {
+	color: #865211;
 }
 
 
@@ -359,6 +391,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
 	position: absolute;
 	text-align: right;
 	right: 26px;
+	z-index: 3;
 }
 
 
@@ -367,26 +400,32 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
  */
 
 .profile-colored {
-	background-color: yellow;
+	background-image: url('/trip/image/prof-back3.jpg');
 	padding: 15px 15px;
 }
-.profile-colored h3{
+
+.profile-colored h3 {
 	margin-top: 0px;
 }
-.profile-colored ul li{
+
+.profile-colored ul li {
 	margin-bottom: 2px;
 }
-.profile-colored ul li span{
+
+.profile-colored ul li span {
 	margin-right: 7px;
 }
-.profile-colored .progress{
+
+.profile-colored .progress {
 	margin-bottom: 0px;
 }
+
 
 /**
  * Telephone input
  * intl-tel-input.allow-dropdown
  */
-.intl-tel-input.allow-dropdown{
+
+.intl-tel-input.allow-dropdown {
 	width: 100%;
 }
