@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Payment</title>
+	<script type="text/javascript" src="/bootstrap/jquery-1-11-3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/bichu/style.css">
+</head>
+
+<body>
+	<br>
+	<br>
+	<p> <button id="rewind">REWIND</button></p>
+	<br />
+	<br />
+	<div class="container">
+
+		<div class="row">
+			<!-- tabs -->
+
+			<div class="col-md-12 col-sm-12 col-xs-12 bhoechie-tab-container">
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 bhoechie-tab-menu">
+					<div class="list-group" id="bro-menu">
+						<a href="#" id="m-sadad_olp" class="list-group-item text-center">
+							<h4 class="glyphicon glyphicon-plane"></h4>
+							<br/>Sadad OLP
+						</a>
+						<a href="#" id="m-credit_card" class="list-group-item text-center">
+							<h4 class="glyphicon glyphicon-credit-card"></h4>
+							<br/>Credit Card
+						</a>
+						<a href="#" id="m-other_payment" class="list-group-item text-center">
+							<h4 class="glyphicon glyphicon-home"></h4>
+							<br/>Other payment
+						</a>
+						<a href="#" id="m-hehe" class="list-group-item text-center">
+							<h4 class="glyphicon glyphicon-cutlery"></h4>
+							<br/>Someting else
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 bhoechie-tab" id="bro-content">
+
+					<!-- Salad OLP -->
+					<div class="bhoechie-tab-content" id="c-sadad_olp">
+						<h1>Sadad OLP</h1>
+						<hr />
+						<div class="row">
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label for="bank-id" class="col-sm-3 customer-custom-label control-label">Bank Id :</label>
+									<div class="col-sm-3">
+										<select class="select2 form-control width-ini" tabindex="-1" aria-hidden="true" id="client-id-search">
+											<option value="">Select</option>
+											<option value="">SABB</option>
+											<option value="">SAMB</option>
+											<option value="">BSFR</option>
+											<option value="">RIBL</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="olp-account" class="control-label col-sm-3 customer-custom-label">OLP Account :</label>
+									<div class="col-sm-4">
+										<input type="text" maxlength="12" class="form-control width-ini" value="" placeholder="OLP Account" name="olpAccount" id="olp-account">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="olp-account" class="control-label col-sm-3 customer-custom-label">Password :</label>
+									<div class="col-sm-4">
+										<input type="password" maxlength="12" class="form-control width-ini" value="" placeholder="Password" name="olpAccount" id="password">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-3 col-sm-10">
+										<button class="btn btn-success btn-sm">Pay Now</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- train section -->
+					<div class="bhoechie-tab-content" id="c-credit_card">
+						<h1>Credit Card</h1>
+						<hr />
+						<div class="row">
+
+
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label for="olp-account" class="control-label col-sm-3 customer-custom-label">First name</label>
+									<div class="col-sm-4">
+										<input type="text" maxlength="12" class="form-control" placeholder="First name" name="olpAccount" id="olp-account">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="olp-account" class="control-label col-sm-3 customer-custom-label">Last name</label>
+									<div class="col-sm-4">
+										<input type="text" maxlength="12" class="form-control" placeholder="Last name" name="olpAccount" id="olp-account">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="olp-account" class="control-label col-sm-3 customer-custom-label">Credit card</label>
+									<div class="col-sm-2">
+										<select class="form-control select2 width-ini" tabindex="-1" aria-hidden="true" id="client-id-search">
+											<option value="" selected="selected">Select</option>
+											<option value="">MASTER</option>
+											<option value="">VISA</option>
+											<option value="">MESTRO</option>
+										</select>
+									</div>
+									<div class="col-sm-4">
+										<img class="img-responsive" src="http://localhost:8080/CollectionNew/resources/img/visa.png">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="olp-account" class="control-label col-sm-3 customer-custom-label">Card Number</label>
+									<div class="col-sm-4">
+										<input type="text" maxlength="12" class="form-control" placeholder="Card Number" name="olpAccount" id="olp-account">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="olp-account" class="control-label col-sm-3 customer-custom-label">Valid Tru :</label>
+									<div class="col-sm-2">
+										<select class="form-control select2" style="width: 100%;" tabindex="-1" aria-hidden="true" id="client-id-search">
+											<option value="" selected="selected">--Month--</option>
+											<option value="">Jan</option>
+											<option value="">Feb</option>
+											<option value="">Mar</option>
+											<option value="">Apr</option>
+											<option value="">May</option>
+											<option value="">Jun</option>
+											<option value="">Jul</option>
+											<option value="">Aug</option>
+											<option value="">Sep</option>
+											<option value="">Oct</option>
+											<option value="">Nov</option>
+											<option value="">Dec</option>
+										</select>
+									</div>
+									<div class="col-sm-2">
+										<select class="form-control select2" style="width: 100%;" tabindex="-1" aria-hidden="true" id="client-id-search">
+											<option value="" selected="selected">--Year--</option>
+											<option value="">1994</option>
+											<option value="">2005</option>
+											<option value="">2006</option>
+											<option value="">2007</option>
+											<option value="">2008</option>
+											<option value="">2009</option>
+											<option value="">2010</option>
+											<option value="">2011</option>
+											<option value="">2012</option>
+											<option value="">2013</option>
+											<option value="">2014</option>
+											<option value="">2015</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="olp-account" class="control-label col-sm-3 customer-custom-label">CCV Number :</label>
+									<div class="col-sm-2">
+										<input type="password" maxlength="12" class="form-control" value="" placeholder="CCV Number" name="olpAccount" id="olp-account">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-3 col-sm-4">
+										<button class="btn btn-success btn-sm">Pay Now</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<!-- other payment -->
+					<div class="bhoechie-tab-content" id="c-other_payment">
+						<h1>Other Payment</h1>
+						<hr />
+						<div class="row">
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label for="olp-account" class="control-label col-sm-3 customer-custom-label">Virtual Account</label>
+									<div class="col-sm-4">
+										<input type="text" maxlength="12" class="form-control width-ini" value="" placeholder="Some fields /" name="olpAccount" id="olp-account">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-3 col-sm-8">
+										<ul>
+											<li>Go to any SHB Branches and credit to the virtual account number</li>
+											<li>Pay through SHB Online Banking to your virtual account number</li>
+											<li>Send as a SARIE Transfer to your virtual account from any bank.</li>
+										</ul>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-3 col-sm-10">
+										<button class="btn btn-success btn-sm">Pay Now</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="bhoechie-tab-content" id="c-hehe">
+						<h1>Some other fields</h1>
+						<hr />
+						<div class="row">
+							<p>// stuffs goes here ...</p>
+						</div>
+					</div>
+
+					<!-- this must be the last div -->
+					<div class="bhoechie-tab-content active">
+						<div class="row">
+							<div class="col-sm-6">
+								<h3 class="text-muted">Select Payment Method</h3>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/bichu/main.js"></script>
+</body>
+
+</html>
