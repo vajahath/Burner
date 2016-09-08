@@ -5,13 +5,78 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
-	<script type="text/javascript" src="/bower_components/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<title>Modal</title>
+
+	<style>
+	.pro-per{
+		background-color: #5BC0DE;
+		display: inline-block;
+		font-size: 50px;
+		padding: 13px 17px;
+		border-radius: 7px;
+		color: white;
+	}
+	.progress {
+		height: 5px;
+	}
+	
+	.hori-info {
+		/* background-color: yellow; */
+		padding-right: 0px;
+	}
+	
+	.hori-info .row1 {
+		background-color: #8A8A8A;
+		padding: 6px 10px;
+		color: white;
+		border-bottom: thin solid white;
+	}
+	
+	.hori-info .row2 {
+		background-color: #F1F1F1;
+		padding: 10px;
+		color: #676767;
+		height: 56px;
+	}
+	
+	.hori-container {
+		/* background-color: yellow; */
+		display: table;
+		border: thin solid white;
+		/* border-radius: 5px; */
+	}
+	
+	.hori-container .hori-row {
+		display: table-row;
+	}
+	
+	.hori-container .hori-row .hori {
+		/* background-color: pink; */
+		min-width: 200px;
+		width: 200px;
+		display: table-cell;
+		/* padding: 1px 1px; */
+		border-right: thin solid white;
+	}
+	
+	.hori .hori-header {
+		background-color: #8a8a8a;
+		padding: 6px 10px;
+		color: white;
+	}
+	
+	.hori .hori-drop {
+		padding: 10px 10px;
+		background-color: #F1F1F1;
+	}
+	</style>
 </head>
 
 <body>
 	<div class="container">
+		<progress value="50" max="100"></progress>
 		<p>
 			<br>
 			<button type="button" class="btn btn-info" data-toggle="modal" data-target="#stage1">modal 1</button>
@@ -25,47 +90,154 @@
 
 		<!-- modal 1 -->
 		<div id="stage1" class="modal fade" role="dialog">
-			<div class="modal-dialog">
+			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal">×</button>
 						<h4 class="modal-title">Upload file</h4>
 					</div>
 					<div class="modal-body">
-
-						<form class="form-horizontal">
-							<div class="form-group">
-								<label for="inputEmail3" class="col-md-3 control-label">load file</label>
-								<div class="col-md-9">
-									<input type="email" class="form-control" id="inputEmail3" placeholder="Email" />
-								</div>
-							</div>
-
-							<div class="form-group">
-								<div class="col-md-offset-3 col-md-9">
-									<label class="btn btn-success" for="exampleInputFile">File input</label>
-									<input type="file" id="exampleInputFile" style="visibility: hidden">
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-md-offset-3 col-sm-offset-3 col-md-9 col-sm-9">
-									<div class="progress">
-										<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-											<!-- content to show on progressbar -->
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-body" style="color: grey;">
-											show status here
-										</div>
+						<div class="form-horizontal">
+							<form>
+								<div class="form-group">
+									<label for="inputEmail3" class="col-md-2 control-label">Load file</label>
+									<div class="col-md-8">
+										<label class="btn btn-lg btn-info" for="exampleInputFile"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span> Choose File</label>
+										<input type="file" id="exampleInputFile" style="visibility: hidden">
 									</div>
 								</div>
-							</div>
-						</form>
+								<div class="form-group">
+									<div class="col-md-offset-2 col-sm-offset-2 col-md-5 col-sm-5">
+										<div class="progress">
+											<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+												<!-- content to show on progressbar -->
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-body" style="background-color: #f1f1f1; color: grey; height: 70px;overflow:auto;">
+												<ul style="list-style: none;padding-left: 5px;">
+													<li>some thing...</li>
+													<li>some thing...</li>
+													<li>some thing...</li>
+													<li>some thing...</li>
+													<li>some thing...</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="pro-per">
+											<span>33%</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-md-2 hori-info">
+										<div class="row1">
+											<span>Expected fields</span>
+										</div>
+										<div class="row2">
+											<span>Fields from file</span>
+										</div>
+									</div>
+									<div class="col-sm-10" style="padding-left:5px;">
+										<div style="overflow:auto;">
 
+											<div class="hori-container">
+												<div class="hori-row">
+													<div class="hori">
+														<div class="hori-header">
+															field 1
+														</div>
+														<div class="hori-drop">
+															<select class="form-control" id="sel1">
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+
+													<div class="hori">
+														<div class="hori-header">
+															field 1
+														</div>
+														<div class="hori-drop">
+															<select class="form-control" id="sel1">
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+
+													<div class="hori">
+														<div class="hori-header">
+															field 1
+														</div>
+														<div class="hori-drop">
+															<select class="form-control" id="sel1">
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+
+													<div class="hori">
+														<div class="hori-header">
+															field 1
+														</div>
+														<div class="hori-drop">
+															<select class="form-control" id="sel1">
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="hori">
+														<div class="hori-header">
+															field 1
+														</div>
+														<div class="hori-drop">
+															<select class="form-control" id="sel1">
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+													<div class="hori">
+														<div class="hori-header">
+															field 1
+														</div>
+														<div class="hori-drop">
+															<select class="form-control" id="sel1">
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Next</button>
+						<button type="button" class="btn btn-success" data-dismiss="modal"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span> Upload</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Continue</button>
+						<button type="button" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancel</button>
 					</div>
 				</div>
 			</div>
@@ -124,7 +296,9 @@
 
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Next</button>
+						<button type="button" class="btn btn-success" data-dismiss="modal">Upload</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Continue</button>=
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
 					</div>
 				</div>
 			</div>
