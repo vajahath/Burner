@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trip | Create Account</title>
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/trip/styles/main.css">
+    <link rel="stylesheet" href="/trip/bower_components/intl-tel-input/build/css/intlTelInput.css">
+</head>
+
+<body>
+    <!-- for recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- include nav-bar -->
+    <% include templates/navbar-default.html %>
+        <!-- body -->
+        <div class="container">
+            <!-- header container -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box">
+                        header info
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- aside-left -->
+                <div class="col-md-3">
+                    <div class="box">
+                        FILTERS
+                    </div>
+                </div>
+                <!-- aside-right -->
+                <div class="search-results">
+                    <div class="col-md-9">
+                        
+                        <!-- a serch item -->
+                        <div class="box">
+                            <div class="row vcenter">
+                                <div class="col-md-2 flight-brand">
+                                    <div class="logo">
+                                        <img src="/trip/image/indigo.png" class="flight-logo">
+                                        <p class="name">IndiGo</p>
+                                        <p class="code">6E-198</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 time">
+                                    <p class="clock">22:15</p>
+                                    <p class="place">Mumbai</p>
+                                </div>
+                                <div class="col-md-2 time">
+                                    <p class="clock">22:15</p>
+                                    <p class="place">Mumbai</p>
+                                </div>
+                                <div class="col-md-2 time">
+                                    <p class="clock">2h 15min</p>
+                                    <p class="place">Non stop</p>
+                                </div>
+                                <div class="col-md-2 price">
+                                    <p class="cash">$2333</p>
+                                    <p class="tag">some text</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>
+                                        <button class="btn btn-yellow">BOOK</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- a serch item -->
+                        <div class="box">
+                            <div class="row vcenter">
+                                <div class="col-md-2 flight-brand">
+                                    <div class="logo">
+                                        <img src="/trip/image/indigo.png" class="flight-logo">
+                                        <p class="name">IndiGo</p>
+                                        <p class="code">6E-198</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 time">
+                                    <p class="clock">22:15</p>
+                                    <p class="place">Mumbai</p>
+                                </div>
+                                <div class="col-md-2 time">
+                                    <p class="clock">22:15</p>
+                                    <p class="place">Mumbai</p>
+                                </div>
+                                <div class="col-md-2 time">
+                                    <p class="clock">2h 15min</p>
+                                    <p class="place">Non stop</p>
+                                </div>
+                                <div class="col-md-2 price">
+                                    <p class="cash">$2333</p>
+                                    <p class="tag">some text</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>
+                                        <button class="btn btn-yellow">BOOK</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- a serch item -->
+                        <div class="box">
+                            <div class="row vcenter">
+                                <div class="col-md-2 flight-brand">
+                                    <div class="logo">
+                                        <img src="/trip/image/indigo.png" class="flight-logo">
+                                        <p class="name">IndiGo</p>
+                                        <p class="code">6E-198</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 time">
+                                    <p class="clock">22:15</p>
+                                    <p class="place">Mumbai</p>
+                                </div>
+                                <div class="col-md-2 time">
+                                    <p class="clock">22:15</p>
+                                    <p class="place">Mumbai</p>
+                                </div>
+                                <div class="col-md-2 time">
+                                    <p class="clock">2h 15min</p>
+                                    <p class="place">Non stop</p>
+                                </div>
+                                <div class="col-md-2 price">
+                                    <p class="cash">$2333</p>
+                                    <p class="tag">some text</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>
+                                        <button class="btn btn-yellow">BOOK</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- include footer -->
+        <% include templates/footer-default.html %>
+            <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+            <script type="text/javascript" src="bower_components/bootstrap/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="/trip/js/main.js"></script>
+            <script src="/trip/bower_components/intl-tel-input/build/js/intlTelInput.js"></script>
+            <script type="text/javascript">
+            $(document).ready(function() {
+                $("#phone").intlTelInput();
+            });
+            </script>
+</body>
+
+</html>
