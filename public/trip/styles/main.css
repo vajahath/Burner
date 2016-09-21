@@ -471,6 +471,7 @@ a.text-white:hover {
 .flight-brand .logo .name,
 .flight-brand .logo .code {
     font-size: 11px;
+    margin: 0px;
 }
 
 .flight-brand .logo .name {
@@ -490,6 +491,11 @@ a.text-white:hover {
     text-align: center;
 }
 
+.time .clock,
+.time .place {
+    margin: 0px;
+}
+
 .time .clock {
     font-size: 21px;
 }
@@ -497,17 +503,62 @@ a.text-white:hover {
 .time .place {
     color: grey;
 }
+
+
 /**
  * .price
  */
-.price{
-	text-align: center;
+
+.price {
+    text-align: center;
 }
-.price .cash{
-	color: red;
-	font-size: 28px;
+
+.price .cash {
+    color: red;
+    font-size: 28px;
 }
-.price .tag{
-	color: green;
-	font-size: 12px;
+
+.price .tag {
+    color: green;
+    font-size: 12px;
+}
+
+
+/* ----------------------- */
+
+.witch-box {
+    background-color: white;
+    border: thin solid #F8981D;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.witch-box .box-header {
+    background-color: #F8981D;
+    color: white;
+    padding: 10px 25px;
+}
+
+.witch-box .box-body {
+    background-color: white;
+    padding: 10px 25px;
+}
+
+
+/**
+ * hrs
+ */
+
+.hr-grad {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #FFBD67, #ccc);
+}
+/**
+ * no-margin
+ */
+.no-margin{
+    margin: 0px;
 }

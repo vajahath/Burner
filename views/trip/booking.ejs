@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Trip | Create Account</title>
+
+	<link rel="stylesheet" type="text/css" href="/trip/bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/trip/bower_components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css">
+	<link rel="stylesheet" href="/trip/styles/main.css">
+</head>
+
+<body>
+	<!-- include nav-bar -->
+	<% include templates/navbar-default.html %>
+		<!-- body -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					rounded status
+				</div>
+			</div>
+			<!-- departure -->
+			<div class="row">
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-md-12">
+							<h4>Departure</h4>
+							<div class="witch-box">
+								<div class="box-header">
+									<span><strong>22 Sep 2016, Thu</strong></span>
+									<span class="pull-right">Fare Rules</span>
+								</div>
+								<div class="box-body">
+									<div class="row vcenter">
+										<div class="col-md-2 flight-brand">
+											<div class="logo">
+												<img src="/trip/image/indigo.png" class="flight-logo">
+												<p class="name">IndiGo</p>
+												<p class="code">6E-198</p>
+											</div>
+										</div>
+										<div class="col-md-3 time">
+											<p class="clock">22:15</p>
+											<p class="place">Mumbai</p>
+										</div>
+										<div class="col-md-2" style="font-size:24px;text-align:center;color:#878787;">
+											<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										</div>
+										<div class="col-md-3 time">
+											<p class="clock">22:15</p>
+											<p class="place">Delhi</p>
+										</div>
+										<div class="col-md-2 time">
+											<p class="clock">2h 15min</p>
+											<p class="place"><strong>Non stop</strong></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="box">
+								<div class="checkbox checkbox-warning">
+									<input type="checkbox" id="checkbox1">
+									<label for="checkbox1">
+										I have an existing account with Payback.
+									</label>
+								</div>
+								<hr style="margin-bottom: 8px;margin-top: 8px;">
+								<div class="checkbox checkbox-warning">
+									<input type="checkbox" id="checkbox2">
+									<label for="checkbox2">
+										Get Protected: Don't forget travel insurance
+										<br>I want to add trip insurance to my booking for Rs. 249 per person. View features & benefits of insurance.
+									</label>
+								</div>
+								<hr style="margin-bottom: 8px;margin-top: 8px;">
+								<div class="checkbox checkbox-warning">
+									<input type="checkbox" id="checkbox3">
+									<label for="checkbox3">
+										I provide my consent to be contacted for The American Express ® MakeMyTrip credit card which offers MMT vouchers worth Rs. 2000*, even if I am registered with NCPR.T&C
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-12">
+
+							<p>You are logged in as : <span class="text-danger"><strong>riya@example.com</strong></span> &nbsp;
+								<button class="btn btn-sm btn-warning">Sign out and change</button>
+							</p>
+							<div class="checkbox checkbox-success">
+								<input type="checkbox" id="checkbox4">
+								<label for="checkbox4">
+									By clicking this button, I understand & agree with the Rules & Restrictions of this fare,the Privacy Policy & Terms & Conditions
+								</label>
+							</div>
+							<hr>
+							<button class="btn btn-lg btn-success">Continue <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-md-12">
+							<h4>Fare Summary</h4>
+							<div class="box">
+								<table class="table table-striped table-condensed">
+									<tbody>
+										<tr>
+											<td>John</td>
+											<td style="text-align: center;">128</td>
+										</tr>
+										<tr>
+											<td>Mary</td>
+											<td style="text-align: center;">1125</td>
+										</tr>
+										<tr>
+											<td>July</td>
+											<td style="text-align: center;">7789</td>
+										</tr>
+										<tr>
+											<td>
+												<h4><strong>Grand Totlal</strong></h4></td>
+											<td style="text-align: center;color: #FF7400;">
+												<h4><strong>4458</strong></h4></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="box">
+								<p>Have an e-coupon or a deal-code? <span class="text-muted">(Optional)</span></p>
+								<form class="form-inline">
+									<div class="form-group">
+										<div class="input-group">
+											<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+											<div class="input-group-addon"><a href="#">Apply</a></div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- include footer -->
+		<% include templates/footer-default.html %>
+			<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+			<script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="/trip/js/main.js"></script>
+			</script>
+</body>
+
+</html>

@@ -24,6 +24,9 @@ router.get('/myacc', function(req, res) {
 router.get('/search', function(req, res) {
 	res.render('trip/search', {});
 });
+router.get('/book', function(req, res) {
+	res.render('trip/booking', {});
+});
 
 
 // router.get('/dafaq', function(req, res){
