@@ -3,7 +3,9 @@ $(document).ready(function() {
 		e.stopPropagation();
 	});
 
-	// bhoechie-tab
+	//////////////////
+	// bhoechie-tab //
+	//////////////////
 	$("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
 		e.preventDefault();
 		$(this).siblings('a.active').removeClass("active");
@@ -12,4 +14,23 @@ $(document).ready(function() {
 		$("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
 		$("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
 	});
+
+	//////////////////////
+	// for booking page //
+	//////////////////////
+	// when user clicks the continue button
+	$('.next').click(function() {
+		var theid = $(this).attr("swichto");
+		$('.nav-tabs a[href="#' + theid + '"]').tab('show');
+
+		$('#s-' + theid).addClass('step-active');
+	});
+	// when user clicks the back button
+	$('.back').click(function() {
+		$('.nav-tabs a[href="#' + $(this).attr("switchto") + '"]').tab('show');
+
+		$('#s-' + $(this).attr("current")).removeClass('step-active');
+
+	});
+	// over
 });
