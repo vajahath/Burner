@@ -173,10 +173,112 @@
 				</div>
 
 				<div id="travellers" class="tab-pane fade">
-					<h3>Menu 1</h3>
-					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					<button class="back" switchto="review" current="travellers">back</button>
-					<button class="next">next</button>
+					<div class="row">
+						<div class="col-md-12">
+
+							<div class="witch-box">
+								<div class="box-header">
+									<span><strong>Details</strong></span>
+									<span class="pull-right"></span>
+								</div>
+								<div class="box-body">
+									<div class="row vcenter">
+										<div class="col-md-1 flight-brand">
+											<div class="logo">
+												<img src="/trip/image/indigo.png" class="flight-logo">
+												<p class="name">IndiGo</p>
+												<p class="code">6E-198</p>
+											</div>
+										</div>
+										<div class="col-md-2 time">
+											<p class="clock">22:15</p>
+											<p class="place">Mumbai</p>
+										</div>
+										<div class="col-md-1" style="font-size:24px;text-align:center;color:#878787;">
+											<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										</div>
+										<div class="col-md-2 time">
+											<p class="clock">22:15</p>
+											<p class="place">Delhi</p>
+										</div>
+										<div class="col-md-2 time">
+											<p class="clock">2h 15min</p>
+											<p class="place"><strong>Non stop</strong></p>
+										</div>
+										<div class="col-md-4 time">
+											<p class="place">Total Travellers : <strong>2</strong></p>
+											<p class="clock" style="font-size:18px;">Total Amount : <strong style="color:red;">5234</strong></p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<div class="box">
+								<form class="form-horizontal">
+									<div class="form-group">
+										<div class="col-sm-offset-2 col-sm-10">
+											<span id="nameHelpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="f-name" class="col-sm-2 control-label">Adult</label>
+										<div class="col-sm-5">
+											<input aria-describedby="nameHelpBlock" type="text" class="form-control" id="f-name" placeholder="First name">
+										</div>
+										<div class="col-sm-5">
+											<input aria-describedby="nameHelpBlock" type="text" class="form-control" id="l-name" placeholder="Last name">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<div class="col-sm-offset-2 col-sm-5">
+											<div class="radio radio-warning radio-inline">
+												<input type="radio" id="radio1" name="sex" value="male">
+												<label for="radio1">
+													Male
+												</label>
+											</div>
+
+											<div class="radio radio-warning radio-inline">
+												<input type="radio" id="radio2" name="sex" value="female">
+												<label for="radio2">
+													Female
+												</label>
+											</div>
+										</div>
+										<div class="col-md-2">
+											<input type="text" class="form-control" id="" placeholder="Age">
+										</div>
+									</div>
+								</form>
+							</div>
+							<hr>
+							<div class="checkbox checkbox-success">
+								<input type="checkbox" id="addToList">
+								<label for="addToList">
+									Add above travelers to my Traveler List
+								</label>
+							</div>
+							<br>
+							<div class="form-group">
+								<label for="contact" class="control-label" style="display:inline-block">Contact details</label>
+								<input type="text" class="form-control" style="width:40%;display:inline-block;" id="contact" placeholder="Mobile Number">
+							</div>
+
+						</div>
+						<div class="col-md-4">
+							<div class="box">
+								<p class="text-muted">Traveller List</p>
+							</div>
+						</div>
+					</div>
+					<br>
+					<button class="btn btn-lg btn-warning back" switchto="review" current="travellers"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Back</button>
+					<button class="btn btn-lg btn-success next" switchto="payment">Continue <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
 				</div>
 
 				<div id="payment" class="tab-pane fade">

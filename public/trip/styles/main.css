@@ -635,7 +635,7 @@ a.text-white:hover {
 
 
 /**
- * trans-box
+ * pakka-trans-box
  */
 
 .pakka-trans-box {
@@ -645,4 +645,14 @@ a.text-white:hover {
     margin-top: 10px;
     margin-bottom: 10px;
     width: 100%;
+}
+
+/**
+ * these are not working properly
+ */
+.radio.radio-warning.radio-inline label:focus{
+    outline: none;
+}
+.radio.radio-warning.radio-inline input[type="radio"]:focus{
+    outline: none;
 }
