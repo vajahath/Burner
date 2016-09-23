@@ -319,9 +319,8 @@ div.bhoechie-tab-menu div.list-group > a.active:after {
 }
 
 div.bhoechie-tab-content {
-	padding-top: 10px;
+	padding: 12px 25px;
 	/* border: 1px solid #eeeeee; */
-	padding-left: 12px;
 	background-color: #fff;
 }
 
@@ -338,7 +337,6 @@ div.bhoechie-tab-container .list-group-item.active:hover div.bhoechie-tab-contai
 .bhoechie-tab-content h1 {
 	color: #f89b24;
 }
-
 
 /**
 * .text-yellow
@@ -661,4 +659,18 @@ a.text-white:hover {
 
 .radio.radio-warning.radio-inline input[type='radio']:focus {
 	outline: none;
+}
+
+/**
+ * bhoechie-mild-orange
+ */
+div.bhoechie-tab-container.bhoechie-mild-orange .list-group-item.active, div.bhoechie-tab-container .list-group-item.active:focus, div.bhoechie-tab-container .list-group-item.active:hover div.bhoechie-tab-container {
+    border-color: #ffdbab;
+}
+div.bhoechie-tab-container.bhoechie-mild-orange div.bhoechie-tab-menu div.list-group > a.active, div.bhoechie-tab-menu div.list-group > a.active .glyphicon, div.bhoechie-tab-menu div.list-group > a.active .fa {
+    color: #a55c00;
+    background-color: #ffdbab;
+}
+div.bhoechie-tab-container.bhoechie-mild-orange div.bhoechie-tab-menu div.list-group > a.active:after{
+	border-left: 10px solid #ffdcad;
 }

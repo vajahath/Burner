@@ -23,7 +23,7 @@
 						<ul class="staircase">
 							<li class="step-active" id="s-review">review</li>
 							<li id="s-travellers">Travellers</li>
-							<li id="s-payments">Payments</li>
+							<li id="s-payment">Payments</li>
 						</ul>
 					</div>
 				</div>
@@ -37,7 +37,7 @@
 			</ul>
 
 			<div class="tab-content">
-				<div id="review" class="tab-pane fade">
+				<div id="review" class="tab-pane fade in active">
 					<!-- departure -->
 					<div class="row">
 						<div class="col-md-8">
@@ -278,10 +278,10 @@
 					</div>
 					<br>
 					<button class="btn btn-lg btn-warning back" switchto="review" current="travellers"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Back</button>
-					<button class="btn btn-lg btn-success next" switchto="payment">Continue <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+					<button class="btn btn-lg btn-success next" swichto="payment">Continue <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
 				</div>
 
-				<div id="payment" class="tab-pane fade in active">
+				<div id="payment" class="tab-pane fade">
 					<div class="row">
 						<div class="col-md-12">
 
@@ -353,8 +353,180 @@
 					<div class="row">
 						<div class="col-md-12">
 							<h4>Payment</h4>
+
+							<div class="col-md-12 col-sm-12 col-xs-12 bhoechie-tab-container bhoechie-mild-orange">
+								<div class="col-md-2 bhoechie-tab-menu">
+									<div class="list-group">
+										<a href="#" class="list-group-item active text-center">
+											Credit Card
+										</a>
+										<a href="#" class="list-group-item text-center">
+											Debit Card
+										</a>
+										<a href="#" class="list-group-item text-center">
+											Net Banking
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6 bhoechie-tab">
+									<div class="bhoechie-tab-content active">
+
+										<h1>Credit Card</h1>
+										<hr>
+										<form>
+											<div class="form-group">
+												<label class="sr-only" for="card-number">Card Numner</label>
+												<input type="email" class="form-control input-lg" id="card-number" aria-describedby="card-number-help-text" placeholder="Card Number">
+												<span id="card-number-help-text" class="help-block">Enter your card number to view the convenience fee.</span>
+											</div>
+											<div class="form-group">
+												<label class="sr-only" for="holder-name">Name</label>
+												<input type="text" class="form-control input-lg" aria-describedby="holder-name-help-text" id="holder-name" placeholder="Card holder name">
+												<span id="holder-name-help-text" class="help-block">As mentioned in your card.</span>
+											</div>
+											<label>Expiry Date</label>
+
+											<div class="form-horizontal">
+												<div class="form-group">
+													<div class="col-md-4">
+														<select class="form-control input-lg" id="exp-month">
+															<option>Month</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+														</select>
+													</div>
+													<div class="col-md-4">
+														<select class="form-control input-lg" id="exp-month">
+															<option>Year</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+														</select>
+													</div>
+													<div class="col-md-4">
+														<input type="text" class="form-control input-lg" placeholder="CVV">
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="checkbox checkbox-success">
+													<input type="checkbox" id="save-details">
+													<label for="save-details">
+														Save card details for next purchase
+													</label>
+												</div>
+											</div>
+											<div class="form-group">
+												<h3 class="text-muted">Total Amount : <strong class="text-danger">Rs.3568</strong></h3>
+											</div>
+											<button type="submit" class="btn btn-lg btn-success">Make Payment <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+										</form>
+
+									</div>
+									<!-- train section -->
+									<div class="bhoechie-tab-content">
+
+										<h1>Debit Card</h1>
+										<hr>
+										<form>
+											<div class="form-group">
+												<label class="sr-only" for="selected-bank-dc">Select Bank</label>
+												<select class="form-control input-lg" id="selected-bank-dc">
+													<option class="text-muted">Select bank</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+												</select>
+												<!-- <span id="card-number-help-text" class="help-block">Select your Bank</span> -->
+											</div>
+											<div class="form-group">
+												<label class="sr-only" for="card-number-dc">Card Numner</label>
+												<input type="email" class="form-control input-lg" id="card-number-dc" aria-describedby="card-number-help-text-dc" placeholder="Card Number">
+												<span id="card-number-help-text-dc" class="help-block">We support all major cards</span>
+											</div>
+											<div class="form-group">
+												<label class="sr-only" for="holder-name-dc">Name</label>
+												<input type="text" class="form-control input-lg" aria-describedby="holder-name-help-text-dc" id="holder-name-dc" placeholder="Card holder name">
+												<span id="holder-name-help-text-dc" class="help-block">As mentioned in your card.</span>
+											</div>
+											<label for="exp-month">Expiry Date</label>
+
+											<div class="form-horizontal">
+												<div class="form-group">
+													<div class="col-md-4">
+														<select class="form-control input-lg" id="exp-month">
+															<option>Month</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+														</select>
+													</div>
+													<div class="col-md-4">
+														<select class="form-control input-lg" id="exp-year">
+															<option>Year</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+														</select>
+													</div>
+													<div class="col-md-4">
+														<input type="text" class="form-control input-lg" placeholder="CVV">
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="checkbox checkbox-success">
+													<input type="checkbox" id="save-details-dc">
+													<label for="save-details-dc">
+														Save card details for next purchase
+													</label>
+												</div>
+											</div>
+											<div class="form-group">
+												<h3 class="text-muted">Total Amount : <strong class="text-danger">Rs.3568</strong></h3>
+											</div>
+											<button type="submit" class="btn btn-lg btn-success">Make Payment <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+										</form>
+									</div>
+
+									<!-- Net banking -->
+									<div class="bhoechie-tab-content">
+										<h1>Net Banking</h1>
+										<hr>
+										<form>
+											<div class="form-group">
+												<label class="sr-only" for="selected-bank-nb">Select Bank</label>
+												<select class="form-control input-lg" aria-describedby="card-number-help-text-netbanking" id="selected-bank-nb">
+													<option class="text-muted">Select bank</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+												</select>
+												<span id="card-number-help-text-netbanking" class="help-block">Select your bank to view the convenience fee.</span>
+											</div>
+											
+											<div class="form-group">
+												<div class="checkbox checkbox-success">
+													<input type="checkbox" id="save-details-nb">
+													<label for="save-details-nb">
+														Save card details for next purchase
+													</label>
+												</div>
+											</div>
+											<div class="form-group">
+												<h3 class="text-muted">Total Amount : <strong class="text-danger">Rs.3568</strong></h3>
+											</div>
+											<button type="submit" class="btn btn-lg btn-success">Make Payment <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+										</form>
+									</div>
+								</div>
+							</div>
 						</div>
+
 					</div>
+					<br>
+					<button class="btn btn-warning back" switchto="travellers" current="payment"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Back</button>
 				</div>
 			</div>
 		</div>
