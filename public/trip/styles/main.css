@@ -264,7 +264,6 @@ div.bhoechie-tab-container {
 	z-index: 10;
 	padding: 0 !important;
 	opacity: .97;
-	-moz-border-radius: 4px;
 	border-radius: 4px;
 	background-color: #fff;
 	background-clip: padding-box;
@@ -446,8 +445,10 @@ a.text-white:hover {
 
 .vcenter {
 	/* vertical-align: middle; */
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-ms-flex-align: center;
+	    align-items: center;
 }
 
 
