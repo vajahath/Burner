@@ -338,6 +338,7 @@ div.bhoechie-tab-container .list-group-item.active:hover div.bhoechie-tab-contai
 	color: #f89b24;
 }
 
+
 /**
 * .text-yellow
 */
@@ -446,7 +447,7 @@ a.text-white:hover {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-align: center;
-	    align-items: center;
+	align-items: center;
 }
 
 
@@ -661,16 +662,57 @@ a.text-white:hover {
 	outline: none;
 }
 
+
 /**
  * bhoechie-mild-orange
  */
-div.bhoechie-tab-container.bhoechie-mild-orange .list-group-item.active, div.bhoechie-tab-container .list-group-item.active:focus, div.bhoechie-tab-container .list-group-item.active:hover div.bhoechie-tab-container {
-    border-color: #ffdbab;
+
+div.bhoechie-tab-container.bhoechie-mild-orange .list-group-item.active,
+div.bhoechie-tab-container .list-group-item.active:focus,
+div.bhoechie-tab-container .list-group-item.active:hover div.bhoechie-tab-container {
+	border-color: #ffdbab;
 }
-div.bhoechie-tab-container.bhoechie-mild-orange div.bhoechie-tab-menu div.list-group > a.active, div.bhoechie-tab-menu div.list-group > a.active .glyphicon, div.bhoechie-tab-menu div.list-group > a.active .fa {
-    color: #a55c00;
-    background-color: #ffdbab;
+
+div.bhoechie-tab-container.bhoechie-mild-orange div.bhoechie-tab-menu div.list-group > a.active,
+div.bhoechie-tab-menu div.list-group > a.active .glyphicon,
+div.bhoechie-tab-menu div.list-group > a.active .fa {
+	color: #a55c00;
+	background-color: #ffdbab;
 }
-div.bhoechie-tab-container.bhoechie-mild-orange div.bhoechie-tab-menu div.list-group > a.active:after{
+
+div.bhoechie-tab-container.bhoechie-mild-orange div.bhoechie-tab-menu div.list-group > a.active:after {
 	border-left: 10px solid #ffdcad;
+}
+
+
+/**
+ * my-act
+ */
+
+.my-act {
+	border: thin solid #C9C9C9;
+	border-radius: 3px;
+	display: inline-block;
+	padding: 2px 4px;
+	margin-top: 6px;
+	background-color: white;
+	color: #E37800;
+}
+
+.my-act img {
+	width: 27px;
+	height: 27px;
+	display: inline-block;
+	float: left;
+	margin-top: 2px;
+}
+
+.my-act .content {
+	display: inline-block;
+	font-size: 11px;
+	margin-left: 7px;
+}
+
+.my-act .content p {
+	margin: 0px;
 }
