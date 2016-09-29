@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Flight</title>
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/trip/styles/main.css">
+	<style>
+	.li-auto {
+		margin-left: -3%;
+		color: white;
+		background-color: #153465;
+		list-style-type: none;
+		width: 27%;
+	}
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3 style="color: #6B6B6B;">Flight Registration</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="box">
+					<div class="row">
+						<form id="flightRegistration">
+							<div class="col-md-6">
+								<div class="form-horizontal">
+									<div class="form-group">
+										<label for="" class="col-sm-4 control-label">Flight No</label>
+										<div class="col-sm-7">
+											<input type="text" class="form-control" name="flightNo" id="flightNo" placeholder="Flight No">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-sm-4 control-label">Departure Date</label>
+										<div class="col-sm-7">
+
+											<div class='input-group date datetimepicker'>
+												<input type='text' class="form-control" name="departureDate" id="departureDate" placeholder="Departure Date" />
+												<span class="input-group-addon">
+                        						<span class="glyphicon glyphicon-calendar"></span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-sm-4 control-label">Arrival Date</label>
+										<div class="col-sm-7">
+
+
+											<div class='input-group date datetimepicker'>
+												<input type='text' class="form-control" name="arrivalDate" id="arrivalDate" placeholder="Arrival Date" />
+												<span class="input-group-addon">
+                        						<span class="glyphicon glyphicon-calendar"></span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-sm-4 control-label">Travel Type</label>
+										<div class="col-sm-7">
+											<select class="form-control" name="travelType" id="travelType" placeholder="Travel Type">
+												<option value="Economy">Economy</option>
+												<option value="Premium">Premium Economy</option>
+												<option value="Business">Business</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-sm-4 control-label">Source</label>
+										<div class="col-sm-7">
+											<input type="text" class="form-control" name="source" id="source" placeholder="Source" onkeyup="searchkey(this)">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-sm-4 control-label">Destination</label>
+										<div class="col-sm-7">
+											<input type="text" class="form-control" name="destination" id="destination" placeholder="Destination" onkeyup="searchkey(this)">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-sm-4 control-label">Via One</label>
+										<div class="col-sm-7">
+											<input type="text" class="form-control" name="viaOne" id="viaOne" placeholder="Via One">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-sm-4 control-label">Via Two</label>
+										<div class="col-sm-7">
+											<input type="text" class="form-control" name="viaTwo" id="viaTwo" placeholder="Via Two">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-sm-4 control-label">Via Three</label>
+										<div class="col-sm-7">
+											<input type="text" class="form-control" name="viaThree" id="viaThree" placeholder="Via Three">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-horizontal">
+									<div class="form-group">
+										<label for="" class="col-sm-4 control-label">Travel Class</label>
+										<div class="col-sm-7">
+											<input type="text" class="form-control" name="travelClass" id="travelClass" placeholder="Travel Class">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-sm-4 control-label">Services One</label>
+										<div class="col-sm-7">
+											<input type="text" class="form-control" name="servicesOne" id="servicesOne" placeholder="Services One">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-sm-4 control-label">Services Two</label>
+										<div class="col-sm-7">
+											<input type="text" class="form-control" name="servicesTwo" id="servicesTwo" placeholder="Services Two">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-sm-4 control-label">Services Three</label>
+										<div class="col-sm-7">
+											<input type="text" class="form-control" name="servicesThree" id="servicesThree" placeholder="Services Three">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-sm-4 control-label">Price</label>
+										<div class="col-sm-7">
+											<input type="text" class="form-control" name="price" id="price" placeholder="Price">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-sm-4 control-label">Economy Seat</label>
+										<div class="col-sm-7">
+											<input type="text" class="form-control" name="economySeat" id="economySeat" placeholder="Economy Seat">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-sm-4 control-label">Premium Economy Seat</label>
+										<div class="col-sm-7">
+											<input type="text" class="form-control" name="premiumEconomySeat" id="premiumEconomySeat" placeholder="Premium Economy Seat">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-sm-4 control-label">Business Seat</label>
+										<div class="col-sm-7">
+											<input type="text" class="form-control" name="businessSeat" id="businessSeat" placeholder="Business Seat">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-sm-4 control-label">First Class Seat</label>
+										<div class="col-sm-7">
+											<input type="text" class="form-control" name="firstClassSeat" id="firstClassSeat" placeholder="First Class Seat">
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<button type="button" id="btnflightDetailsSave" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Register</button>
+				<button type="button" id="btnflightDetailsSave" class="btn btn-lg btn-warning"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancel</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
