@@ -591,10 +591,14 @@ a.text-white:hover {
 }
 
 .staircase li:before {
-	font-size: 10px;
+	/* font-family: 'Glyphicons Halflings' */
+	font-size: 15px;
 	line-height: 20px;
 	display: block;
-	width: 20px;
+	padding-top: 2.5px;
+	padding-left: 0px;
+	width: 27px;
+	height: 27px;
 	margin: 0 auto 5px auto;
 	content: counter(step);
 	counter-increment: step;
@@ -633,6 +637,21 @@ a.text-white:hover {
 .staircase li.step-active:after {
 	color: white;
 	background: #27ae60;
+}
+
+#s-review:before {
+	font-family: 'Glyphicons Halflings';
+	content: "\e010";
+}
+
+#s-travellers:before {
+	font-family: 'Glyphicons Halflings';
+	content: "\e139";
+}
+
+#s-payment:before {
+	font-family: 'Glyphicons Halflings';
+	content: "\e177";
 }
 
 

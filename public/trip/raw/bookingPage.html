@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Flight</title>
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="/trip/js/main.js"></script>
+
+	<link rel="stylesheet" href="/trip/styles/main.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="pakka-trans-box">
+					<ul class="staircase">
+						<li class="step-active" id="s-review">review</li>
+						<li id="s-travellers">Travellers</li>
+						<li id="s-payment">Payments</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- sr-only -->
+		<ul class="nav nav-tabs sr-only">
+			<li class="active"><a data-toggle="tab" href="#review">Review</a></li>
+			<li><a data-toggle="tab" href="#travellers">Travellers</a></li>
+			<li><a data-toggle="tab" href="#payment">Payments</a></li>
+		</ul>
+
+		<div class="tab-content">
+			<div id="review" class="tab-pane fade in active">
+				<!-- departure -->
+				<div class="row">
+					<div class="col-md-8">
+						<div class="row">
+							<div class="col-md-12">
+								<h4>Departure</h4>
+								<div class="witch-box">
+									<div class="box-header">
+										<%-- <input type="hidden" id="id-hdn-code"value="${details[0]}"> --%>
+											<span><strong>22 Sep 2016, Thu</strong></span>
+											<span class="pull-right">Fare Rules</span>
+									</div>
+									<div class="box-body">
+										<div class="row vcenter">
+											<div class="col-md-2 flight-brand">
+												<div class="logo">
+													<img src="${pageContext.request.contextPath}/resources/img/indigo.jpeg" class="flight-logo">
+													<p class="name">IndiGo</p>
+													<p class="code" id="idcode"></p>
+													<input type="hidden" id="id-hdn-code" value="${details[0]}">
+												</div>
+											</div>
+											<div class="col-md-3 time">
+												<p class="clock" id="idcode1"></p>
+												<p class="place" id="idcode2"></p>
+												<input type="hidden" id="id-hdn-arr" value="${details[1]}">
+												<input type="hidden" id="id-hdn-splace" value="${details[2]}">
+											</div>
+											<div class="col-md-2" style="font-size:24px;text-align:center;color:#878787;">
+												<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+											</div>
+											<div class="col-md-3 time">
+												<p class="clock" id="idcode3"></p>
+												<p class="place" id="idcode4"></p>
+												<input type="hidden" id="id-hdn-depart" value="${details[3]}">
+												<input type="hidden" id="id-hdn-depaplace" value="${details[4]}">
+											</div>
+											<div class="col-md-2 time">
+												<p class="clock" id="idcode5"></p>
+												<p class="place"><strong>Non stop</strong></p>
+												<input type="hidden" id="id-hdn-time" value="${details[5]}">
+												<input type="hidden" id="id-hdn-code" value="${details}">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="box">
+									<div class="checkbox checkbox-warning">
+										<input type="checkbox" id="checkbox1">
+										<label for="checkbox1">
+											I have an existing account with Payback.
+										</label>
+									</div>
+									<hr style="margin-bottom: 8px;margin-top: 8px;">
+									<div class="checkbox checkbox-warning">
+										<input type="checkbox" id="checkbox2">
+										<label for="checkbox2">
+											Get Protected: Don't forget travel insurance
+											<br>I want to add trip insurance to my booking for Rs. 249 per person. View features & benefits of insurance.
+										</label>
+									</div>
+									<hr style="margin-bottom: 8px;margin-top: 8px;">
+									<div class="checkbox checkbox-warning">
+										<input type="checkbox" id="checkbox3">
+										<label for="checkbox3">
+											I provide my consent to be contacted for The American Express ® MakeMyTrip credit card which offers MMT vouchers worth Rs. 2000*, even if I am registered with NCPR.T&C
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="col-md-12">
+
+								<p>You are logged in as : <input cla type="text" placeholder="liva@example.com" value="liva@example.com"> &nbsp;
+									<button class="btn btn-sm btn-warning">Sign out and change</button>
+								</p>
+								<div class="checkbox checkbox-success">
+									<input type="checkbox" id="checkbox4">
+									<label for="checkbox4">
+										By clicking this button, I understand & agree with the Rules & Restrictions of this fare,the Privacy Policy & Terms & Conditions
+									</label>
+								</div>
+								<hr>
+								<button class="btn btn-lg btn-success next" swichto="travellers">Continue <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-md-12">
+								<h4>Fare Summary</h4>
+								<div class="box">
+									<table class="table table-striped table-condensed">
+										<tbody>
+											<tr>
+												<td>John</td>
+												<td style="text-align: center;">128</td>
+											</tr>
+											<tr>
+												<td>Mary</td>
+												<td style="text-align: center;">1125</td>
+											</tr>
+											<tr>
+												<td>July</td>
+												<td style="text-align: center;">7789</td>
+											</tr>
+											<tr>
+												<td>
+													<input type="hidden" id="id-hdn-total" value="${details[6]}" />
+													<h4><strong>Grand Total</strong></h4></td>
+												<td style="text-align: center;color: #FF7400;" id="idcode6">
+													<h4><strong></strong></h4></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="box">
+									<p>Have an e-coupon or a deal-code? <span class="text-muted">(Optional)</span></p>
+									<form class="form-inline">
+										<div class="form-group">
+											<div class="input-group">
+												<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+												<div class="input-group-addon"><a href="#">Apply</a></div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="travellers" class="tab-pane fade">
+				<div class="row">
+					<div class="col-md-12">
+
+						<div class="witch-box">
+							<div class="box-header">
+								<span><strong>Details</strong></span>
+								<span class="pull-right"></span>
+							</div>
+							<div class="box-body">
+								<div class="row vcenter">
+									<div class="col-md-1 flight-brand">
+										<div class="logo">
+											<img src="${pageContext.request.contextPath}/resources/img/indigo.jpeg" class="flight-logo">
+											<p class="name">IndiGo</p>
+											<p class="code" id="idcode0"></p>
+										</div>
+									</div>
+									<div class="col-md-2 time">
+										<p class="clock" id="idcode11"></p>
+										<p class="place" id="idcode22"></p>
+									</div>
+									<div class="col-md-1" style="font-size:24px;text-align:center;color:#878787;">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									</div>
+									<div class="col-md-2 time">
+										<p class="clock" id="idcode33"></p>
+										<p class="place" id="idcode44"></p>
+									</div>
+									<div class="col-md-2 time">
+										<p class="clock" id="idcode55"></p>
+										<p class="place"><strong>Non stop</strong></p>
+									</div>
+									<div class="col-md-4 time">
+										<p class="place">Total Travellers : <strong>2</strong></p>
+										<p class="clock" style="font-size:18px;">Total Amount : <strong id="idcode66" style="color:red;"></strong></p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+
+						<div id="travelerDetails">
+
+							<c:forEach var="i" begin="0" end="2" varStatus="loop">
+								<div class="box">
+									<form class="form-horizontal">
+										<div class="form-group">
+											<div class="col-sm-offset-2 col-sm-10">
+												<span id="nameHelpBlock<c:out value=" ${i} "/>" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="f-name<c:out value=" ${i} "/>" class="col-sm-2 control-label">Adult</label>
+											<div class="col-sm-5">
+												<input aria-describedby="nameHelpBlock<c:out value=" ${i} "/>" type="text" class="form-control" id="f-name<c:out value=" ${i} "/>" placeholder="First Name">
+											</div>
+											<div class="col-sm-5">
+												<input aria-describedby="nameHelpBlock<c:out value=" ${i} "/>" type="text" class="form-control" id="l-name<c:out value=" ${i} "/>" placeholder="Last Name">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="col-sm-offset-2 col-sm-5">
+												<div class="radio radio-warning radio-inline">
+													<input type="radio" id="radio1<c:out value=" ${i} "/>" name="sex" value="male" checked="checked">
+													<label for="radio1<c:out value=" ${i} "/>">
+														Male
+													</label>
+												</div>
+
+												<div class="radio radio-warning radio-inline">
+													<input type="radio" id="radio2<c:out value=" ${i} "/>" name="sex" value="female">
+													<label for="radio2<c:out value=" ${i} "/>">
+														Female
+													</label>
+												</div>
+											</div>
+											<div class="col-md-2">
+												<input type="text" class="form-control" id="age<c:out value=" ${i} "/>" placeholder="Age">
+											</div>
+										</div>
+									</form>
+								</div>
+
+								<c:if test="${loop.last}">
+									<input type="hidden" value="<c:out value=" ${i} "/>" id="limit" />
+								</c:if>
+
+							</c:forEach>
+						</div>
+
+
+						<hr>
+						<div class="checkbox checkbox-success">
+							<input type="checkbox" id="addToList">
+							<label for="addToList">
+								Add above travelers to my Traveler List
+							</label>
+						</div>
+						<br>
+						<div class="form-group">
+							<label for="contact" class="control-label" style="display:inline-block">Contact details</label>
+							<input type="text" class="form-control" style="width:40%;display:inline-block;" id="emailId" placeholder="Email ID">
+							<input type="text" class="form-control" style="width:40%;display:inline-block;" id="mobile" placeholder="Mobile Number">
+						</div>
+
+						<form id="travelerDetails-form">
+						</form>
+
+					</div>
+					<div class="col-md-4">
+						<div class="box">
+							<p class="text-muted">Traveller List</p>
+						</div>
+					</div>
+				</div>
+				<br>
+				<button class="btn btn-lg btn-warning back" switchto="review" current="travellers"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Back</button>
+				<button class="btn btn-lg btn-success next" id="btnTravelerContinue" swichto="payment">Continue <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+			</div>
+
+			<div id="payment" class="tab-pane fade">
+				<div class="row">
+					<div class="col-md-12">
+
+						<div class="witch-box">
+							<div class="box-header">
+								<span><strong>Details</strong></span>
+								<span class="pull-right"></span>
+							</div>
+							<div class="box-body">
+								<div class="row vcenter">
+									<div class="col-md-1 flight-brand">
+										<div class="logo">
+											<img src="${pageContext.request.contextPath}/resources/img/indigo.jpeg" class="flight-logo">
+											<p class="name">IndiGo</p>
+											<p class="code">6E-198</p>
+										</div>
+									</div>
+									<div class="col-md-2 time">
+										<p class="clock">22:15</p>
+										<p class="place">Mumbai</p>
+									</div>
+									<div class="col-md-1" style="font-size:24px;text-align:center;color:#878787;">
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									</div>
+									<div class="col-md-2 time">
+										<p class="clock">22:15</p>
+										<p class="place">Delhi</p>
+									</div>
+									<div class="col-md-2 time">
+										<p class="clock">2h 15min</p>
+										<p class="place"><strong>Non stop</strong></p>
+									</div>
+									<div class="col-md-4 time">
+										<p class="place">Total Travellers : <strong>2</strong></p>
+										<p class="clock" style="font-size:18px;">Total Amount : <strong style="color:red;">5234</strong></p>
+									</div>
+								</div>
+								<div class="row vcenter">
+									<div class="col-md-12">
+										<div class="box">
+											<p><strong class="text-info">Travellers :</strong> Samantha, Veena, David</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="panel panel-success">
+							<div class="panel-heading">
+								<h3 class="panel-title">Loyalty Discount</h3>
+							</div>
+							<div class="panel-body">
+
+								<form class="form-inline">
+									<div class="form-group" style="width:60%;">
+										<label class="sr-only" for="paybackid">Payback / Mobile number</label>
+										<input type="email" class="form-control" style="width: 100%;" id="paybackid" placeholder="Payback / Mobile number">
+									</div>
+									<button type="submit" class="btn btn-success">Apply</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h4>Payment</h4>
+
+						<div class="col-md-12 col-sm-12 col-xs-12 bhoechie-tab-container bhoechie-mild-orange">
+							<div class="col-md-2 bhoechie-tab-menu">
+								<div class="list-group">
+									<a href="#" class="list-group-item active text-center">
+											Credit Card
+										</a>
+									<a href="#" class="list-group-item text-center">
+											Debit Card
+										</a>
+									<a href="#" class="list-group-item text-center">
+											Net Banking
+										</a>
+								</div>
+							</div>
+							<div class="col-md-6 bhoechie-tab">
+								<div class="bhoechie-tab-content active">
+
+									<h1>Credit Card</h1>
+									<hr>
+									<form>
+										<div class="form-group">
+											<label class="sr-only" for="card-number">Card Numner</label>
+											<input type="email" class="form-control input-lg" id="card-number" aria-describedby="card-number-help-text" placeholder="Card Number">
+											<span id="card-number-help-text" class="help-block">Enter your card number to view the convenience fee.</span>
+										</div>
+										<div class="form-group">
+											<label class="sr-only" for="holder-name">Name</label>
+											<input type="text" class="form-control input-lg" aria-describedby="holder-name-help-text" id="holder-name" placeholder="Card holder name">
+											<span id="holder-name-help-text" class="help-block">As mentioned in your card.</span>
+										</div>
+										<label>Expiry Date</label>
+
+										<div class="form-horizontal">
+											<div class="form-group">
+												<div class="col-md-4">
+													<select class="form-control input-lg" id="exp-month">
+														<option>Month</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+													</select>
+												</div>
+												<div class="col-md-4">
+													<select class="form-control input-lg" id="exp-month">
+														<option>Year</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+													</select>
+												</div>
+												<div class="col-md-4">
+													<input type="text" class="form-control input-lg" placeholder="CVV">
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="checkbox checkbox-success">
+												<input type="checkbox" id="save-details">
+												<label for="save-details">
+													Save card details for next purchase
+												</label>
+											</div>
+										</div>
+										<div class="form-group">
+											<h3 class="text-muted">Total Amount : <strong class="text-danger">Rs.3568</strong></h3>
+										</div>
+										<button type="submit" class="btn btn-lg btn-success">Make Payment <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+									</form>
+
+								</div>
+								<!-- train section -->
+								<div class="bhoechie-tab-content">
+
+									<h1>Debit Card</h1>
+									<hr>
+									<form>
+										<div class="form-group">
+											<label class="sr-only" for="selected-bank-dc">Select Bank</label>
+											<select class="form-control input-lg" id="selected-bank-dc">
+												<option class="text-muted">Select bank</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+											</select>
+											<!-- <span id="card-number-help-text" class="help-block">Select your Bank</span> -->
+										</div>
+										<div class="form-group">
+											<label class="sr-only" for="card-number-dc">Card Numner</label>
+											<input type="email" class="form-control input-lg" id="card-number-dc" aria-describedby="card-number-help-text-dc" placeholder="Card Number">
+											<span id="card-number-help-text-dc" class="help-block">We support all major cards</span>
+										</div>
+										<div class="form-group">
+											<label class="sr-only" for="holder-name-dc">Name</label>
+											<input type="text" class="form-control input-lg" aria-describedby="holder-name-help-text-dc" id="holder-name-dc" placeholder="Card holder name">
+											<span id="holder-name-help-text-dc" class="help-block">As mentioned in your card.</span>
+										</div>
+										<label for="exp-month">Expiry Date</label>
+
+										<div class="form-horizontal">
+											<div class="form-group">
+												<div class="col-md-4">
+													<select class="form-control input-lg" id="exp-month">
+														<option>Month</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+													</select>
+												</div>
+												<div class="col-md-4">
+													<select class="form-control input-lg" id="exp-year">
+														<option>Year</option>
+														<option>2</option>
+														<option>3</option>
+														<option>4</option>
+													</select>
+												</div>
+												<div class="col-md-4">
+													<input type="text" class="form-control input-lg" placeholder="CVV">
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="checkbox checkbox-success">
+												<input type="checkbox" id="save-details-dc">
+												<label for="save-details-dc">
+													Save card details for next purchase
+												</label>
+											</div>
+										</div>
+										<div class="form-group">
+											<h3 class="text-muted">Total Amount : <strong class="text-danger">Rs.3568</strong></h3>
+										</div>
+										<button type="submit" class="btn btn-lg btn-success">Make Payment <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+									</form>
+								</div>
+
+								<!-- Net banking -->
+								<div class="bhoechie-tab-content">
+									<h1>Net Banking</h1>
+									<hr>
+									<form>
+										<div class="form-group">
+											<label class="sr-only" for="selected-bank-nb">Select Bank</label>
+											<select class="form-control input-lg" aria-describedby="card-number-help-text-netbanking" id="selected-bank-nb">
+												<option class="text-muted">Select bank</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+											</select>
+											<span id="card-number-help-text-netbanking" class="help-block">Select your bank to view the convenience fee.</span>
+										</div>
+
+										<div class="form-group">
+											<div class="checkbox checkbox-success">
+												<input type="checkbox" id="save-details-nb">
+												<label for="save-details-nb">
+													Save card details for next purchase
+												</label>
+											</div>
+										</div>
+										<div class="form-group">
+											<h3 class="text-muted">Total Amount : <strong class="text-danger">Rs.3568</strong></h3>
+										</div>
+										<button type="submit" class="btn btn-lg btn-success">Make Payment <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<br>
+				<button class="btn btn-warning back" switchto="travellers" current="payment"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Back</button>
+			</div>
+		</div>
+	</div>
+</body>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Flight</title>
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/trip/styles/main.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>Company Registration</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="box">
+					<div class="row">
+						<form id="companyregister" method="post">
+							<div class="col-md-6">
+								<div class="form-horizontal">
+									<div class="form-group">
+										<label for="companyid" class="col-sm-4 control-label">Companyids</label>
+										<div class="col-sm-7">
+											<input type="text" placeholder="companyids" class="form-control" id="companyid" name="companyId" required="true">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="companynameid" class="col-sm-4 control-label">Company Name</label>
+										<div class="col-sm-7">
+											<input type="text" placeholder="Company Name" class="form-control" id="companynameid" name="companyName" required="true">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="contactid" class="col-sm-4 control-label">Contact Person</label>
+										<div class="col-sm-7">
+											<input placeholder="contactperson" type="text" class="form-control" id="contactid" name="contactPerson" required="true">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="address1id" class="col-sm-4 control-label">address1</label>
+										<div class="col-sm-7">
+											<input placeholder="address1" type="textarea" class="form-control" id="address1id" name="address1">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="address2id" class="col-sm-4 control-label">Address 2</label>
+										<div class="col-sm-7">
+											<input placeholder="address2" type="textarea" class="form-control" id="address2id" name="address2">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="zipcodeid" class="col-sm-4 control-label">Zip code</label>
+										<div class="col-sm-7">
+											<input placeholder="zipcode" type="text" class="form-control" id="zipcodeid" name="zipCode">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="cityid" class="col-sm-4 control-label">City</label>
+										<div class="col-sm-7">
+											<input placeholder="city" type="text" class="form-control" id="cityid" name="city">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="stateid" class="col-sm-4 control-label">State</label>
+										<div class="col-sm-7">
+											<input placeholder="state" type="text" class="form-control" id="stateid" name="state">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="cellnoid" class="col-sm-4 control-label">Cell No</label>
+										<div class="col-sm-7">
+											<input placeholder="cellno" type="text" class="form-control" id="cellnoid" name="cellNo">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-horizontal">
+									
+									<div class="form-group">
+										<label for="workphoneid" class="col-sm-4 control-label">workphone</label>
+										<div class="col-sm-7">
+											<input placeholder="workphone" type="text" class="form-control" id="workphoneid" name="workPhone">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="extensionid" class="col-sm-4 control-label">Extension</label>
+										<div class="col-sm-7">
+											<input placeholder="extension" type="text" class="form-control" id="extensionid" name="extension">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="countryid" class="col-sm-4 control-label">Select Country Id</label>
+										<div class="col-sm-7">
+											<select class="form-control" id="countryid" name="country">
+												<option value="">-----select country id---</option>
+												<option value="country1">country1</option>
+												<option value="country2">country2</option>
+												<option value="country3">country3</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<form id="companyregister" method="post">
+					<button type="button" class="btn btn-lg btn-success" id="id-save-button" onclick="savecompany()"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Register</button>
+					<button type="button" class="btn btn-lg btn-warning" id=""><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancel</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
