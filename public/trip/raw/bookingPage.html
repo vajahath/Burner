@@ -112,10 +112,11 @@
 							</div>
 						</div>
 						<hr>
+						<!-- if logged-in -->
 						<div class="row">
 							<div class="col-md-12">
 
-								<p>You are logged in as : <input cla type="text" placeholder="liva@example.com" value="liva@example.com"> &nbsp;
+								<p>You are logged in as : <input class="form-control" style="max-width: 222px;display: inline;" type="text" disabled placeholder="liva@example.com" value="liva@example.com"> &nbsp;
 									<button class="btn btn-sm btn-warning">Sign out and change</button>
 								</p>
 								<div class="checkbox checkbox-success">
@@ -126,6 +127,22 @@
 								</div>
 								<hr>
 								<button class="btn btn-lg btn-success next" swichto="travellers">Continue <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+							</div>
+						</div>
+						<!-- if logged-out -->
+						<div class="row">
+							<div class="col-md-12">
+
+								<p>You are logged in as : <input class="form-control" style="max-width: 222px;display: inline;" type="text" disabled placeholder="liva@example.com" value="liva@example.com"> &nbsp;</p>
+								<div class="checkbox checkbox-success">
+									<input type="checkbox" id="checkbox4">
+									<label for="checkbox4">
+										By clicking this button, I understand & agree with the Rules & Restrictions of this fare,the Privacy Policy & Terms & Conditions
+									</label>
+								</div>
+								<hr>
+								<button class="btn btn-lg btn-warning next" swichto="travellers">Continue as Guest <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+								<button class="btn btn-lg btn-success">Login and Continue <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></button>
 							</div>
 						</div>
 					</div>
