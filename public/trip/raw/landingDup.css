@@ -135,25 +135,14 @@ body {
 	margin-bottom: 50px;
 }
 
-.intro-header .site-heading {
-	padding-top: 160px;
-	padding-bottom: 220px;
+@media only screen and (min-width: 768px) {
+	.intro-header .site-heading {
+		padding: 160px 0;
+	}
 }
 
 .intro-header .site-heading {
 	text-align: left;
-}
-
-.intro-header .site-heading a:link,
-.intro-header .site-heading a:visited {
-	color: #9E9E9E;
-	font-weight: 700;
-}
-
-.intro-header .site-heading a.active:link,
-.intro-header .site-heading a.active:visited {
-	color: white;
-	font-weight: 700;
 }
 
 .intro-header .site-heading .subheading,
@@ -166,84 +155,71 @@ body {
 	margin: 10px 0 0;
 }
 
+/**
+ * main-inputs
+ * .mixinp
+ */
 
+.mixinp {
+	margin: -2px;
+	padding: 13px 8px;
+	border: none;
+	border-left: solid 1px #CDCDCD;
+	font-size: 1.2em;
+	width: inherit;
+}
+
+.mixinp.txt-fld {
+	color: #535353;
+	letter-spacing: 2px;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.mixinp.mixinp-btn {
+	background-color: #00B848;
+	color: white;
+	padding:13px 15px;
+}
 /**
  * stackoverflowed for icon>input
  */
-
-.ipcontainer {
+.ipcontainer{
 	display: inline-block;
 	position: relative;
-	margin: 0px;
-	margin-right: -4px;
 }
-
-.ipcontainer .glyphicon {
+.ipcontainer .glyphicon{
 	position: absolute;
-	right: 7px;
-	top: 22px;
+	right: 5px;
+	top: 15px;
 	font-size: 1.2em;
 	color: #949494;
 }
-
-.ipcontainer .form-control {
-	padding: 30px 12px;
-	border: none;
-	border-radius: 0px;
-	border-left: 1px solid #9C9C9C;
-}
-
-.ipcontainer-butt {
-	padding: 20px 25px;
-	border: none;
-	background-color: #FF9F24;
-	color: #FFFFFF;
-}
-
-.ipcontainer-butt:hover {
-	background-color: #E07E00;
-}
-
-.ipcontainer-butt:active {
-	background-color: #FF6200;
-}
-
+.ipcontainer.for-date{}
 
 /* ============================================= */
-
-
 /*
    all above are some sh*t codes. wanna rewrite.
  */
-
-
 /* ============================================= */
-
-
 /*
  * NEAT CODE STARTS HERE
  * =====================
  */
-
-.pic-card {
+.pic-card{
+	background-color: yellow;
 	position: relative;
-	margin-top: 10px;
-	margin-bottom: 10px;
 }
-
-.pic-card.fixed-20 {
+.pic-card.fixed-20{
 	height: 20em;
 }
-
-.pic-card > .content {
+.pic-card > .content{
 	position: absolute;
 	top: 0px;
 	width: 100%;
 	padding: 0px 16px;
-	color: #FFFFFF;
+	color: white;
 }
-
-.pic-card > .pic-foot {
+.pic-card > .pic-foot{
 	position: absolute;
 	bottom: 13px;
 	width: 100%;
