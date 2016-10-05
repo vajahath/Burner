@@ -178,7 +178,7 @@ body {
 	margin-right: -4px;
 }
 
-.ipcontainer .glyphicon {
+.ipcontainer .glyphicon.abs {
 	position: absolute;
 	right: 7px;
 	top: 22px;
@@ -186,7 +186,7 @@ body {
 	color: #949494;
 }
 
-.ipcontainer .form-control {
+.ipcontainer .form-control.abs {
 	padding: 30px 12px;
 	border: none;
 	border-radius: 0px;
@@ -249,4 +249,22 @@ body {
 	width: 100%;
 	padding: 0px 16px;
 	color: white;
+}
+/**
+ * .cminus, .cplus
+ */
+.cminus,
+.cplus{
+	color: black;
+	padding: 5px 8px;
+    font-size: 9px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+/**
+ * .form-control.sleek
+ */
+.form-control.sleek{
+	border-radius: 0px;
+	height: 31px;
 }

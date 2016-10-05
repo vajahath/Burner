@@ -6,7 +6,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Airlines</title>
-	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
 	<link rel="stylesheet" href="landing.css">
 
 	<style>
@@ -18,7 +19,8 @@
 	}
 	
 	.dropdown-menu {
-		background-color: rgba(0, 0, 0, 0.67);
+		background-color: rgba(0, 0, 0, 0.80);
+		color: white;
 	}
 	
 	@media only screen and (min-width: 768px) {
@@ -33,6 +35,26 @@
 		.navbar-custom .nav li a:focus {
 			color: rgb(255, 159, 36);
 		}
+	}
+	
+	.datepicker table tr td.day.focused,
+	.datepicker table tr td.day:hover {
+		background: #ff9f24;
+		cursor: pointer;
+		color: black;
+	}
+	
+	.datepicker .datepicker-switch:hover,
+	.datepicker .next:hover,
+	.datepicker .prev:hover,
+	.datepicker tfoot tr th:hover {
+		background: #ff9f24;
+		color: black;
+	}
+	
+	.form-control[readonly] {
+		background-color: #fff;
+		cursor: text;
 	}
 	</style>
 </head>
@@ -55,12 +77,8 @@
 
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">eng <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">arabic</a></li>
-							<li><a href="#">english</a></li>
-						</ul>
+					<li>
+						<a href="">Arabic</a>
 					</li>
 					<li>
 						<a href="">Sign in</a>
@@ -71,8 +89,12 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="http://flagpedia.net/data/flags/mini/in.png" alt="flag"> <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="#"><img src="http://www.expatforum.com/expats/images/flags/uae.gif" alt=""> &nbsp;uae</a></li>
-							<li><a href="#"><img src="http://flagpedia.net/data/flags/mini/in.png" alt=""> &nbsp; india</a></li>
+							<li>
+								<a href="#"><img src="http://www.expatforum.com/expats/images/flags/uae.gif" alt=""> &nbsp;uae</a>
+							</li>
+							<li>
+								<a href="#"><img src="http://flagpedia.net/data/flags/mini/in.png" alt=""> &nbsp; india</a>
+							</li>
 							<!-- <li role="separator" class="divider"></li> -->
 						</ul>
 					</li>
@@ -95,23 +117,78 @@
 							<a href="#"></a>
 						</p>
 						<div class="ipcontainer" style="margin-left: initial;">
-							<input class="form-control" type="text" placeholder="Origin">
-							<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+							<input class="form-control abs" type="text" placeholder="Origin">
+							<span class="glyphicon glyphicon-menu-right abs" aria-hidden="true"></span>
 						</div>
 						<div class="ipcontainer">
-							<input class="form-control" type="text" placeholder="To">
+							<input class="form-control abs" type="text" placeholder="To">
 						</div>
 						<div class="ipcontainer" style="width:130px">
-							<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-							<input class="form-control" type="text" placeholder="Depart">
+							<span class="glyphicon glyphicon-calendar abs" aria-hidden="true"></span>
+							<input class="form-control abs datepik" type="text" data-provide="datepicker" placeholder="Depart">
 						</div>
 						<div class="ipcontainer" style="width:130px">
-							<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-							<input class="form-control" type="text" placeholder="Return">
+							<span class="glyphicon glyphicon-calendar abs" aria-hidden="true"></span>
+							<input class="form-control abs datepik" type="text" data-provide="datepicker" placeholder="Return">
 						</div>
 						<div class="ipcontainer" style="width:140px">
-							<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-							<input class="form-control" type="text" placeholder="People">
+							<span class="glyphicon glyphicon-user abs" aria-hidden="true"></span>
+							<input class="form-control abs dropdown-toggle" data-toggle="dropdown" id="ctotal" value="1" readonly type="text" placeholder="People">
+							<div class="dropdown-menu propagation-stoped" style="width: 235px;">
+								<div class="col-md-12">
+									<div class="form-horizontal">
+										<div class="form-group">
+											<label for="sel1" class="col-md-3">Class</label>
+											<div class="col-md-9">
+												<select class="form-control sleek" id="sel1">
+													<option>Economy</option>
+													<option>Prem</option>
+													<option>Busin</option>
+													<option>A</option>
+												</select>
+											</div>
+										</div>
+										<hr />
+										<div class="form-group">
+											<label for="sel1" class="col-md-3">Adult</label>
+											<div class="col-md-2">
+												<button class="btn btn-sm btn-warning cminus"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+											</div>
+											<div class="col-md-4" style="text-align: center;">
+												<label class="cvalue" id="">1</label>
+											</div>
+											<div class="col-md-2">
+												<button class="btn btn-sm btn-info cplus"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="sel1" class="col-md-3">kids</label>
+											<div class="col-md-2">
+												<button class="btn btn-sm btn-warning cminus"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+											</div>
+											<div class="col-md-4" style="text-align: center;">
+												<label class="cvalue" id="">0</label>
+											</div>
+											<div class="col-md-2">
+												<button class="btn btn-sm btn-info cplus"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="sel1" class="col-md-3">kings</label>
+											<div class="col-md-2">
+												<button class="btn btn-sm btn-warning cminus"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+											</div>
+											<div class="col-md-4" style="text-align: center;">
+												<label class="cvalue" id="">0</label>
+											</div>
+											<div class="col-md-2">
+												<button class="btn btn-sm btn-info cplus"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
 						</div>
 						<button class="ipcontainer-butt">Search</button>
 
@@ -169,6 +246,7 @@
 		</div>
 
 	</div>
+
 	<br>
 	<br>
 	<br>
@@ -179,9 +257,10 @@
 			<p style="margin-top: 20px;" class="text-muted">&copy; Copyright 2016 | Interland</p>
 		</div>
 	</footer>
-
-	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,21 @@
+{
+  "name": "airline",
+  "homepage": "https://github.com/vajahath/Burner",
+  "authors": [
+    "Vajahath Ahmed <vajuoff.1@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-datepicker": "^1.6.4",
+    "bootstrap": "^3.3.7"
+  }
+}
