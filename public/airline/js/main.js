@@ -25,4 +25,16 @@ $(document).ready(function() {
 			$('#ctotal').val(+$('#ctotal').val() - 1);
 		}
 	});
+	/*
+	 * for tabs
+	 */
+	$('#return-r').click(function() {
+		$('#i_return').tab('show');
+	});
+	$('#one-way-r').click(function() {
+		$('#i_oneway').tab('show');
+	});
+	// $('#multi').click(function() {
+	// 	$('#i_oneway').tab('show');
+	// });
 });

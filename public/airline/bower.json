@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "bootstrap-datepicker": "^1.6.4",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "awesome-bootstrap-checkbox": "https://github.com/flatlogic/awesome-bootstrap-checkbox.git#^0.3.7"
   }
 }

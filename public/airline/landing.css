@@ -67,8 +67,12 @@ body {
 		color: rgba(255, 255, 255, 0.8);
 	}
 	.navbar-custom .nav li a {
-		color: white;
+		color: #484848;
 		padding: 20px;
+		padding-top: 24px;
+	}
+	.navbar-custom .nav li a.whi {
+		color: #FFF;
 	}
 	.navbar-custom .nav li a:hover,
 	.navbar-custom .nav li a:focus {
@@ -136,8 +140,8 @@ body {
 }
 
 .intro-header .site-heading {
-	padding-top: 160px;
-	padding-bottom: 220px;
+	padding-top: 173px;
+    padding-bottom: 238px;
 }
 
 .intro-header .site-heading {
@@ -180,32 +184,32 @@ body {
 
 .ipcontainer .glyphicon.abs {
 	position: absolute;
-	right: 7px;
-	top: 22px;
+	right: 4px;
+	top: 12px;
 	font-size: 1.2em;
 	color: #949494;
 }
 
 .ipcontainer .form-control.abs {
-	padding: 30px 12px;
+	padding: 19px 35px;
 	border: none;
 	border-radius: 0px;
 	border-left: 1px solid #9C9C9C;
 }
 
 .ipcontainer-butt {
-	padding: 20px 25px;
+	padding: 9px 25px;
 	border: none;
-	background-color: #FF9F24;
+	background-color: #00bba1;
 	color: #FFFFFF;
 }
 
 .ipcontainer-butt:hover {
-	background-color: #E07E00;
+	background-color: #009D87;
 }
 
 .ipcontainer-butt:active {
-	background-color: #FF6200;
+	background-color: #007161;
 }
 
 
@@ -250,21 +254,48 @@ body {
 	padding: 0px 16px;
 	color: white;
 }
+
+
 /**
  * .cminus, .cplus
  */
+
 .cminus,
-.cplus{
+.cplus {
 	color: black;
 	padding: 5px 8px;
-    font-size: 9px;
-    line-height: 1.5;
-    border-radius: 3px;
+	font-size: 9px;
+	line-height: 1.5;
+	border-radius: 3px;
 }
+
+
 /**
  * .form-control.sleek
  */
-.form-control.sleek{
+
+.form-control.sleek {
 	border-radius: 0px;
 	height: 31px;
+}
+
+
+/**
+ * left-nav-things
+ */
+
+@media only screen and (min-width: 1170px) {}
+
+.left-nav-things {}
+
+
+/**
+ * dull
+ */
+
+.dull {
+	background-color: rgba(0, 0, 0, 0.79);
+	padding: 10px 20px 25px 20px;
+	display: inline-block;
+	border-radius: 4px;
 }

@@ -5,9 +5,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Airlines</title>
+	<title>Travel Portal</title>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="bower_components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css">
 	<link rel="stylesheet" href="landing.css">
 
 	<style>
@@ -19,8 +20,8 @@
 	}
 	
 	.dropdown-menu {
-		background-color: rgba(0, 0, 0, 0.80);
-		color: white;
+		background-color: rgb(255, 255, 255);
+		color: black;
 	}
 	
 	@media only screen and (min-width: 768px) {
@@ -56,6 +57,40 @@
 		background-color: #fff;
 		cursor: text;
 	}
+	
+	.nav-pills>li.active>a,
+	.nav-pills>li.active>a:focus,
+	.nav-pills>li.active>a:hover {
+		color: #fff;
+		background-color: #ff5858;
+	}
+	
+	.intro-header .site-heading a:link,
+	.intro-header .site-heading a:visited {
+		color: #ffffff;
+		font-weight: normal;
+		font-size: .9em;
+	}
+	
+	.nav>li>a:focus,
+	.nav>li>a:hover {
+		text-decoration: none;
+		background-color: rgba(255, 88, 88, 0.38);
+	}
+	
+	.nav-pills>li>a {
+		border-radius: 3px;
+	}
+	
+	.nav>li>a {
+		position: relative;
+		display: block;
+		padding: 2px 9px;
+	}
+	
+	.nav {
+		margin-bottom: 12px;
+	}
 	</style>
 </head>
 
@@ -68,24 +103,27 @@
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
 				</button>
-				<a class="navbar-brand" href="index.html"><span style="color: #FF9F24;" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> Airlines</a>
+				<a class="navbar-brand" href="index.html"><span style="color: #00ffe6;" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> Airlines</a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-
+				<ul class="nav navbar-nav left-nav-things">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle whi" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Flights</a></li>
+						</ul>
+					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li>
-						<a href="">Arabic</a>
+						<a class="whi" href="">Arabic</a>
 					</li>
 					<li>
-						<a href="">Sign in</a>
+						<a class="whi" href="">Sign in</a>
 					</li>
-					<li>
-						<a href="">sign up</a>
-					</li>
+
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="http://flagpedia.net/data/flags/mini/in.png" alt="flag"> <span class="caret"></span></a>
 						<ul class="dropdown-menu">
@@ -107,90 +145,131 @@
 
 	<!-- Page Header -->
 	<!-- Set your background image for this header on the line below. -->
-	<header class="intro-header" style="background-image: url('/image/kett.jpg')">
+	<header class="intro-header" style="background-image: url('/image/street.jpg')">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-offset-1 col-md-10">
 					<div class="site-heading">
-						<h1 style="color: white;margin-bottom: 25px;text-align: left">Search Flight Deals</h1>
-						<p><a class="active" href="#">Return</a> &nbsp;<a href="#">One-way</a>&nbsp;
-							<a href="#"></a>
-						</p>
-						<div class="ipcontainer" style="margin-left: initial;">
-							<input class="form-control abs" type="text" placeholder="Origin">
-							<span class="glyphicon glyphicon-menu-right abs" aria-hidden="true"></span>
-						</div>
-						<div class="ipcontainer">
-							<input class="form-control abs" type="text" placeholder="To">
-						</div>
-						<div class="ipcontainer" style="width:130px">
-							<span class="glyphicon glyphicon-calendar abs" aria-hidden="true"></span>
-							<input class="form-control abs datepik" type="text" data-provide="datepicker" placeholder="Depart">
-						</div>
-						<div class="ipcontainer" style="width:130px">
-							<span class="glyphicon glyphicon-calendar abs" aria-hidden="true"></span>
-							<input class="form-control abs datepik" type="text" data-provide="datepicker" placeholder="Return">
-						</div>
-						<div class="ipcontainer" style="width:140px">
-							<span class="glyphicon glyphicon-user abs" aria-hidden="true"></span>
-							<input class="form-control abs dropdown-toggle" data-toggle="dropdown" id="ctotal" value="1" readonly type="text" placeholder="People">
-							<div class="dropdown-menu propagation-stoped" style="width: 235px;">
-								<div class="col-md-12">
-									<div class="form-horizontal">
-										<div class="form-group">
-											<label for="sel1" class="col-md-3">Class</label>
-											<div class="col-md-9">
-												<select class="form-control sleek" id="sel1">
-													<option>Economy</option>
-													<option>Prem</option>
-													<option>Busin</option>
-													<option>A</option>
-												</select>
+						<ul class="nav nav-pills">
+							<li class="active"><a data-toggle="tab" href="#flight">Flights</a></li>
+							<li><a data-toggle="tab" href="#hotel">Hotel</a></li>
+							<li><a data-toggle="tab" href="#car">Car</a></li>
+						</ul>
+						<div class="tab-content">
+							<div id="flight" class="tab-pane fade in active">
+								<div class="dull">
+									<div class="radio radio-inline radio-success" id="return-r">
+										<input type="radio" name="radio2" id="radio1" value="return" checked>
+										<label for="radio1" style="color: white;">
+											Return
+										</label>
+									</div>
+									<div class="radio radio-inline radio-success" id="one-way-r">
+										<input type="radio" name="radio2" id="radio2" value="one-way">
+										<label for="radio2" style="color: white;">
+											One way
+										</label>
+									</div>
+									<div class="radio radio-inline radio-success" id="multi">
+										<input type="radio" name="radio2" id="radio3" value="one-way">
+										<label for="radio3" style="color: white;">
+											Multi-city
+										</label>
+									</div>
+									<ul class="nav nav-tabs sr-only" role="tablist">
+										<li role="presentation" class="active"><a href="#return-rr" aria-controls="home" id="i_return" role="tab" data-toggle="tab">Return</a></li>
+										<li role="presentation"><a href="#oneway-rr" aria-controls="profile" role="tab" id="i_oneway" data-toggle="tab">Oneway</a></li>
+										<li role="presentation"><a href="#oneway" aria-controls="profile" role="tab" id="i_multi" data-toggle="tab">Oneway</a></li>
+									</ul>
+									<div class="tab-content" style="margin-top: 7px;">
+										<div id="return-rr" class="tab-pane fade in active">
+											<div class="ipcontainer" style="margin-left: initial;">
+												<input class="form-control abs" type="text" placeholder="Origin" style="border-radius: 4px 0px 0px 4px;">
+												<span class="glyphicon glyphicon-menu-right abs" aria-hidden="true"></span>
 											</div>
+											<div class="ipcontainer">
+												<input class="form-control abs" type="text" placeholder="To">
+											</div>
+											<div class="ipcontainer" style="width:130px">
+												<span class="glyphicon glyphicon-calendar abs" aria-hidden="true"></span>
+												<input class="form-control abs datepik" type="text" data-provide="datepicker" placeholder="Depart">
+											</div>
+											<div class="ipcontainer" style="width:130px">
+												<span class="glyphicon glyphicon-calendar abs" aria-hidden="true"></span>
+												<input class="form-control abs datepik" type="text" data-provide="datepicker" placeholder="Return">
+											</div>
+											<div class="ipcontainer" style="width:140px">
+												<span class="glyphicon glyphicon-user abs" aria-hidden="true"></span>
+												<input class="form-control abs dropdown-toggle" data-toggle="dropdown" id="ctotal" value="1" readonly type="text" placeholder="People">
+												<div class="dropdown-menu propagation-stoped" style="width: 235px;">
+													<div class="col-md-12">
+														<div class="form-horizontal">
+															<div class="form-group">
+																<label for="sel1" class="col-md-3">Class</label>
+																<div class="col-md-9">
+																	<select class="form-control sleek" id="sel1">
+																		<option>Economy</option>
+																		<option>Prem</option>
+																		<option>Busin</option>
+																		<option>A</option>
+																	</select>
+																</div>
+															</div>
+															<hr />
+															<div class="form-group">
+																<label for="sel1" class="col-md-3">Adult</label>
+																<div class="col-md-2">
+																	<button class="btn btn-sm btn-warning cminus"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+																</div>
+																<div class="col-md-4" style="text-align: center;">
+																	<label class="cvalue" id="">1</label>
+																</div>
+																<div class="col-md-2">
+																	<button class="btn btn-sm btn-info cplus"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+																</div>
+															</div>
+															<div class="form-group">
+																<label for="sel1" class="col-md-3">kids</label>
+																<div class="col-md-2">
+																	<button class="btn btn-sm btn-warning cminus"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+																</div>
+																<div class="col-md-4" style="text-align: center;">
+																	<label class="cvalue" id="">0</label>
+																</div>
+																<div class="col-md-2">
+																	<button class="btn btn-sm btn-info cplus"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+																</div>
+															</div>
+															<div class="form-group">
+																<label for="sel1" class="col-md-3">kings</label>
+																<div class="col-md-2">
+																	<button class="btn btn-sm btn-warning cminus"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+																</div>
+																<div class="col-md-4" style="text-align: center;">
+																	<label class="cvalue" id="">0</label>
+																</div>
+																<div class="col-md-2">
+																	<button class="btn btn-sm btn-info cplus"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+																</div>
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+											<button style="border-radius: 0px 4px 4px 0px;" class="ipcontainer-butt"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</button>
 										</div>
-										<hr />
-										<div class="form-group">
-											<label for="sel1" class="col-md-3">Adult</label>
-											<div class="col-md-2">
-												<button class="btn btn-sm btn-warning cminus"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
-											</div>
-											<div class="col-md-4" style="text-align: center;">
-												<label class="cvalue" id="">1</label>
-											</div>
-											<div class="col-md-2">
-												<button class="btn btn-sm btn-info cplus"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
-											</div>
-										</div>
-										<div class="form-group">
-											<label for="sel1" class="col-md-3">kids</label>
-											<div class="col-md-2">
-												<button class="btn btn-sm btn-warning cminus"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
-											</div>
-											<div class="col-md-4" style="text-align: center;">
-												<label class="cvalue" id="">0</label>
-											</div>
-											<div class="col-md-2">
-												<button class="btn btn-sm btn-info cplus"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
-											</div>
-										</div>
-										<div class="form-group">
-											<label for="sel1" class="col-md-3">kings</label>
-											<div class="col-md-2">
-												<button class="btn btn-sm btn-warning cminus"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
-											</div>
-											<div class="col-md-4" style="text-align: center;">
-												<label class="cvalue" id="">0</label>
-											</div>
-											<div class="col-md-2">
-												<button class="btn btn-sm btn-info cplus"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
-											</div>
+										<div id="oneway-rr" class="tab-pane fade">
+											<h3>one way</h3>
+
 										</div>
 									</div>
-
 								</div>
 							</div>
+							<div id="hotel#" class="tab-pane fade">
+
+							</div>
 						</div>
-						<button class="ipcontainer-butt">Search</button>
 
 					</div>
 				</div>
