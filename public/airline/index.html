@@ -125,10 +125,17 @@
 					<li>
 						<a class="whi" style="font-size: 1.2em;" href="">العربية</a>
 					</li>
-					<li>
-						<a class="whi" data-toggle="modal" data-target="#signinme" href="">Sign in</a>
+=					<li class="dropdown">
+						<a href="#" class="dropdown-toggle whi" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My account <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a data-toggle="modal" data-target="#signinme" href="">Sign in</a>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Flight Registration</a></li>
+							<li><a href="#">Company Registration</a></li>
+						</ul>
 					</li>
-
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="http://flagpedia.net/data/flags/mini/in.png" alt="flag"> <span class="caret"></span></a>
 						<ul class="dropdown-menu">
@@ -353,13 +360,13 @@
 				</div>
 				<div class="modal-body" style="background-position:center; background-image: url('/image/higirl.jpg');">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-6" style="padding-top: 11px;">
 							<hr>
 							<h2 style="color: white; margin-top: 21px; padding: 13px;">Find some <br> beautiful <br>places to get lost..</h2>
 							<hr>
 						</div>
 						<div class="col-md-6">
-							<div class="dull" style="width: 100%; padding-top: 20px; background-color: rgba(255, 255, 255, 0.15)">
+							<div class="dull" style="width: 100%; padding: 60px 20px; background-color: rgba(255, 255, 255, 0.15)">
 								<form>
 									<div class="form-group">
 										<label class="sr-only" for="user-email">Email address</label>
@@ -373,8 +380,8 @@
 									<button type="button" class="btn btn-teal form-control">Sign in</button>
 									
 								</form>
-								<p style="margin-top: 15px; color: white; text-align: right;">
-								<a style="color: white;" href="#">Sign up</a><br>
+								<p style="font-size: .85em; margin-top: 10px; color: white; text-align: left;">
+								New user? <a style="color: white;" href="#">Sign up</a><br>
 								</p>
 								<button type="button" class="btn form-control" style="background-color: #FF4E4E; color: white;">Sign in with Google</button>
 								<br>
