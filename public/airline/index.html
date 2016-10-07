@@ -108,7 +108,7 @@
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
 				</button>
-				<a class="navbar-brand" href="index.html"><span style="color: #00ffe6;" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> Airlines</a>
+				<a class="navbar-brand" href="index.html"><span style="color: #00ffe6;" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> Travel Portal</a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -125,11 +125,14 @@
 					<li>
 						<a class="whi" style="font-size: 1.2em;" href="">العربية</a>
 					</li>
-=					<li class="dropdown">
+					=
+					<li class="dropdown">
 						<a href="#" class="dropdown-toggle whi" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My account <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li>
-								<a data-toggle="modal" data-target="#signinme" href="">Sign in</a>
+								<div style="text-align: center; padding-top: 7px;">
+									<a class="btn btn-teal" style="padding: 14px 61px; color: white;" data-toggle="modal" data-target="#signinme" href="">Sign in</a>
+								</div>
 							</li>
 							<li role="separator" class="divider"></li>
 							<li><a href="#">Flight Registration</a></li>
@@ -170,16 +173,17 @@
 						<div class="tab-content">
 							<div id="flight" class="tab-pane fade in active">
 								<div class="dull">
-									<div class="radio radio-inline radio-success" id="return-r">
-										<input type="radio" name="radio2" id="radio1" value="return" checked>
-										<label for="radio1" style="color: white;">
-											Return
-										</label>
-									</div>
+
 									<div class="radio radio-inline radio-success" id="one-way-r">
-										<input type="radio" name="radio2" id="radio2" value="one-way">
+										<input type="radio" name="radio2" id="radio2" value="one-way" checked>
 										<label for="radio2" style="color: white;">
 											One way
+										</label>
+									</div>
+									<div class="radio radio-inline radio-success" id="return-r">
+										<input type="radio" name="radio2" id="radio1" value="return">
+										<label for="radio1" style="color: white;">
+											Return
 										</label>
 									</div>
 									<div class="radio radio-inline radio-success" id="multi">
@@ -194,7 +198,82 @@
 										<li role="presentation"><a href="#oneway" aria-controls="profile" role="tab" id="i_multi" data-toggle="tab">Oneway</a></li>
 									</ul>
 									<div class="tab-content" style="margin-top: 7px;">
-										<div id="return-rr" class="tab-pane fade in active">
+										<!-- tab 1 -->
+										<div id="oneway-rr" class="tab-pane fade in active">
+											<div class="ipcontainer" style="margin-left: initial;">
+												<input class="form-control abs" type="text" placeholder="Origin" style="border-radius: 4px 0px 0px 4px;">
+												<span class="glyphicon glyphicon-menu-right abs" aria-hidden="true"></span>
+											</div>
+											<div class="ipcontainer">
+												<input class="form-control abs" type="text" placeholder="To">
+											</div>
+											<div class="ipcontainer" style="width:130px">
+												<span class="glyphicon glyphicon-calendar abs" aria-hidden="true"></span>
+												<input class="form-control abs datepik" type="text" data-provide="datepicker" placeholder="Depart">
+											</div>
+											<div class="ipcontainer" style="width:140px">
+												<span class="glyphicon glyphicon-user abs" aria-hidden="true"></span>
+												<input class="form-control abs dropdown-toggle" data-toggle="dropdown" id="ctotal" value="1" readonly type="text" placeholder="People">
+												<div class="dropdown-menu propagation-stoped" style="width: 235px;">
+													<div class="col-md-12">
+														<div class="form-horizontal">
+															<div class="form-group">
+																<label for="sel1" class="col-md-3">Class</label>
+																<div class="col-md-9">
+																	<select class="form-control sleek" id="sel1">
+																		<option>Economy</option>
+																		<option>Prem</option>
+																		<option>Busin</option>
+																		<option>A</option>
+																	</select>
+																</div>
+															</div>
+															<hr />
+															<div class="form-group">
+																<label for="sel1" class="col-md-3">Adult</label>
+																<div class="col-md-2">
+																	<button class="btn btn-sm btn-default cminus"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+																</div>
+																<div class="col-md-4" style="text-align: center;">
+																	<label class="cvalue" id="">1</label>
+																</div>
+																<div class="col-md-2">
+																	<button class="btn btn-sm btn-default cplus"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+																</div>
+															</div>
+															<div class="form-group">
+																<label for="sel1" class="col-md-3">kids</label>
+																<div class="col-md-2">
+																	<button class="btn btn-sm btn-default cminus"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+																</div>
+																<div class="col-md-4" style="text-align: center;">
+																	<label class="cvalue" id="">0</label>
+																</div>
+																<div class="col-md-2">
+																	<button class="btn btn-sm btn-default cplus"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+																</div>
+															</div>
+															<div class="form-group">
+																<label for="sel1" class="col-md-3">kings</label>
+																<div class="col-md-2">
+																	<button class="btn btn-sm btn-default cminus"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+																</div>
+																<div class="col-md-4" style="text-align: center;">
+																	<label class="cvalue" id="">0</label>
+																</div>
+																<div class="col-md-2">
+																	<button class="btn btn-sm btn-default cplus"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+																</div>
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+											<button style="border-radius: 0px 4px 4px 0px;" class="ipcontainer-butt"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</button>
+
+										</div>
+										<div id="return-rr" class="tab-pane fade">
 											<div class="ipcontainer" style="margin-left: initial;">
 												<input class="form-control abs" type="text" placeholder="Origin" style="border-radius: 4px 0px 0px 4px;">
 												<span class="glyphicon glyphicon-menu-right abs" aria-hidden="true"></span>
@@ -270,10 +349,6 @@
 												</div>
 											</div>
 											<button style="border-radius: 0px 4px 4px 0px;" class="ipcontainer-butt"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</button>
-										</div>
-										<div id="oneway-rr" class="tab-pane fade">
-											<h3>one way</h3>
-
 										</div>
 									</div>
 								</div>
@@ -378,10 +453,11 @@
 										<!-- <a style="color: white; font-size: .8em;" href="#">Forgot Password</a> -->
 									</div>
 									<button type="button" class="btn btn-teal form-control">Sign in</button>
-									
+
 								</form>
 								<p style="font-size: .85em; margin-top: 10px; color: white; text-align: left;">
-								New user? <a style="color: white;" href="#">Sign up</a><br>
+									New user? <a style="color: white;" href="#">Sign up</a>
+									<br>
 								</p>
 								<button type="button" class="btn form-control" style="background-color: #FF4E4E; color: white;">Sign in with Google</button>
 								<br>
