@@ -370,3 +370,10 @@ footer.page-footer ul li a:hover {
 .row .content i {
 	margin-top: 3px;
 }
+
+/**
+ * collapsable body
+ */
+.collapsible-body .heading{
+	color: #6C6C6C;
+}

@@ -1,0 +1,16 @@
+client:
+  ✔ add link < index/section-2 -collegeManage...sln -learnMore @done (16-10-31 14:15)
+  ✔ add link < produces/collageManage..sln/cards @done (16-10-31 14:16)
+  ✔ add link < products/cms -viewDemo href to new CMS page @done (16-10-31 14:42)
+  ✔ add CMS page @done (16-10-31 14:42)
+  ✔ add CMS to products page @done (16-10-31 14:42)
+  ☐ separate CMS and SMS in products.html
+  ☐ fix broken links in CMS specific page
+  ☐ add picture < index/section-2 -laptop
+  ☐ customer care bottom
+  ☐ upgrade bower.json
+  ☐ upgrade readme.md
+  ☐ check images for copyright issues
+  ☐ remove local dependencies as much as possible
+  ☐ review
+  ☐ build
