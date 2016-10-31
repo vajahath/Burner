@@ -4,13 +4,19 @@ client:
   ✔ add link < products/cms -viewDemo href to new CMS page @done (16-10-31 14:42)
   ✔ add CMS page @done (16-10-31 14:42)
   ✔ add CMS to products page @done (16-10-31 14:42)
-  ☐ separate CMS and SMS in products.html
-  ☐ fix broken links in CMS specific page
+  ✔ separate CMS and SMS in products.html @done (16-10-31 15:07)
+  ✔ adjust bhoechie tabs > for large content  @done (16-10-31 15:41)
+  ✔ fix broken links in CMS specific page @done (16-10-31 15:42)
+  ✔ customer care bottom @done (16-10-31 15:49)
+  ☐ add content to cms page, check links.
+  ☐ add downloadable pdf page
   ☐ add picture < index/section-2 -laptop
-  ☐ customer care bottom
   ☐ upgrade bower.json
   ☐ upgrade readme.md
   ☐ check images for copyright issues
+  ☐ social links in Main page
+  ☐ social links in CMS specific page
+  ☐ contact details in cms specific page: bottom form
   ☐ remove local dependencies as much as possible
   ☐ review
   ☐ build
