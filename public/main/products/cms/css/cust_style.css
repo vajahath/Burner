@@ -1,227 +1,227 @@
 /*  bhoechie tab */
 
 div.bhoechie-tab-container {
-  z-index: 10;
-  background-color: #ffffff;
-  padding: 0 !important;
-  border-radius: 4px;
-  -moz-border-radius: 4px;
-  border: 1px solid #ddd;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-  -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-  background-clip: padding-box;
-  opacity: 0.97;
-  filter: alpha(opacity=97);
+	z-index: 10;
+	background-color: #ffffff;
+	padding: 0 !important;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	border: 1px solid #ddd;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	-moz-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	background-clip: padding-box;
+	opacity: 0.97;
+	filter: alpha(opacity=97);
 }
 
 div.bhoechie-tab-menu {
-  padding-right: 0;
-  padding-left: 0;
-  padding-bottom: 0;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 0;
 }
 
 div.bhoechie-tab-menu div.list-group {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 div.bhoechie-tab-menu div.list-group>a {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 div.bhoechie-tab-menu div.list-group>a .glyphicon,
 div.bhoechie-tab-menu div.list-group>a .fa {
-  color: #2B8C82;
+	color: #2B8C82;
 }
 
 div.bhoechie-tab-menu div.list-group>a:first-child {
-  border-top-right-radius: 0;
-  -moz-border-top-right-radius: 0;
+	border-top-right-radius: 0;
+	-moz-border-top-right-radius: 0;
 }
 
 div.bhoechie-tab-menu div.list-group>a:last-child {
-  border-bottom-right-radius: 0;
-  -moz-border-bottom-right-radius: 0;
+	border-bottom-right-radius: 0;
+	-moz-border-bottom-right-radius: 0;
 }
 
 div.bhoechie-tab-menu div.list-group>a.active,
 div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
 div.bhoechie-tab-menu div.list-group>a.active .fa {
-  background-color: #2B8C82;
-  background-image: #2B8C82;
-  color: #ffffff;
+	background-color: #2B8C82;
+	background-image: #2B8C82;
+	color: #ffffff;
 }
 
 div.bhoechie-tab-menu div.list-group>a.active:after {
-  content: '';
-  position: absolute;
-  left: 100%;
-  top: 50%;
-  margin-top: -13px;
-  border-left: 0;
-  border-bottom: 13px solid transparent;
-  border-top: 13px solid transparent;
-  border-left: 10px solid #2B8C82;
+	content: '';
+	position: absolute;
+	left: 100%;
+	top: 50%;
+	margin-top: -13px;
+	border-left: 0;
+	border-bottom: 13px solid transparent;
+	border-top: 13px solid transparent;
+	border-left: 10px solid #2B8C82;
 }
 
 div.bhoechie-tab-content {
-  background-color: #ffffff;
-  /* border: 1px solid #eeeeee; */
-  padding-left: 20px;
-  padding-top: 10px;
+	background-color: #ffffff;
+	/* border: 1px solid #eeeeee; */
+	padding-left: 20px;
+	padding-top: 10px;
 }
 
 div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
-  display: none;
+	display: none;
 }
 
 .bhoechie-tab-content h1 {
-  color: #318F85;
+	color: #318F85;
 }
 
 
 /* tabs over */
 
 blockquote {
-  border-color: #318F85;
+	border-color: #318F85;
 }
 
 blockquote p {
-  font-size: 28px;
-  line-height: 1.25em;
-  color: #FFF;
+	font-size: 28px;
+	line-height: 1.25em;
+	color: #FFF;
 }
 
 .impression {
-  background: url('../img/meet.jpg');
-  background-position: center;
-  background-size: cover;
+	background: url('../img/meet.jpg');
+	background-position: center;
+	background-size: cover;
 }
 
 .banner-book {
-  background-color: #262626;
-  padding: 80px;
-  color: #FFF;
+	background-color: #262626;
+	padding: 80px;
+	color: #FFF;
 }
 
 .order-btn:link,
 .order-btn:visited {
-  background-color: #318F85;
-  color: #FFF;
+	background-color: #318F85;
+	color: #FFF;
 }
 
 .order-btn:hover,
 .order-btn:active {
-  background-color: #4E4E4E;
-  color: #FFF;
+	background-color: #4E4E4E;
+	color: #FFF;
 }
 
 .gray-back:link,
 .gray-back:visited {
-  background-color: #525252;
-  color: #FFF;
+	background-color: #525252;
+	color: #FFF;
 }
 
 .gray-back:hover,
 .gray-back:active {
-  background-color: #318F85;
-  color: #FFF;
+	background-color: #318F85;
+	color: #FFF;
 }
 
 .main-footer {
-  background-color: #2F2F2F;
-  color: #6B6B6B;
+	background-color: #2F2F2F;
+	color: #6B6B6B;
 }
 
 .price-card {
-  background-color: #DADADA;
-  margin: 5px;
-  box-shadow: 2px 2px 6px #717171;
-  padding-bottom: 30px;
+	background-color: #DADADA;
+	margin: 5px;
+	box-shadow: 2px 2px 6px #717171;
+	padding-bottom: 30px;
 }
 
 .card-header {
-  color: #FFF;
-  padding: 15px 10px 10px 10px;
+	color: #FFF;
+	padding: 15px 10px 10px 10px;
 }
 
 .card-header i {
-  font-size: 40px;
+	font-size: 40px;
 }
 
 .btn-green {
-  background-color: #318F85;
-  border: #008D7E;
+	background-color: #318F85;
+	border: #008D7E;
 }
 
 .btn-green:hover {
-  background-color: #24AC9E;
-  border: #008D7E;
+	background-color: #24AC9E;
+	border: #008D7E;
 }
 
 .btn-gray {
-  background-color: #ABABAB;
-  border: #989898;
+	background-color: #ABABAB;
+	border: #989898;
 }
 
 .btn-gray:hover {
-  background-color: #909090;
-  border: #989898;
+	background-color: #909090;
+	border: #989898;
 }
 
 .contact-section {
-  padding: 50px 20px 20px 20px;
+	padding: 50px 20px 20px 20px;
 }
 
 .contact-section input {
-  background-color: #5E5E5E;
-  border: none;
-  letter-spacing: 1.75px;
-  height: 3.38em;
-  color: #FFFFFF;
+	background-color: #5E5E5E;
+	border: none;
+	letter-spacing: 1.75px;
+	height: 3.38em;
+	color: #FFFFFF;
 }
 
 .contact-section textarea {
-  background-color: #5E5E5E;
-  border: none;
-  color: #FFFFFF;
-  letter-spacing: 1.75px;
+	background-color: #5E5E5E;
+	border: none;
+	color: #FFFFFF;
+	letter-spacing: 1.75px;
 }
 
 .btn {
-  font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 
 /**
- * bhoechie-tab-menu
- */
+* bhoechie-tab-menu
+*/
 
 .bhoechie-tab-menu {
-  height: 500px;
-  overflow-x: hidden;
-  overflow-y: auto;
+	height: 500px;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 .bhoechie-tab-content {
-  height: 500px;
-  overflow: auto;
-  padding-right: 66px;
-  padding-bottom: 35px;
+	height: 500px;
+	overflow: auto;
+	padding-right: 66px;
+	padding-bottom: 35px;
 }
 
 
 /**
- * reddish
- */
+* reddish
+*/
 
 .reddish {
-  background-color: #FF5C51;
-  border-color: #FF5C51;
-  margin: 6px;
+	background-color: #FF5C51;
+	border-color: #FF5C51;
+	margin: 6px;
 }
 
 .reddish:hover {
-  background-color: #D4463C;
-  border-color: #D4463C;
+	background-color: #D4463C;
+	border-color: #D4463C;
 }

@@ -8,7 +8,10 @@ client:
   ✔ adjust bhoechie tabs > for large content  @done (16-10-31 15:41)
   ✔ fix broken links in CMS specific page @done (16-10-31 15:42)
   ✔ customer care bottom @done (16-10-31 15:49)
+  ☐ add price list
+  ☐ add functionality to buy now buttons
   ☐ add content to cms page, check links.
+  ☐ add quote to CMS
   ☐ add downloadable pdf page
   ☐ add picture < index/section-2 -laptop
   ☐ upgrade bower.json
