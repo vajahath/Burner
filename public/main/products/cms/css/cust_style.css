@@ -160,13 +160,18 @@ blockquote p {
 }
 
 .btn-gray {
-	background-color: #ABABAB;
+	background-color: #969696;
 	border: #989898;
+	color: white;
 }
 
 .btn-gray:hover {
-	background-color: #909090;
+	background-color: #6E6E6E;
 	border: #989898;
+	color: white;
+}
+.btn-gray:active{
+	color: white;
 }
 
 .contact-section {
