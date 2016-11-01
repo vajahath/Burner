@@ -28,7 +28,14 @@
         offset: {
             top: 100
         }
-    })
+    });
+
+    $('#cms-download').click(function() {
+        window.location.href = 'downloadables/cms.pdf';
+    });
+    $('#sms-download').click(function() {
+        window.location.href = 'downloadables/sms.pdf';
+    });
 
 })(jQuery); // End of use strict
 
