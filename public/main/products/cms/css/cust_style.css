@@ -230,3 +230,12 @@ blockquote p {
 	background-color: #D4463C;
 	border-color: #D4463C;
 }
+
+/**
+ * #pricing
+ */
+#pricing {
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}

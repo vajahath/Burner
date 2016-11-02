@@ -8,11 +8,13 @@ client:
   ✔ adjust bhoechie tabs > for large content  @done (16-10-31 15:41)
   ✔ fix broken links in CMS specific page @done (16-10-31 15:42)
   ✔ customer care bottom @done (16-10-31 15:49)
-  ☐ add price list
+  ✔ add price list @done (16-11-02 11:51)
+  ✔ add downloadable pdf pages @done (16-11-02 11:58)
+  ☐ Fix dropdown issue in Firefox and edge.
+  ☐ Add contents to educatuion
   ☐ add functionality to buy now buttons
   ☐ add content to cms page, check links.
   ☐ add quote to CMS
-  ☐ add downloadable pdf page
   ☐ add picture < index/section-2 -laptop
   ☐ upgrade bower.json
   ☐ upgrade readme.md
@@ -23,3 +25,6 @@ client:
   ☐ remove local dependencies as much as possible
   ☐ review
   ☐ build
+
+Update v2:
+  ☐ add sidenave as in icici's. (If and only if that is needed).
