@@ -23,7 +23,7 @@ router.post('/', function(req, res) {
 				res.send("ah snap.. thats incorrect..")
 			}
 		} else {
-			res.send("F*** ! fill all fields.");
+			res.send("Funny right?! FILL ALL FIELDS.");
 		}
 	} else {
 		res.send("u r logged in");

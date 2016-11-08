@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>My app</title>
+	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+	<style>
+
+	</style>
+</head>
+
+<body>
+	<div class="row">
+		<div class="container">
+			<br>
+			<br>
+			<br>
+			<form action="" method="post" style="display: inline-block;">
+				<div class="dropdown">
+					visible value:
+					<input class="dropdown-toggle" id="visible" type="text" data-toggle="dropdown" placeholder="city">
+					<ul class="dropdown-menu">
+						<li><a class="destination" code="maa" href="#">Mumbai</a></li>
+						<li><a class="destination" code="hel" href="#">New Delhi</a></li>
+						<li><a class="destination" code="mee" href="#">Madurai</a></li>
+					</ul>
+				</div>
+			</form>
+			<div style="display: inline-block; float: right;">
+				Hidden value:
+				<input type="text" placeholder="code" id="hvalue">
+
+			</div>
+
+			<!-- <button onclick="show()">show</button> -->
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".destination").click(function() {
+			$("#hvalue").val($(this).attr('code'));
+			$("#visible").val($(this).text());
+			// console.log($(this).text());
+		})
+	});
+	
+	</script>
+
+</body>
+
+</html>

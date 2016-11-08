@@ -1,0 +1,52 @@
+html {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	background-color: #597DFF;
+	height: 100%;
+}
+
+.container {
+	background-color: #FFBB7E;
+	height: 80%;
+	padding-top: 10%;
+}
+
+.dull {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #FFF;
+	padding: 1%;
+}
+
+.input-group-addon {
+	border-radius: 0px;
+}
+
+.form-control {
+	border-radius: 0px;
+	padding: 21px 12px;
+}
+
+.form-group {
+	margin-left: -5px;
+}
+
+.flex-container {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.flex-item {}
+.btn-fancy{
+	border-radius: 0px 4px 4px 0px;
+	margin-left: -5px;
+}
+
+.form-inline .form-group:first-child .form-control{
+	border-radius: 4px 0px 0px 4px;
+	margin-left: 0px;
+}
